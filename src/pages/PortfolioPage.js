@@ -5,6 +5,9 @@ import WelcomeCard from '../components/WelcomeCard'
 export default function PortfolioPage() {
 
     return (
-        <WelcomeCard/>
+        <div>
+            <h2>Portfolio</h2>
+            <WelcomeCard/>
+        </div>
     );
 }
