@@ -19,9 +19,10 @@ jobs:
           host: ${{ secrets.MY_HOST }}
           username: ${{ secrets.MY_USER }}
           password: ${{ secrets.MY_PASSWORD }}
+          #key: ${{ secrets.MY_PRIVATE_KEY }}
           rm: true
           source: "build"
-          target: "~/www/repository/aladin-testbed"
+          target: "~/www/repository/cv"
 
       - name: move files to production
         uses: appleboy/ssh-action@master
