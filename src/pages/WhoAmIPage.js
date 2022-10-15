@@ -5,6 +5,9 @@ import WelcomeCard from '../components/WelcomeCard'
 export default function WhoAmIPage() {
 
     return (
-        <WelcomeCard/>
+        <div>
+            <h2>Who Am I</h2>
+            <WelcomeCard/>
+        </div>
     );
 }

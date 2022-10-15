@@ -2,7 +2,7 @@ import React from 'react';
 
 import WelcomeCard from '../components/WelcomeCard'
 
-export default function WelcomePage(props) {
+export default function WelcomePage() {
 
     return (
         <WelcomeCard/>
