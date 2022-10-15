@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.MY_PASSWORD }}
           rm: true
           source: "build"
-          target: "~/www/repository/cv"
+          target: "~/www/repository/aladin-testbed"
 
       - name: move files to production
         uses: appleboy/ssh-action@master
