@@ -8,6 +8,7 @@ export const SET_HIPSLIST = 'SET_HIPSLIST'
 export const initialState = {
         status: "unfetched",
         hipslist: undefined,
+        base_url: "https://web-of-wyrd.nl/data_on_yggdrasil/my_cv"
 }
 
 export const reducer = (state, action) => {

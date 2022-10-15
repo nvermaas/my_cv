@@ -17,10 +17,10 @@ import WhoAmIPage from '../pages/WhoAmIPage';
 
 import FetchData from '../services/FetchData';
 
-const url =
+const base_url =
     process.env.NODE_ENV === "development"
-        ? "http://localhost:3000/hipslist.txt"
-        : "https://sdc.astron.nl/astron-hips/hipslist.txt";
+        ? "https://web-of-wyrd.nl/data_on_yggdrasil/my_cv"
+        : "https://web-of-wyrd.nl/data_on_yggdrasil/my_cv";
 
 
 export default function Main() {
@@ -28,7 +28,7 @@ export default function Main() {
     FetchData()
 
     return (
-        <Router basename="">
+        <Router basename="cv">
             <div>
                 <NavigationBar/>
 
