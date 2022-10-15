@@ -5,6 +5,9 @@ import WelcomeCard from '../components/WelcomeCard'
 export default function HistoryPage() {
 
     return (
-        <WelcomeCard/>
+        <div>
+            <h2>History & Experience</h2>
+            <WelcomeCard/>
+        </div>
     );
 }
