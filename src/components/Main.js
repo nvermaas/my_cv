@@ -8,8 +8,13 @@ import {
 } from "react-router-dom";
 
 import NavigationBar from './NavigationBar';
-import HipsPage from '../pages/HipsPage';
+
 import WelcomePage from '../pages/WelcomePage';
+import SkillsPage from '../pages/SkillsPage';
+import HistoryPage from '../pages/HistoryPage';
+import PortfolioPage from '../pages/PortfolioPage';
+import WhoAmIPage from '../pages/WhoAmIPage';
+
 import FetchData from '../services/FetchData';
 
 const url =
@@ -31,13 +36,22 @@ export default function Main() {
                     <Route exact path="/">
                         <WelcomePage />
                     </Route>
-                    <Route exact path="/hips">
-                        <HipsPage />
+                    <Route exact path="/skills">
+                        <SkillsPage />
+                    </Route>
+                    <Route exact path="/history">
+                        <HistoryPage />
+                    </Route>
+                    <Route exact path="/portfolio">
+                        <PortfolioPage />
+                    </Route>
+                    <Route exact path="/whoami">
+                        <WhoAmIPage />
                     </Route>
                 </Switch>
             </div>
             <footer>
-                <small> (C) 2021 - ASTRON - version 1.0.0 - 12 jan 2021</small>
+                <small> (C) 2022 - Nico Vermaas - version 1.0.0 - 15 oct 2022</small>
             </footer>
         </Router>
 

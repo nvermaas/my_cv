@@ -2,23 +2,22 @@ import React from 'react';
 
 import { Navbar, Nav } from 'react-bootstrap';
 import '../App.css';
-import logo from '../assets/astron-hips-logo.jpg';
-import { NavLink, Link } from "react-router-dom"
-
-import { useGlobalReducer } from '../contexts/GlobalContext';
+import logo from '../assets/nico_cv_logo.jpg';
+import { NavLink } from "react-router-dom"
 
 
 export default function NavigationBar() {
-    const [ my_state , my_dispatch] = useGlobalReducer()
 
     return (
         <Navbar bg="dark" variant="dark">
 
-            <img class="App-logo"  alt='' src={logo} width="150" height="50" className="d-inline-block align-top"/>
+            <img className="d-inline-block align-top"  alt='' src={logo} width="150" height="50" />
 
             <Nav className="mr-auto">
                 <Nav.Link as={NavLink} to="/">Welcome</Nav.Link>
-                <Nav.Link as={NavLink} to="/hips">HiPS Surveys</Nav.Link>
+                <Nav.Link as={NavLink} to="/skills">Skills</Nav.Link>
+                <Nav.Link as={NavLink} to="/history">History</Nav.Link>
+                <Nav.Link as={NavLink} to="/portfolio">Portfolio</Nav.Link>
             </Nav>
         </Navbar>
 

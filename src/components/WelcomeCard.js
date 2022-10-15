@@ -1,25 +1,25 @@
 import React from 'react';
-import {Card, Button, Table, Image } from 'react-bootstrap'
+import {Card, Table} from 'react-bootstrap'
 
-import hips_logo from '../assets/astron-vo-logo.jpg';
-//import astron_logo from '../assets/astron-logo.png';
+import nico_cv_logo from '../assets/nico_cv_logo.jpg';
 
-export default function WelcomeCard(props) {
+
+export default function WelcomeCard() {
 
     return (
         <div className="App">
             <Card>
                 <Card.Body>
-                    <h2>Welcome to the ASTRON HiPS service.</h2>
+                    <h2>Curriculum Vitae of Nico Vermaas.</h2>
                     <Table>
-                        <img src={hips_logo} />
+                        <img src={nico_cv_logo} alt="logo cv"/>
 
                     </Table>
                     <Card.Text>
+                        <li>On this page you can find my CV and Portfolio of projects.</li>
+                        <li>This App was written in ReactJS, to prove the point ;-) </li>
+                        <li>Automatically deployed with a CI/CD pipeline from this github repo </li>
 
-                        <p>On this page, you will find&nbsp;
-                            <a href="https://aladin.u-strasbg.fr/hips/">HiPS</a>es of several of our the surveys in the Virtual Observatory. </p>
-                        <p>Of course, our HiPSes are also listed in <a href="https://aladin.u-strasbg.fr/">Aladin</a></p>
                     </Card.Text>
                 </Card.Body>
             </Card>
