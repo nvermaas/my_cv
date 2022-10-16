@@ -9,11 +9,11 @@ import {
 
 import NavigationBar from './NavigationBar';
 
-import WelcomePage from '../pages/WelcomePage';
-import SkillsPage from '../pages/SkillsPage';
-import HistoryPage from '../pages/HistoryPage';
-import PortfolioPage from '../pages/PortfolioPage';
-import WhoAmIPage from '../pages/WhoAmIPage';
+import WelcomePage from '../routes/welcome/WelcomePage';
+import SkillsPage from '../routes/skills/SkillsPage';
+import HistoryPage from '../routes/history/HistoryPage';
+import PortfolioPage from '../routes/portfolio/PortfolioPage';
+import WhoAmIPage from '../routes/whoami/WhoAmIPage';
 
 import FetchData from '../services/FetchData';
 

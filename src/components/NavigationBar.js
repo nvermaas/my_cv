@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Navbar, Nav } from 'react-bootstrap';
 import '../App.css';
-import logo from '../assets/nico_cv_logo.jpg';
+import logo from '../assets/cv_logo_small.png';
 import { NavLink } from "react-router-dom"
 
 

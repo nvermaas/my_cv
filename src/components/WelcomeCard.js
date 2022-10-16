@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card, Table} from 'react-bootstrap'
 
-import nico_cv_logo from '../assets/nico_cv_logo.jpg';
+import nico_cv_logo from '../assets/cv_logo_large.png';
 
 
 export default function WelcomeCard() {
@@ -12,7 +12,7 @@ export default function WelcomeCard() {
                 <Card.Body>
                     <h2>Curriculum Vitae of Nico Vermaas.</h2>
                     <Table>
-                        <img src={nico_cv_logo} alt="logo cv"/>
+                        <img src={nico_cv_logo} width="800" alt="logo cv"/>
 
                     </Table>
                     <Card.Text>
