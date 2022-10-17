@@ -1,13 +1,13 @@
 import React from 'react';
 
-import WelcomeCard from '../../components/WelcomeCard'
+import ProjectsPage from './ProjectsPage'
 
 export default function PortfolioPage() {
 
     return (
         <div>
             <h2>Portfolio</h2>
-            <WelcomeCard/>
+            <ProjectsPage/>
         </div>
     );
 }

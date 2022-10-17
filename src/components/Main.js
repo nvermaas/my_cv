@@ -15,8 +15,6 @@ import HistoryPage from '../routes/history/HistoryPage';
 import PortfolioPage from '../routes/portfolio/PortfolioPage';
 import WhoAmIPage from '../routes/whoami/WhoAmIPage';
 
-import FetchData from '../services/FetchData';
-
 const base_url =
     process.env.NODE_ENV === "development"
         ? "https://web-of-wyrd.nl/data_on_yggdrasil/my_cv"
@@ -24,8 +22,6 @@ const base_url =
 
 
 export default function Main() {
-
-    FetchData()
 
     return (
         <Router basename="cv">
@@ -51,7 +47,7 @@ export default function Main() {
                 </Switch>
             </div>
             <footer>
-                <small> (C) 2022 - Nico Vermaas - version 1.0.0 - 15 oct 2022</small>
+                <small> (C) 2022 - Nico Vermaas - version 1.0.0 - 17 oct 2022</small>
             </footer>
         </Router>
 

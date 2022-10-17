@@ -1,14 +1,19 @@
-// Nico Vermaas - 28 oct 2019
-// This is the reducer for the global state providor.
+// the reducer for the global state providor.
 
 // possible actions
 export const SET_STATUS = 'SET_STATUS'
-export const SET_HIPSLIST = 'SET_HIPSLIST'
+export const SET_PORTFOLIO_PAGE = 'SET_PORTFOLIO_PAGE'
+export const SET_CURRENT_PROJECT = 'SET_CURRENT_PROJECT'
 
 export const initialState = {
         status: "unfetched",
-        hipslist: undefined,
-        base_url: "https://web-of-wyrd.nl/data_on_yggdrasil/my_cv"
+        portfolio_page: "projects",
+        base_url: "https://web-of-wyrd.nl/data_on_yggdrasil/my_cv/",
+
+        projects: [
+            {"name": "skyview", "type": "frontend", "image": "skyview.png", "thumbnail": "skyview.png"},
+            {"name": "astrobase", "type": "backend", "image": "astrobase.png", "thumbnail": "astrobse.png"}
+            ]
 }
 
 export const reducer = (state, action) => {
@@ -20,10 +25,16 @@ export const reducer = (state, action) => {
                 status: action.status
             };
 
-        case SET_HIPSLIST:
+        case SET_PORTFOLIO_PAGE:
             return {
                 ...state,
-                hipslist: action.hipslist,
+                portfolio_page: action.portfolio_page,
+            };
+
+        case SET_CURRENT_PROJECT:
+            return {
+                ...state,
+                current_project: action.current_project,
             };
 
         default:
