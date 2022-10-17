@@ -11,8 +11,8 @@ export const initialState = {
         base_url: "https://web-of-wyrd.nl/data_on_yggdrasil/my_cv/",
 
         projects: [
-            {"name": "skyview", "type": "frontend", "image": "skyview.png", "thumbnail": "skyview.png"},
-            {"name": "astrobase", "type": "backend", "image": "astrobase.png", "thumbnail": "astrobse.png"}
+            {"name": "skyview", "type": "frontend", "image": "/assets/astroview.png", "thumbnail": "/assets/astroview.png"},
+            {"name": "astrobase", "type": "backend", "image": "/astrobase.png", "thumbnail": "/astrobase.png"}
             ]
 }
 
