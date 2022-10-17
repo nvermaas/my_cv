@@ -33,4 +33,5 @@ jobs:
           script: |
              cd ~/www/cv
              cp ~/www/repository/cv/build/*.* .
+             cp ~/www/repository/cv/build/assets/* ./assets
              cp -r ~/www/repository/cv/build/static/* ~/www/my_static_files
