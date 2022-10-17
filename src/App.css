@@ -41,3 +41,46 @@
   font-family: "Raleway";
   font-size: 20px;
 }
+
+
+.Observations-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: inherit;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.card-img-top {
+  width: 45vh;
+  height: 15vw;
+  object-fit: cover;
+  background-color: darkgrey;
+}
+
+.card-img-observation {
+  width: 45vh;
+  height: 15vw;
+  background-color: darkgrey;
+}
+
+.card-img-cutout-dir {
+  width: 15vw;
+  height: 40vh;
+  background-color: transparent;
+}
+
+.card-img-cutout {
+  width: 16vw;
+  height: 45vh;
+  background-color: transparent;
+}
+
+.card-dataproduct {
+  display: flex;
+  object-fit: cover;
+  background-color: lightgrey;
+}
