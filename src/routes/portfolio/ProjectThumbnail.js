@@ -4,7 +4,6 @@ import {Card, Button } from 'react-bootstrap'
 import { useGlobalReducer } from '../../contexts/GlobalContext';
 import { SET_CURRENT_PROJECT } from '../../contexts/GlobalStateReducer'
 
-// display a single cutout directory on a card
 export default function ProjectThumbnail(props) {
     const [ my_state , my_dispatch] = useGlobalReducer()
 
@@ -23,7 +22,9 @@ export default function ProjectThumbnail(props) {
     const image_src =
         process.env.NODE_ENV === "development"
             ? "http://localhost:3000"+props.project.thumbnail
-            : process.env.PUBLIC_URL+props.project.thumbnail
+            : "https://uilennest.net/cv/"+props.project.thumbnail
+
+//: process.env.PUBLIC_URL+props.project.thumbnail
 
     alert(image_src)
     return (
