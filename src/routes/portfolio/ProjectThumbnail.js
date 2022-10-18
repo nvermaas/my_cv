@@ -22,11 +22,11 @@ export default function ProjectThumbnail(props) {
     const image_src =
         process.env.NODE_ENV === "development"
             ? "http://localhost:3000"+props.project.thumbnail
-            : "https://uilennest.net/cv/"+props.project.thumbnail
+            : "https://uilennest.net/cv"+props.project.thumbnail
 
 //: process.env.PUBLIC_URL+props.project.thumbnail
 
-    alert(image_src)
+
     return (
 
         <Card className="card-img-cutout-dir" >
