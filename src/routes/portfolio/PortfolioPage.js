@@ -15,29 +15,20 @@ export default function PortfolioPage() {
         my_dispatch({type: SET_PORTFOLIO_PAGE, portfolio_page: page})
     }
 
-    let renderPage
-
-
-    if (my_state.portfolio_page === 'projects') {
-        renderPage = <Projects/>
-    }
-
-    if (my_state.portfolio_page === 'frontend') {
-        renderPage = <Projects/>
-    }
-
     return (
         <div className="App">
 
             <Container fluid>
                 <Row>
-                    <Button variant="primary" onClick={() => handleClick("projects")}>Projects</Button>&nbsp;
-                    <Button variant="primary" onClick={() => handleClick("frontend")}>Frontend</Button>&nbsp;
+                    <Button variant="primary" onClick={() => handleClick("all")}>All Projects</Button>&nbsp;
+                    <Button variant="primary" onClick={() => handleClick("frontend_reactjs")}>Frontend (ReactJS)</Button>&nbsp;
+                    <Button variant="primary" onClick={() => handleClick("backend_django")}>Backend (Django)</Button>&nbsp;
+                    <Button variant="primary" onClick={() => handleClick("java")}>Java</Button>&nbsp;
                 </Row>
                 <Row>
                     <Col sm={12} md={12} lg={12}>
                         <Card>
-                            {renderPage}
+                            <Projects type={my_state.portfolio_page}/>
                         </Card>
                     </Col>
                 </Row>
