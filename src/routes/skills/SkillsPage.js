@@ -1,13 +1,12 @@
 import React from 'react';
 
-import WelcomeCard from '../../components/WelcomeCard'
+import SkillsCard from '../../components/SkillsCard'
 
 export default function SkillsPage() {
 
     return (
         <div>
-            <h2>Skills</h2>
-            <WelcomeCard/>
+            <SkillsCard/>
         </div>
     );
 }

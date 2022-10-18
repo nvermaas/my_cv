@@ -6,7 +6,7 @@ export default function ProjectTiles(props) {
 
     return (
         <div>
-            <header className="Observations-header">
+            <header>
             <Container fluid>
                 <Row>
                     {

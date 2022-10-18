@@ -1,13 +1,15 @@
 import React from 'react';
 
-import WelcomeCard from '../../components/WelcomeCard'
+import AstronSDCCard from '../../components/AstronSDCCard'
 
 export default function HistoryPage() {
 
     return (
         <div>
-            <h2>History & Experience</h2>
-            <WelcomeCard/>
+            <AstronSDCCard/>
+            <AstronSDCCard/>
+            <AstronSDCCard/>
+            <AstronSDCCard/>
         </div>
     );
 }
