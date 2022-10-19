@@ -1,8 +1,8 @@
 import React from 'react';
 
-import SkillsCard from '../../components/SkillsCard'
-import OlderSkillsCard from '../../components/OlderSkillsCard'
-import AncientSkillsCard from '../../components/AncientSkillsCard'
+import SkillsCard from './SkillsCard'
+import OlderSkillsCard from './OlderSkillsCard'
+import AncientSkillsCard from './AncientSkillsCard'
 
 export default function SkillsPage() {
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card, Table} from 'react-bootstrap'
 
-import nico_cv_logo from '../assets/cv_logo_large.png';
+import nico_cv_logo from '../../assets/cv_logo_large.png';
 
 
 export default function WelcomeCard() {

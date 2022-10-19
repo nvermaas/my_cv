@@ -15,12 +15,6 @@ import HistoryPage from '../routes/history/HistoryPage';
 import PortfolioPage from '../routes/portfolio/PortfolioPage';
 import WhoAmIPage from '../routes/whoami/WhoAmIPage';
 
-const base_url =
-    process.env.NODE_ENV === "development"
-        ? "https://web-of-wyrd.nl/data_on_yggdrasil/my_cv"
-        : "https://web-of-wyrd.nl/data_on_yggdrasil/my_cv";
-
-
 export default function Main() {
 
     return (

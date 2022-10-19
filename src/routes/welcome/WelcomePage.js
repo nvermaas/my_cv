@@ -1,6 +1,6 @@
 import React from 'react';
 
-import WelcomeCard from '../../components/WelcomeCard'
+import WelcomeCard from './WelcomeCard'
 
 export default function WelcomePage() {
 
