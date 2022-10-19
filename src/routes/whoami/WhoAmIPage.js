@@ -1,13 +1,12 @@
 import React from 'react';
 
-import WelcomeCard from '../../components/WelcomeCard'
+import WhoAmICard from './WhoAmICard'
 
 export default function WhoAmIPage() {
 
     return (
         <div>
-            <h2>Who Am I</h2>
-            <WelcomeCard/>
+            <WhoAmICard/>
         </div>
     );
 }

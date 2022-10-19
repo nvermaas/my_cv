@@ -23,6 +23,7 @@ export default function OlderSkillsCard() {
                             <li>Java Server Pages (jsp) (frontend)</li>
                             <li>Database: MySQL </li>
                             <li>DevOps: CI/CD pipelines with Jenkins and Subversion (svn)</li>
+                            <li>Provisioning: Ansible, Vagrant</li>
                             <li>System Design: SA/SD, Analyses, Functional Design, Technical Design</li>
                             <li>Documentation/Modelling: DFD, UML</li>
                             <li>Async messagebus: qpid</li>

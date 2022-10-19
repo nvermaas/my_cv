@@ -20,10 +20,10 @@ export default function PortfolioPage() {
 
             <Container fluid>
                 <Row>
-                    <Button variant="primary" onClick={() => handleClick("all")}>All Projects</Button>&nbsp;
-                    <Button variant="primary" onClick={() => handleClick("frontend_reactjs")}>Frontend (ReactJS)</Button>&nbsp;
-                    <Button variant="primary" onClick={() => handleClick("backend_django")}>Backend (Django)</Button>&nbsp;
-                    <Button variant="primary" onClick={() => handleClick("java")}>Java</Button>&nbsp;
+                    <Button variant="secondary" onClick={() => handleClick("all")}>All Projects</Button>&nbsp;
+                    <Button variant="secondary" onClick={() => handleClick("frontend_reactjs")}>Frontend (ReactJS)</Button>&nbsp;
+                    <Button variant="secondary" onClick={() => handleClick("backend_django")}>Backend (Django)</Button>&nbsp;
+                    <Button variant="secondary" onClick={() => handleClick("java")}>Java</Button>&nbsp;
                 </Row>
                 <Row>
                     <Col sm={12} md={12} lg={12}>

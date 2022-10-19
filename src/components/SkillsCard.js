@@ -23,7 +23,7 @@ export default function SkillsCard() {
                             <li>ReactJS (frontend)</li>
                             <li>Database: Postgres, SQlite</li>
                             <li>DevOps: CI/CD pipelines with Gitlab and Github (actions)</li>
-                            <li>Containerization with Docker and docker-compose</li>
+                            <li>Containerization: Docker and docker-compose</li>
                             <li>System Design: SA/SD, Analyses, Functional Design, Technical Design</li>
                             <li>Documentation/Modelling: DFD, UML</li>
                             <li>Async messagebus: RabbitMQ, Celery</li>
