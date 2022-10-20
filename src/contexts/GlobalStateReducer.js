@@ -10,11 +10,6 @@ export const initialState = {
         portfolio_page: "projects",
         base_url: "https://web-of-wyrd.nl/data_on_yggdrasil/my_cv/",
 
-        projects: [
-            {"name": "astroview", "type": "frontend_reactjs", "card": "AstroViewCard", "thumbnail": "/assets/astroview.png"},
-            {"name": "astrobase", "type": "backend_django", "card": "AstroBaseCard", "thumbnail": "/astrobase.png"},
-            {"name": "energy", "type": "backend_django", "card": "EnergyCard", "thumbnail": "/assets/my_energy_server.png"}
-            ]
 }
 
 export const reducer = (state, action) => {

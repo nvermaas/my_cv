@@ -23,7 +23,10 @@ export default function PortfolioPage() {
                     <Button variant="secondary" onClick={() => handleClick("all")}>All Projects</Button>&nbsp;
                     <Button variant="secondary" onClick={() => handleClick("frontend_reactjs")}>Frontend (ReactJS)</Button>&nbsp;
                     <Button variant="secondary" onClick={() => handleClick("backend_django")}>Backend (Django)</Button>&nbsp;
-                    <Button variant="secondary" onClick={() => handleClick("java")}>Java</Button>&nbsp;
+                    <Button variant="secondary" onClick={() => handleClick("architecture")}>Architecture</Button>&nbsp;
+                    <Button variant="secondary" onClick={() => handleClick("architecture")}>Design</Button>&nbsp;
+                    <Button variant="secondary" onClick={() => handleClick("java")}>Java (web)</Button>&nbsp;
+                    <Button variant="secondary" onClick={() => handleClick("private")}>Private Projects</Button>&nbsp;
                 </Row>
                 <Row>
                     <Col sm={12} md={12} lg={12}>

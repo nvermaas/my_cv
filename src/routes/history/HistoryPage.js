@@ -1,15 +1,16 @@
 import React from 'react';
 
-import AstronSDCCard from '../../components/AstronSDCCard'
+import AstronSDCCard from './AstronSDCCard'
+import AstronApertifCard from './AstronApertifCard'
+import AstronROCard from './AstronROCard'
 
 export default function HistoryPage() {
 
     return (
         <div>
             <AstronSDCCard/>
-            <AstronSDCCard/>
-            <AstronSDCCard/>
-            <AstronSDCCard/>
+            <AstronApertifCard/>
+            <AstronROCard/>
         </div>
     );
 }
