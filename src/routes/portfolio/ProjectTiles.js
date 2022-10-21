@@ -3,12 +3,12 @@ import { Container, Row, Col } from 'react-bootstrap';
 import ProjectThumbnail from './ProjectThumbnail';
 import AstroViewCard from "./AstroViewCard";
 import AstroBaseCard from "./AstroBaseCard";
-import EnergyCard from "./EnergyCard";
+import EnergyViewCard from "./EnergyViewCard";
 
 const PROJECT_CARDS = {
     astroview: AstroViewCard,
     astrobase: AstroBaseCard,
-    energy: EnergyCard
+    energy: EnergyViewCard
 };
 
 export default function ProjectTiles(props) {

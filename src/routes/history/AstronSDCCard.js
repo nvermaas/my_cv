@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card, Table, Container, Row, Col} from 'react-bootstrap'
-import nico_cv_logo from '../../assets/cv_logo_large.png';
+import sdc from '../../assets/sdc.jpg';
 
 
 export default function AstronSDCCard() {
@@ -10,21 +10,30 @@ export default function AstronSDCCard() {
 
             <Card>
                 <Card.Body>
-                    <h2>ASTRON Science Data Center (2020 - present)</h2>
+                    <h3 align={"left"}>ASTRON Science Data Center (2020 - present)</h3>
 
                     <Card.Text>
+
                         <Table>
+
                             <tr>
                                 <td align="left">
-                                    <img src={nico_cv_logo} width="300" alt="logo cv"/>
+                                    <img src={sdc} width="300" alt="logo cv"/>
                                 </td>
                                 <td align="left">
-                                    <li>ESAP backend & frontend (architect)</li>
-                                    <li>ADEX backend & frontend (architect, lead)</li>
-                                    <li>Architecture, charting the software and data landscape</li>
-                                    <li>Infrastructure, provisioning dev, test, prod machines based on Docker</li>
-                                    <li>DevOps (CI/CD pipelines in Gitlab</li>
-                                    <li>Documentation, introducing vision & strategy, the documentation matrix</li>
+                                    In 2019 I joined the 'SDC team' to start development of the ESAP Science Portal for the European Escape project.
+                                    I set up the development infrastructure (Gitlab), made the technology choices (Django and ReactJS)
+                                    and implemented the first iteration of the ESAP portal and the ADEX spinoff for ASTRON.
+                                    <tr>&nbsp;</tr>
+                                    In the following years the team grew and became the dedicated development team for the new Science Data Center.
+                                    My role changed to a more architectural/design role and lead developer for ADEX.
+
+                                    <tr>&nbsp;</tr>
+                                    <li>ESAP backend & frontend</li>
+                                    <li>ADEX backend & frontend (lead engineer)</li>
+                                    <li>Architecture, analyses and design</li>
+                                    <li>Infrastructure & DevOps (CI/CD pipelines in Gitlab</li>
+                                    <li>Introducing documentation vision & strategy</li>
                                 </td>
                             </tr>
                         </Table>
