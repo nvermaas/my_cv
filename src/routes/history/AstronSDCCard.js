@@ -10,7 +10,7 @@ export default function AstronSDCCard() {
 
             <Card>
                 <Card.Body>
-                    <h3 align={"left"}>ASTRON Science Data Center (2020 - present)</h3>
+                    <h3 align={"left"}>ASTRON Science Data Center, Dwingeloo (2020 - present)</h3>
 
                     <Card.Text>
 

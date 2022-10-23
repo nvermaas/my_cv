@@ -10,7 +10,7 @@ export default function AstronSDCCard() {
 
             <Card>
                 <Card.Body>
-                    <h3 align="left">ASTRON Radio Observatory (2002 - 2016)</h3>
+                    <h3 align="left">ASTRON Radio Observatory, Westerbork (2002 - 2016)</h3>
 
                     <Card.Text>
                         <Table>
@@ -37,6 +37,12 @@ export default function AstronSDCCard() {
                                     <tr>&nbsp;</tr>
                                     In 2007 MoM was ported to the LOFAR telescope. I was now the only developer.
                                     LOFAR was in development for a long time, and my task was to keep MoM adapted accordingly.
+
+                                    <tr>&nbsp;</tr>
+                                    I also wrote the CRAFT software, which was developed to keep track of all the LOFAR hardware components. a micro-service architecture.
+                                    This was a micro-services architecture in java, with a java-struts/sql backend on Tomcat
+                                    and several distributed java GUI's as services.
+                                    The GUI's, combined with a barcode scanner, was used at the factories and the telescope construction sites.
 
                                     <tr>&nbsp;</tr>
 

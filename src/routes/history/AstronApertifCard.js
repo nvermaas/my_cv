@@ -10,7 +10,7 @@ export default function AstronSDCCard() {
 
             <Card>
                 <Card.Body>
-                    <h3 align="left">ASTRON Apertif (2016 - 2020)</h3>
+                    <h3 align="left">ASTRON Apertif, Dwingeloo (2016 - 2020)</h3>
 
                     <Card.Text>
                         <Table>
@@ -32,7 +32,7 @@ export default function AstronSDCCard() {
                                     connect the astronomers, operators, telescopes and archive into a working system.
                                     I was the only developer and worked directly with the scientists.
                                     <tr>&nbsp;</tr>
-                                    <li>ATDB (architect, lead (backend) developer)</li>
+                                    <li>ATDB (architect, lead developer)</li>
                                 </td>
                             </tr>
                         </Table>
