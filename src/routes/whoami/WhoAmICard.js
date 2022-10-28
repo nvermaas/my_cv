@@ -18,10 +18,7 @@ export default function WhoAmICard() {
                                 <td align="center">
                                     <img src={nico} width="300" alt="logo cv"/>
                                 </td>
-                                <td align="left">
-                                    <li>Hiker</li>
-                                    <li>Amateur Astronomer</li>
-                                </td>
+
                             </tr>
                         </Table>
                     </Card.Text>

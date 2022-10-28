@@ -7,7 +7,7 @@ export const SET_CURRENT_PROJECT = 'SET_CURRENT_PROJECT'
 
 export const initialState = {
         status: "unfetched",
-        portfolio_page: "projects",
+        portfolio_page: "all",
         base_url: "https://web-of-wyrd.nl/data_on_yggdrasil/my_cv/",
 
 }

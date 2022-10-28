@@ -9,7 +9,7 @@ export default function OlderSkillsCard() {
         <div className="App">
             <Card>
                 <Card.Body>
-                    <h2>Older Skills</h2>
+                    <h2>Previous Skills</h2>
 
                     <Card.Text>
                         <Table>

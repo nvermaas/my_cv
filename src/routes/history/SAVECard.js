@@ -34,7 +34,7 @@ export default function SAVECard() {
                                     <li>Trainer</li>
 
                                     <tr>&nbsp;</tr>
-                                    In 2000 I became the lead of a team that used my software to 'digitize/map' the whole
+                                    In 2000 I became the lead of a team that used the software that I had build to 'digitize/map' the whole
                                     country so we could use that data to calculate fire department respond times.
                                     (there was no google maps yet).
                                     <tr>&nbsp;</tr>
