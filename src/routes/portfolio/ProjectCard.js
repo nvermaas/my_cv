@@ -13,7 +13,7 @@ export default function ProjectCard(props) {
                         <Table>
                             <tr>
                                 <td align="left">
-                                    <a href={props.project.thumbnail} target="_blank"><img src={props.project.thumbnail} width="400" alt="project"/></a>
+                                    <a href={props.image} target="_blank"><img src={props.image} width="400" alt="project"/></a>
                                     </td>
                             </tr>
                         </Table>

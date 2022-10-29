@@ -52,7 +52,7 @@ export default function Projects(props) {
                                     let image_url = base_url + project.thumbnail
                                     return (
                                         <Col lg={true}>
-                                            <ProjectCard project={project} />
+                                            <ProjectCard project={project} image={image_url} />
                                             <DetailsCard project={project} image={image_url} details={DetailsCard}/>
                                         </Col>
                                     );
