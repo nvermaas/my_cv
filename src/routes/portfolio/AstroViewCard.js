@@ -15,7 +15,7 @@ export default function AstroViewCard(props) {
                         <Table>
                             <tr>
                                 <td align="left">
-                                    <img src={props.image} width="400" alt="project"/>
+                                    <a href={props.project.thumbnail} target="_blank"><img src={props.project.thumbnail} width="400" alt="project"/></a>
                                     </td>
                                 <td align="left">
                             <li>ReactJS</li>

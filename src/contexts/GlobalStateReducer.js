@@ -20,15 +20,15 @@ export const base_url =
 
 export const projects = [
     {"name": "ATDB", "type": "backend_django", "details_card": ATDBCard, "thumbnail": "/assets/atdb.png",
-        "description" : "Backend/microservices for operation of various aspects of WSRT Telescope for APERTIF"},
+        "description" : "Observation and Pipeline management for APERTIF/WSRT Telescope. Microservices architecture in Django and Python."},
     {"name": "AstroView", "type": "private", "details_card": AstroViewCard, "thumbnail": "/assets/astroview.png",
-        "description" : "Frontend for Astrophotography Database and various image processing pipeline operations"},
+        "description" : "Frontend for astrophotography database (AstroBase). Various async image processing pipelines. Image cutouts"},
     {"name": "AstroBase", "type": "private", "details_card": AstroBaseCard, "thumbnail": "/assets/astrobase.png",
-        "description" : ""},
+        "description" : "Astrophotography backend/API in Django. Based on ATDB for APERTIF"},
     {"name": "EnergyServer", "type": "private", "details_card": EnergyServerCard, "thumbnail": "/assets/my_energy_server.png",
-        "description" : ""},
+        "description" : "Django backend running on Raspberry Pi, connected to a smart energy meter. Interfaces with Domoticz home automation and external solar panel API."},
     {"name": "EnergyView", "type": "private", "details_card": EnergyViewCard, "thumbnail": "/assets/my_energy_view.png",
-        "description" : ""}
+        "description" : "Frontend in ReactJS for EnergyServer. Displays live and historical energy usage and weather."}
 ]
 
 export const initialState = {

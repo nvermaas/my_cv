@@ -18,8 +18,8 @@ export default function ATDBCard(props) {
                                     <a href={props.project.thumbnail} target="_blank"><img src={props.project.thumbnail} width="400" alt="project"/></a>
                                     </td>
                                 <td align="left">
-                            <li>Django</li>
-                            <li>Team: 2</li>
+                                    <li>Tech: Django</li>
+                                    <li>Team: 2</li>
                                 </td>
                             </tr>
                         </Table>

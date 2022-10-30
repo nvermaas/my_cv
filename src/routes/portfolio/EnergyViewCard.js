@@ -15,11 +15,11 @@ export default function EnergyViewCard(props) {
                         <Table>
                             <tr>
                                 <td align="left">
-                                    <img src={props.image} width="400" alt="image"/>
+                                    <a href={props.project.thumbnail} target="_blank"><img src={props.project.thumbnail} width="400" alt="project"/></a>
                                     </td>
                                 <td align="left">
-                            <li>ReactJS</li>
-                            <li>Team: solo</li>
+                                    <li>Tech: ReactJS</li>
+                                    <li>Team: solo</li>
                                 </td>
                             </tr>
                         </Table>
