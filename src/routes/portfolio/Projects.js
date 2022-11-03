@@ -13,7 +13,9 @@ export default function Projects(props) {
                     <Row>
                         {
                             projects.map((project) => {
-                                if ((props.type === project.type) || (props.type === 'all')) {
+                                let list = project.type.split(',')
+
+                                if ((list.includes(props.type)) || (props.type === 'all')) {
 
                                     let image_url = base_url + project.thumbnail
                                     return (

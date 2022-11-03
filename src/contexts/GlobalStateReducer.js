@@ -21,13 +21,22 @@ export const base_url =
 export const projects = [
     {"name": "ATDB", "type": "backend_django", "details_card": ATDBCard, "thumbnail": "/assets/atdb.png",
         "description" : "Observation and Pipeline management for APERTIF/WSRT Telescope. Microservices architecture in Django and Python."},
-    {"name": "AstroView", "type": "private", "details_card": AstroViewCard, "thumbnail": "/assets/astroview.png",
-        "description" : "Frontend for astrophotography database (AstroBase). Various async image processing pipelines. Image cutouts"},
-    {"name": "AstroBase", "type": "private", "details_card": AstroBaseCard, "thumbnail": "/assets/astrobase.png",
+
+    {"name": "AstroView", "type": "private,frontend_reactjs", "details_card": AstroViewCard,
+        "thumbnail": "/assets/astroview.png",
+        "description" : "Frontend for astrophotography database (AstroBase). Various async image processing pipelines. Image cutouts",
+        "image1": "/assets/astroview_main.png",
+        "image2": "/assets/astroview_cutout.png",
+        "image3": "/assets/astrobase_diagram.png",
+    },
+
+    {"name": "AstroBase", "type": "private,backend_django", "details_card": AstroBaseCard, "thumbnail": "/assets/astrobase.png",
         "description" : "Astrophotography backend/API in Django. Based on ATDB for APERTIF"},
-    {"name": "EnergyServer", "type": "private", "details_card": EnergyServerCard, "thumbnail": "/assets/my_energy_server.png",
+
+    {"name": "EnergyServer", "type": "private,backend_django", "details_card": EnergyServerCard, "thumbnail": "/assets/my_energy_server.png",
         "description" : "Django backend running on Raspberry Pi, connected to a smart energy meter. Interfaces with Domoticz home automation and external solar panel API."},
-    {"name": "EnergyView", "type": "private", "details_card": EnergyViewCard, "thumbnail": "/assets/my_energy_view.png",
+
+    {"name": "EnergyView", "type": "private,frontend_reactjs", "details_card": EnergyViewCard, "thumbnail": "/assets/my_energy_view.png",
         "description" : "Frontend in ReactJS for EnergyServer. Displays live and historical energy usage and weather."}
 ]
 
