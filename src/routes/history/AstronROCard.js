@@ -10,7 +10,7 @@ export default function AstronSDCCard() {
 
             <Card>
                 <Card.Body>
-                    <h3 align="left">ASTRON Radio Observatory, Westerbork (2002 - 2016)</h3>
+                    <h3 align="left">ASTRON Radio Observatory, Westerbork (2002 - 2020)</h3>
 
                     <Card.Text>
                         <Table>

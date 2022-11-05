@@ -19,7 +19,7 @@ export default function AstronSDCCard() {
                                     <img src={westerbork} width="300" alt="logo cv"/>
                                 </td>
                                 <td align="left">
-                                    In 2015 I joined the 'ALTA team' to develop the Apertif Long Term Archive.
+                                    In 2016 I joined the 'ALTA team' to develop the Apertif Long Term Archive.
                                     This was a 5 person agile/scrum team, where I built the ALTA frontend in ReactJS
                                     and the backend/api in Django.
                                     <tr>&nbsp;</tr>

@@ -9,7 +9,10 @@ export default function ProjectDetailsCard(props) {
                 <Card.Body>
                     <h1 align={"left"}>{props.project.name}</h1>
                     <ul>
-                        <li><h5 align={"left"}>{props.project.type}</h5></li>
+                        <li align={"left"}>{props.project.type}</li>
+                        <li align={"left"}>developed: {props.project.developed}</li>
+                        <li align={"left"}>operational: {props.project.operational}</li>
+                        <li align={"left"}>my role: {props.project.role}</li>
                     </ul>
                     <p align={"left"}>{props.project.description}</p>
 

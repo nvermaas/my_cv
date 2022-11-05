@@ -16,8 +16,11 @@ export const projects = [
 
     {"name": "ATDB",
         "short_description" : "Observation and Pipeline management for APERTIF/WSRT Telescope. Microservices architecture in Django and Python.",
-        "description" : "Observation and Pipeline management for APERTIF/WSRT Telescope. Microservices architecture in Django and Python.",
+        "description" : "APERTIF Task Database. Observation and Pipeline management for APERTIF/WSRT Telescope. Microservices architecture in Django and Python.",
         "type": "backend django",
+        "developed" : "2017 - 2018",
+        "operational": "2018 - now",
+        "role" : "main developer",
         "thumbnail": "/assets/atdb_gui_main.png",
         "details_card": ProjectDetailsCard,
 
@@ -39,6 +42,9 @@ export const projects = [
         "short_description" : "Pipeline Execution Framework for the LOFAR Data Validation project (LDV). Based on ATDB for APERTIF.",
         "description" : "Pipeline Execution Framework for the LOFAR Data Validation project (LDV). Based on ATDB for APERTIF.",
         "type": "backend django",
+        "developed" : "2021",
+        "operational": "2021 - now",
+        "role" : "main developer",
         "thumbnail": "/assets/atdb_ldv_gui_main.png",
         "details_card": ProjectDetailsCard,
 
@@ -118,6 +124,23 @@ export const projects = [
 
         "details" : [
             { "image" : "/assets/astroview_main.png",
+                "description" : "main screen" },
+            { "image" : "/assets/astroview_cutout.png",
+                "description" : "these are image cutouts" },
+            { "image" : "/assets/astrobase_diagram.png",
+                "description" : "this is the documentation" },
+        ]
+    },
+
+    {"name": "MoM WSRT",
+        "short_description" : "Project Administration for Observations of the Westerbork Synthesis Radio Telescope (WSRT)",
+        "description" : "Project Administration for Observations of the Westerbork Synthesis Radio Telescope (WSRT)",
+        "type": "java",
+        "thumbnail": "/assets/mom_2004.jpg",
+        "details_card": ProjectDetailsCard,
+
+        "details" : [
+            { "image" : "/assets/mom_2004.jpg",
                 "description" : "main screen" },
             { "image" : "/assets/astroview_cutout.png",
                 "description" : "these are image cutouts" },
