@@ -1,13 +1,7 @@
 // the reducer for the global state providor.
 
 // possible actions
-import ProjectCard from "../routes/portfolio/ProjectCard";
-import AstroViewCard from "../routes/portfolio/AstroViewCard";
-import AstroBaseCard from "../routes/portfolio/AstroBaseCard";
-import EnergyViewCard from "../routes/portfolio/EnergyViewCard";
-import EnergyServerCard from "../routes/portfolio/EnergyServerCard";
-import ATDBCard from "../routes/portfolio/ATDBCard";
-
+import ProjectDetailsCard from "../routes/portfolio/ProjectDetailsCard";
 
 export const SET_STATUS = 'SET_STATUS'
 export const SET_PORTFOLIO_PAGE = 'SET_PORTFOLIO_PAGE'
@@ -19,25 +13,92 @@ export const base_url =
         : "https://uilennest.net/cv"
 
 export const projects = [
-    {"name": "ATDB", "type": "backend_django", "details_card": ATDBCard, "thumbnail": "/assets/atdb.png",
-        "description" : "Observation and Pipeline management for APERTIF/WSRT Telescope. Microservices architecture in Django and Python."},
 
-    {"name": "AstroView", "type": "private,frontend_reactjs", "details_card": AstroViewCard,
-        "thumbnail": "/assets/astroview.png",
-        "description" : "Frontend for astrophotography database (AstroBase). Various async image processing pipelines. Image cutouts",
-        "image1": "/assets/astroview_main.png",
-        "image2": "/assets/astroview_cutout.png",
-        "image3": "/assets/astrobase_diagram.png",
+    {"name": "ATDB",
+        "short_description" : "Observation and Pipeline management for APERTIF/WSRT Telescope. Microservices architecture in Django and Python.",
+        "description" : "Observation and Pipeline management for APERTIF/WSRT Telescope. Microservices architecture in Django and Python.",
+        "type": "backend_django",
+        "thumbnail": "/assets/atdb.png",
+        "details_card": ProjectDetailsCard,
+
+        "details" : [
+            { "image" : "/assets/astroview_main.png",
+                "description" : "main screen" },
+            { "image" : "/assets/astroview_cutout.png",
+                "description" : "these are image cutouts" },
+            { "image" : "/assets/astrobase_diagram.png",
+                "description" : "this is the documentation" },
+        ]
     },
 
-    {"name": "AstroBase", "type": "private,backend_django", "details_card": AstroBaseCard, "thumbnail": "/assets/astrobase.png",
-        "description" : "Astrophotography backend/API in Django. Based on ATDB for APERTIF"},
+    {"name": "AstroView",
+        "short_description" : "Frontend for astrophotography database (AstroBase). Various async image processing pipelines. Image cutouts",
+        "description" : "Frontend for astrophotography database (AstroBase). Various async image processing pipelines. Image cutouts",
+        "type": "private,frontend_reactjs",
+        "thumbnail": "/assets/astroview.png",
+        "details_card": ProjectDetailsCard,
 
-    {"name": "EnergyServer", "type": "private,backend_django", "details_card": EnergyServerCard, "thumbnail": "/assets/my_energy_server.png",
-        "description" : "Django backend running on Raspberry Pi, connected to a smart energy meter. Interfaces with Domoticz home automation and external solar panel API."},
+        "details" : [
+            { "image" : "/assets/astroview_main.png",
+              "description" : "main screen" },
+            { "image" : "/assets/astroview_cutout.png",
+                "description" : "these are image cutouts" },
+            { "image" : "/assets/astrobase_diagram.png",
+                "description" : "this is the documentation" },
+        ]
+    },
 
-    {"name": "EnergyView", "type": "private,frontend_reactjs", "details_card": EnergyViewCard, "thumbnail": "/assets/my_energy_view.png",
-        "description" : "Frontend in ReactJS for EnergyServer. Displays live and historical energy usage and weather."}
+    {"name": "AstroBase",
+        "short_description" : "Astrophotography backend/API in Django. Based on ATDB for APERTIF",
+        "description" : "Astrophotography backend/API in Django. Based on ATDB for APERTIF",
+        "type": "private,backend_django",
+        "thumbnail": "/assets/astrobase.png",
+        "details_card": ProjectDetailsCard,
+
+        "details" : [
+            { "image" : "/assets/astroview_main.png",
+                "description" : "main screen" },
+            { "image" : "/assets/astroview_cutout.png",
+                "description" : "these are image cutouts" },
+            { "image" : "/assets/astrobase_diagram.png",
+                "description" : "this is the documentation" },
+        ]
+    },
+
+    {"name": "EnergyView",
+        "short_description" : "Frontend in ReactJS for EnergyServer. Displays live and historical energy usage and weather.",
+        "description" : "Frontend in ReactJS for EnergyServer. Displays live and historical energy usage and weather.",
+        "type": "private,frontend_reactjs",
+        "thumbnail": "/assets/my_energy_view.png",
+        "details_card": ProjectDetailsCard,
+
+        "details" : [
+            { "image" : "/assets/astroview_main.png",
+                "description" : "main screen" },
+            { "image" : "/assets/astroview_cutout.png",
+                "description" : "these are image cutouts" },
+            { "image" : "/assets/astrobase_diagram.png",
+                "description" : "this is the documentation" },
+        ]
+    },
+
+    {"name": "EnergyServer",
+        "short_description" : "Django backend running on Raspberry Pi, connected to a smart energy meter. Interfaces with Domoticz home automation and external solar panel API.",
+        "description" : "Django backend running on Raspberry Pi, connected to a smart energy meter. Interfaces with Domoticz home automation and external solar panel API.",
+        "type": "private,backend_django",
+        "thumbnail": "/assets/my_energy_server.png",
+        "details_card": ProjectDetailsCard,
+
+        "details" : [
+            { "image" : "/assets/astroview_main.png",
+                "description" : "main screen" },
+            { "image" : "/assets/astroview_cutout.png",
+                "description" : "these are image cutouts" },
+            { "image" : "/assets/astrobase_diagram.png",
+                "description" : "this is the documentation" },
+        ]
+    },
+
 ]
 
 export const initialState = {
