@@ -32,8 +32,8 @@ export default function PortfolioPage() {
             <Container fluid>
                 <Row>
                     <Button variant="secondary" onClick={() => handleClick("all")}>All Projects</Button>&nbsp;
-                    <Button variant="secondary" onClick={() => handleClick("frontend_reactjs")}>Frontend (ReactJS)</Button>&nbsp;
-                    <Button variant="secondary" onClick={() => handleClick("backend_django")}>Backend (Django)</Button>&nbsp;
+                    <Button variant="secondary" onClick={() => handleClick("frontend reactjs")}>Frontend (ReactJS)</Button>&nbsp;
+                    <Button variant="secondary" onClick={() => handleClick("backend django")}>Backend (Django)</Button>&nbsp;
                     <Button variant="secondary" onClick={() => handleClick("architecture")}>Architecture</Button>&nbsp;
                     <Button variant="secondary" onClick={() => handleClick("design")}>Design</Button>&nbsp;
                     <Button variant="secondary" onClick={() => handleClick("java")}>Java (web)</Button>&nbsp;

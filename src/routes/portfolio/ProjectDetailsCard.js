@@ -8,31 +8,33 @@ export default function ProjectDetailsCard(props) {
             <Card>
                 <Card.Body>
                     <h1 align={"left"}>{props.project.name}</h1>
-                    <h5 align={"left"}>{props.project.description}</h5>
+                    <ul>
+                        <li><h5 align={"left"}>{props.project.type}</h5></li>
+                    </ul>
+                    <p align={"left"}>{props.project.description}</p>
 
                     <Card.Text>
-                        <Table>
-                            <tr>
-                                <td align="left">
-                                    <a href={props.project.thumbnail} target="_blank"><img src={props.project.thumbnail} width="400" alt="project"/></a>
-                                </td>
-                                <td>
-                                    {props.project.description}
-                                </td>
-                            </tr>
 
-                            {
-                                props.project.details.map((detail) => {
+                    {
+                        props.project.details.map((detail) => {
 
-                                    return (
-                                        <Row lg={true}>
-                                            <a href={detail.image} target="_blank"><img src={detail.image} width="800" alt={detail.description}/></a>
-                                            <h5>{detail.description}</h5>
-                                        </Row>
-                                    );
-                                })
-                            }
-                        </Table>
+                            return (
+                                <div>
+                                    &nbsp;
+                                    <hr></hr>
+                                <Row lg={true}>
+                                    <Col>
+                                        <a href={detail.image} target="_blank"><img src={detail.image} width="800" alt={detail.description}/></a>
+                                    </Col>
+                                    <Col>
+                                        <h5 align={"left"}>{detail.description}</h5>
+                                    </Col>
+                                </Row>
+                                </div>
+                            );
+                        })
+                    }
+
                     </Card.Text>
                 </Card.Body>
             </Card>
