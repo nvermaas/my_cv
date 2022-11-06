@@ -22,7 +22,7 @@ export default function ProjectCard(props) {
                             <Button variant="secondary" onClick={() => handleClick(props.project)}>Details</Button>
                         </Col>
                     </Row>
-                    <div align={"left"}>{props.project.description}</div>
+                    <div align={"left"}>{props.project.short_description}</div>
                     <Card.Text>
                         <Table>
                             <tr>
