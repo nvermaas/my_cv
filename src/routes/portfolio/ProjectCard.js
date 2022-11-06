@@ -14,9 +14,14 @@ export default function ProjectCard(props) {
         <div className="App">
             <Card>
                 <Card.Body>
-                    <h2 align={"left"}>{props.project.name}
-                        &nbsp;<Button variant="secondary" onClick={() => handleClick(props.project)}>Details</Button>
-                    </h2>
+                    <Row>
+                        <Col sm={10} md={10} lg={10}>
+                            <h2 align={"left"}>{props.project.name}</h2>
+                        </Col>
+                        <Col sm={2} md={2} lg={2}>
+                            <Button variant="secondary" onClick={() => handleClick(props.project)}>Details</Button>
+                        </Col>
+                    </Row>
                     <div align={"left"}>{props.project.description}</div>
                     <Card.Text>
                         <Table>

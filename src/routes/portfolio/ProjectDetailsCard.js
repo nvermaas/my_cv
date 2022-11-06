@@ -2,6 +2,14 @@ import React from 'react';
 import {Card, Table, Row, Col} from 'react-bootstrap'
 
 export default function ProjectDetailsCard(props) {
+    let list = <li align={"left"}>{props.project.type}</li>
+
+    let renderDeveloped = props.project.developed ? <li align={"left"}>developed: {props.project.developed}</li> : ""
+    let renderOperational = props.project.operational ? <li align={"left"}>operational: {props.project.operational}</li> : ""
+    let renderRole = props.project.role ? <li align={"left"}>my role: {props.project.role}</li> : ""
+
+
+
 
     return (
         <div className="App">
@@ -10,9 +18,9 @@ export default function ProjectDetailsCard(props) {
                     <h1 align={"left"}>{props.project.name}</h1>
                     <ul>
                         <li align={"left"}>{props.project.type}</li>
-                        <li align={"left"}>developed: {props.project.developed}</li>
-                        <li align={"left"}>operational: {props.project.operational}</li>
-                        <li align={"left"}>my role: {props.project.role}</li>
+                        {renderDeveloped}
+                        {renderOperational}
+                        {renderRole}
                     </ul>
                     <p align={"left"}>{props.project.description}</p>
 

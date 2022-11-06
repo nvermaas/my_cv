@@ -1,6 +1,6 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
-import { projects, base_url } from '../../contexts/GlobalStateReducer';
+import { projects, base_url } from '../../contexts/StaticConfig';
 
 import ProjectCard from "./ProjectCard";
 

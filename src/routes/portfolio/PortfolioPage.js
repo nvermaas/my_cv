@@ -1,9 +1,10 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
+import { projects } from '../../contexts/StaticConfig';
 import { useGlobalReducer } from '../../contexts/GlobalContext';
 import {
-    SET_PORTFOLIO_PAGE, SET_CURRENT_PROJECT, projects
+    SET_PORTFOLIO_PAGE, SET_CURRENT_PROJECT
 } from '../../contexts/GlobalStateReducer';
 
 import Projects from './Projects'
@@ -35,7 +36,6 @@ export default function PortfolioPage() {
                     <Button variant="secondary" onClick={() => handleClick("frontend reactjs")}>Frontend (ReactJS)</Button>&nbsp;
                     <Button variant="secondary" onClick={() => handleClick("backend django")}>Backend (Django)</Button>&nbsp;
                     <Button variant="secondary" onClick={() => handleClick("architecture")}>Architecture</Button>&nbsp;
-                    <Button variant="secondary" onClick={() => handleClick("design")}>Design</Button>&nbsp;
                     <Button variant="secondary" onClick={() => handleClick("java")}>Java</Button>&nbsp;
                     <Button variant="secondary" onClick={() => handleClick("private")}>Private Projects</Button>&nbsp;
                 </Row>
