@@ -99,6 +99,8 @@ export const projects = [
                 "description" : "image cutouts across all the images" },
             { "image" : "/assets/astrobase_diagram.png",
                 "description" : "this is the documentation" },
+            { "image" : "/assets/the_home_observatory.png",
+                "description" : "The home observatory" },
         ]
     },
 
@@ -159,7 +161,7 @@ export const projects = [
             "This is a simple frontend application that displays server side instances of DACHS in an iframe." +
             "VO personal can add surveys by editing a configuration file without the need to update this software.",
         "type": "frontend reactjs",
-        "thumbnail": "/assets/hips.png",
+        "thumbnail": "/assets/hips_dr2.png",
         "details_card": ProjectDetailsCard,
 
         "details" : [
@@ -202,6 +204,55 @@ export const projects = [
         ]
     },
 
+    {"name": "CRAFT",
+        "short_description" : "A set of standalone modules to aid in assembling LOFAR components",
+        "description" : "A set of standalone modules to aid in assembling LOFAR components. ",
+        "type": "java",
+        "thumbnail": "/assets/screenshot_craftmodule_connectingcablesutp5.jpg",
+        "details_card": ProjectDetailsCard,
+
+        "details" : [
+            { "image" : "/assets/screenshot_craftmodule_cabinet_assembly.gif",
+                "description" : "cabinet assembly" },
+            { "image" : "/assets/screenshot_craftmodule_subrack_assembly.jpg",
+                "description" : "subrack assembly" },
+            { "image" : "/assets/screenshot_craftmodule_subrack_assembly2.jpg",
+                "description" : "subrack assembly" },
+            { "image" : "/assets/screenshot_lba1.jpg",
+                "description" : "assembling the LBA (low band antenna)" },
+            { "image" : "/assets/screenshot_lba2.jpg",
+                "description" : "assembling the LBA (low band antenna)" },
+            { "image" : "/assets/screenshot_hba1.jpg",
+                "description" : "assembling the HBA (high band antenna)" },
+            { "image" : "/assets/screenshot_hba2.jpg",
+                "description" : "assembling the HBA (high band antenna)" },
+            { "image" : "/assets/screenshot_hba3.jpg",
+                "description" : "assembling the HBA (high band antenna)" },
+            { "image" : "/assets/screenshot_craftmodule_connectingcablesrcu1.jpg",
+                "description" : "connecting cables to RCU" },
+            { "image" : "/assets/screenshot_craftmodule_connectingcablesutp1.jpg",
+                "description" : "connecting utp cables" },
+            { "image" : "/assets/screenshot_craftmodule_connectingcablesutp2.jpg",
+                "description" : "connecting utp cables" },
+            { "image" : "/assets/screenshot_craftmodule_connectingcablesutp3.jpg",
+                "description" : "connecting utp cables" },
+            { "image" : "/assets/screenshot_craftmodule_connectingcablesutp4.jpg",
+                "description" : "connecting utp cables" },
+            { "image" : "/assets/screenshot_craftmodule_connectingcablesutp5.jpg",
+                "description" : "connecting utp cables" },
+            { "image" : "/assets/screenshot_craftmodule_lofarwan1.jpg",
+                "description" : "assembling WAN" },
+            { "image" : "/assets/screenshot_craftmodule_lofarwan2.jpg",
+                "description" : "assembling WAN" },
+            { "image" : "/assets/screenshot_craftmodule_lofarwan3.jpg",
+                "description" : "assembling WAN" },
+            { "image" : "/assets/screenshot_craftmodule_lofarwan4.jpg",
+                "description" : "assembling WAN" },
+            { "image" : "/assets/screenshot_craftmodule_exchangecomponents1.jpg",
+                "description" : "exchange components" },
+        ]
+    },
+
     {"name": "MoM SD",
         "short_description" : "MoM3 System Design, reverse engineering its functionality as preparation for the LEI/TMSS project.",
         "description" : "MoM3 System Design, reverse engineering its functionality as preparation for the LEI/TMSS project.",
@@ -211,7 +262,7 @@ export const projects = [
 
         "details" : [
             { "image" : "/assets/mom3_contextdiagram.png",
-                "description" : "Context Daigram" },
+                "description" : "Context Diagram" },
             { "image" : "/assets/mom3_dfd0.png",
                 "description" : "Dataflow Diagram - level 0" },
             { "image" : "/assets/mom3_dfd2_specification.png",
