@@ -7,7 +7,7 @@ export default function ProjectDetailsCard(props) {
     let renderDeveloped = props.project.developed ? <li align={"left"}>developed: {props.project.developed}</li> : ""
     let renderOperational = props.project.operational ? <li align={"left"}>operational: {props.project.operational}</li> : ""
     let renderRole = props.project.role ? <li align={"left"}>my role: {props.project.role}</li> : ""
-
+    let renderTechnology = props.project.technology ? <li align={"left"}>technology: {props.project.technology}</li> : ""
 
 
 
@@ -17,7 +17,7 @@ export default function ProjectDetailsCard(props) {
                 <Card.Body>
                     <h1 align={"left"}>{props.project.name}</h1>
                     <ul>
-                        <li align={"left"}>{props.project.type}</li>
+                        {renderTechnology}
                         {renderDeveloped}
                         {renderOperational}
                         {renderRole}
