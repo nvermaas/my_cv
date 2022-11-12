@@ -7,7 +7,7 @@ export const base_url =
 
 export const projects = [
 
-    {"name": "ATDB",
+    {"name": "ATDB (2018)",
         "short_description" : "Observation and Pipeline management for APERTIF/WSRT Telescope. Microservices architecture in Django and Python.",
         "description" : "APERTIF Task Database. Observation and Pipeline management for APERTIF/WSRT Telescope. Microservices architecture in Django and Python.",
         "type": "backend django",
@@ -144,10 +144,37 @@ export const projects = [
         "details_card": ProjectDetailsCard,
 
         "details" : [
-            { "image" : "/assets/hips.png",
-                "description" : "Main welcome." },
             { "image" : "/assets/hips_dr2.png",
+                "description" : "Main welcome." },
+            { "image" : "/assets/hips.png",
                 "description" : "One of the survey pages." },
+        ]
+    },
+
+    {"name": "MoM SD",
+        "short_description" : "MoM3 System Design, reverse engineering its functionality as preparation for the LEI/TMSS project.",
+        "description" : "MoM3 System Design, reverse engineering its functionality as preparation for the LEI/TMSS project.",
+        "type": "architecture,java",
+        "thumbnail": "/assets/mom3_contextdiagram.png",
+        "details_card": ProjectDetailsCard,
+
+        "details" : [
+            { "image" : "/assets/mom3_contextdiagram.png",
+                "description" : "Context Diagram" },
+            { "image" : "/assets/mom3_dfd0.png",
+                "description" : "Dataflow Diagram - level 0" },
+            { "image" : "/assets/mom3_dfd2_specification.png",
+                "description" : "1.0 - Specification" },
+            { "image" : "/assets/mom3_dfd2_ingest.png",
+                "description" : "2.0 -  Ingest" },
+            { "image" : "/assets/mom3_dfd2_controlreport.png",
+                "description" : "3.0 -  Control & Reporting" },
+            { "image" : "/assets/mom3_dfd2_project.png",
+                "description" : "4.0 -  Projects" },
+            { "image" : "/assets/mom3_gui_diagram.png",
+                "description" : "Overview of all the possible user interactions with MoM3 through the GUI." },
+            { "image" : "/assets/mom3_status_transitions.png",
+                "description" : "Overview of all the possible status transitions of observations and pipelines in MoM" },
         ]
     },
 
@@ -182,6 +209,44 @@ export const projects = [
                 "description" : "Query screen" },
             { "image" : "/assets/mom3_dataproducts.png",
                 "description" : "Dataproducts" },
+        ]
+    },
+
+
+    {"name": "Architecture",
+        "short_description" : "Examples of Architecture and modelling",
+        "description" : "This shows a range of types of diagrams that I use to model a 'system', or a series of software components.",
+        "type": "architecture",
+        "thumbnail": "/assets/map_sdc_rainbow.png",
+        "details_card": ProjectDetailsCard,
+
+        "details" : [
+            {
+                "image" : "/assets/map_sdc_rainbow.png",
+                "description" : "Architecture Diagram: shows the overview of interrelated software components and dataflows" },
+            {
+                "image" : "/assets/adex_implementation_sadt.png",
+                "description" : "SADT: shows the flow of steps of a development process and it dependencies" },
+            {
+                "image" : "/assets/diagrams_context.png",
+                "description" : "Context Diagram: shows a 'system', or a software component, in the center" +
+                    " surrounded by the environment outside of that system. It shows how the component interfaces with its environment." },
+            {
+                "image" : "/assets/diagram_deployment_adex.png",
+                "description" : "Deployment Diagram: shows how and where components are deployed in the real world" },
+            {
+                "image" : "/assets/diagram_deployment_atdb_ldv.png",
+                "description" : "Deployment Diagram: shows how and where components are deployed in the real world" },
+            {
+                "image" : "/assets/diagram_datamodel.png",
+                "description" : "Datamodel: shows the structure of the database" },
+            {
+                "image" : "/assets/diagram_std.png",
+                "description" : "State Transition Diagram: shows how state in a software component changes" },
+            {
+                "image" : "/assets/diagram_structurechart.png",
+                "description" : "Structurechart: shows the internal implementation of a software component" },
+
         ]
     },
 
@@ -234,34 +299,6 @@ export const projects = [
                 "description" : "exchange components" },
         ]
     },
-
-    {"name": "MoM SD",
-        "short_description" : "MoM3 System Design, reverse engineering its functionality as preparation for the LEI/TMSS project.",
-        "description" : "MoM3 System Design, reverse engineering its functionality as preparation for the LEI/TMSS project.",
-        "type": "architecture,java",
-        "thumbnail": "/assets/mom3_contextdiagram.png",
-        "details_card": ProjectDetailsCard,
-
-        "details" : [
-            { "image" : "/assets/mom3_contextdiagram.png",
-                "description" : "Context Diagram" },
-            { "image" : "/assets/mom3_dfd0.png",
-                "description" : "Dataflow Diagram - level 0" },
-            { "image" : "/assets/mom3_dfd2_specification.png",
-                "description" : "1.0 - Specification" },
-            { "image" : "/assets/mom3_dfd2_ingest.png",
-                "description" : "2.0 -  Ingest" },
-            { "image" : "/assets/mom3_dfd2_controlreport.png",
-                "description" : "3.0 -  Control & Reporting" },
-            { "image" : "/assets/mom3_dfd2_project.png",
-                "description" : "4.0 -  Projects" },
-            { "image" : "/assets/mom3_gui_diagram.png",
-                "description" : "Overview of all the possible user interactions with MoM3 through the GUI." },
-            { "image" : "/assets/mom3_status_transitions.png",
-                "description" : "Overview of all the possible status transitions of observations and pipelines in MoM" },
-        ]
-    },
-
 
     {"name": "AstroView",
         "short_description" : "Frontend for astrophotography database (AstroBase). Various async image processing pipelines. Image cutouts",

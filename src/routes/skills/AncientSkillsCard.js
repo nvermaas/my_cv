@@ -7,7 +7,7 @@ export default function AncientSkillsCard() {
         <div className="App">
             <Card>
                 <Card.Body>
-                    <h2>Ancient Skills</h2>
+                    <h2>Ancient Skills (1994 - 2002)</h2>
 
                     <Card.Text>
                         <Table>
@@ -16,7 +16,7 @@ export default function AncientSkillsCard() {
                                     <img src={skills} width="300" alt="skills"/>
                                     </td>
                                 <td align="left">
-                                    <li>Developer (windows)</li>
+                                    <li>Programmer (ms-dos, windows)</li>
                                     <li>Delphi (GUI)</li>
                                     <li>Clipper (dbase3), Pascal, Fortran, Basic</li>
                                     <li>Database: dbase3</li>

@@ -14,7 +14,7 @@ export default function NavigationBar() {
             <img className="d-inline-block align-top"  alt='' src={logo} height="50" />
             <Navbar.Brand href="/cv"></Navbar.Brand>
             <Nav className="mr-auto">
-                <Nav.Link as={NavLink} to="/">Welcome</Nav.Link>
+                <Nav.Link as={NavLink} to="/welcome">Welcome</Nav.Link>
                 <Nav.Link as={NavLink} to="/skills">Skills</Nav.Link>
                 <Nav.Link as={NavLink} to="/history">History</Nav.Link>
                 <Nav.Link as={NavLink} to="/portfolio">Portfolio</Nav.Link>

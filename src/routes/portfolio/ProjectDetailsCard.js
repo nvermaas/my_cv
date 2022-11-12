@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Card, Table, Row, Col, Button} from 'react-bootstrap'
 
 export default function ProjectDetailsCard(props) {
-    let list = <li align={"left"}>{props.project.type}</li>
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     let renderYear = props.project.year ? <li align={"left"}>{props.project.year}</li> : ""
     let renderDeveloped = props.project.developed ? <li align={"left"}>{props.project.developed}</li> : ""
     let renderRole = props.project.role ? <li align={"left"}>{props.project.role}</li> : ""
@@ -11,7 +14,7 @@ export default function ProjectDetailsCard(props) {
     return (
         <div className="App">
             <Card className='text-left'>
-                <Card.Header as="h2">{props.project.name}{props.project.year}</Card.Header>
+                <Card.Header as="h2">{props.project.name}</Card.Header>
                 <Card.Body>
                     <Card.Subtitle className="mb-2 text-muted">{props.project.description}</Card.Subtitle>
                     <ul>

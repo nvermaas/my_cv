@@ -8,7 +8,7 @@ export default function OlderSkillsCard() {
         <div className="App">
             <Card>
                 <Card.Body>
-                    <h2>Previous Skills</h2>
+                    <h2>Previous Skills (2002 - 2016)</h2>
 
                     <Card.Text>
                         <Table>
@@ -17,7 +17,7 @@ export default function OlderSkillsCard() {
                                     <img src={skills} width="300" alt="skills"/>
                                     </td>
                                 <td align="left">
-                                    <li>Full Stack Web Developer</li>
+                                    <li>Full Stack Web Developer (Java)</li>
                                     <li>Java Struts (backend) on Tomcat</li>
                                     <li>Java Server Pages (jsp) (frontend)</li>
                                     <li>Database: MySQL </li>

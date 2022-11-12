@@ -8,7 +8,7 @@ export default function SkillsCard() {
         <div className="App">
             <Card>
                 <Card.Body>
-                    <h2>Current Skills</h2>
+                    <h2>Current Skills (2016 - now)</h2>
 
                     <Card.Text>
                         <Table>
@@ -17,7 +17,7 @@ export default function SkillsCard() {
                                     <img src={skills} width="300" alt="skills"/>
                                     </td>
                                 <td align="left">
-                                    <li>Full Stack Web Developer (Linux, Windows)</li>
+                                    <li>Full Stack Web Developer (Django/ReactJS on Linux, Windows)</li>
                                     <li>Django + DRF (backend), FastAPI (backend)</li>
                                     <li>ReactJS (frontend) + Bootstrap </li>
                                     <li>Database: Postgres, SQlite</li>
