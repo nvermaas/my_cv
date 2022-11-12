@@ -41,9 +41,7 @@ export default function PortfolioPage() {
                 </Row>
                 <Row>
                     <Col sm={12} md={12} lg={12}>
-                        <Card>
-                            {renderProjects}
-                        </Card>
+                        {renderProjects}
                     </Col>
                 </Row>
             </Container>

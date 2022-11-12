@@ -11,9 +11,8 @@ export default function ProjectCard(props) {
     }
 
     return (
-        <div className="App">
-            <Card>
-                <Card.Body>
+            <Card className='text-left' >
+                <Card.Header as="h2">
                     <Row>
                         <Col sm={10} md={10} lg={10}>
                             <h2 align={"left"}>{props.project.name}</h2>
@@ -22,7 +21,10 @@ export default function ProjectCard(props) {
                             <Button variant="secondary" onClick={() => handleClick(props.project)}>Details</Button>
                         </Col>
                     </Row>
-                    <div align={"left"}>{props.project.short_description}</div>
+                </Card.Header>
+                <Card.Body>
+                    <Card.Subtitle className="mb-2 text-muted">{props.project.short_description}</Card.Subtitle>
+
                     <Card.Text>
                         <Table>
                             <tr>
@@ -32,9 +34,10 @@ export default function ProjectCard(props) {
                             </tr>
                         </Table>
                     </Card.Text>
+
                  </Card.Body>
             </Card>
-        </div>
+
     );
 
 }

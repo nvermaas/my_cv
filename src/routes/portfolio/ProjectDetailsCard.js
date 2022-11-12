@@ -1,28 +1,25 @@
 import React from 'react';
-import {Card, Table, Row, Col} from 'react-bootstrap'
+import {Card, Table, Row, Col, Button} from 'react-bootstrap'
 
 export default function ProjectDetailsCard(props) {
     let list = <li align={"left"}>{props.project.type}</li>
-
-    let renderDeveloped = props.project.developed ? <li align={"left"}>developed: {props.project.developed}</li> : ""
-    let renderOperational = props.project.operational ? <li align={"left"}>operational: {props.project.operational}</li> : ""
-    let renderRole = props.project.role ? <li align={"left"}>my role: {props.project.role}</li> : ""
-    let renderTechnology = props.project.technology ? <li align={"left"}>technology: {props.project.technology}</li> : ""
-
-
+    let renderYear = props.project.year ? <li align={"left"}>{props.project.year}</li> : ""
+    let renderDeveloped = props.project.developed ? <li align={"left"}>{props.project.developed}</li> : ""
+    let renderRole = props.project.role ? <li align={"left"}>{props.project.role}</li> : ""
+    let renderTechnology = props.project.technology ? <li align={"left"}>{props.project.technology}</li> : ""
 
     return (
         <div className="App">
-            <Card>
+            <Card className='text-left'>
+                <Card.Header as="h2">{props.project.name}{props.project.year}</Card.Header>
                 <Card.Body>
-                    <h1 align={"left"}>{props.project.name}</h1>
+                    <Card.Subtitle className="mb-2 text-muted">{props.project.description}</Card.Subtitle>
                     <ul>
                         {renderTechnology}
                         {renderDeveloped}
-                        {renderOperational}
                         {renderRole}
                     </ul>
-                    <p align={"left"}>{props.project.description}</p>
+
 
                     <Card.Text>
 
@@ -33,14 +30,14 @@ export default function ProjectDetailsCard(props) {
                                 <div>
                                     &nbsp;
                                     <hr></hr>
-                                <Row lg={true}>
-                                    <Col>
-                                        <a href={detail.image} target="_blank"><img src={detail.image} width="800" alt={detail.description}/></a>
-                                    </Col>
-                                    <Col>
-                                        <h5 align={"left"}>{detail.description}</h5>
-                                    </Col>
-                                </Row>
+                                    <Row lg={true}>
+                                        <Col>
+                                            <a href={detail.image} target="_blank"><img src={detail.image} width="800" alt={detail.description}/></a>
+                                        </Col>
+                                        <Col>
+                                            <Card.Subtitle className="mb-2 text-muted">{detail.description}</Card.Subtitle>
+                                        </Col>
+                                    </Row>
                                 </div>
                             );
                         })

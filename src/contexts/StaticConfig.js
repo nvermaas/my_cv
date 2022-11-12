@@ -11,8 +11,9 @@ export const projects = [
         "short_description" : "Observation and Pipeline management for APERTIF/WSRT Telescope. Microservices architecture in Django and Python.",
         "description" : "APERTIF Task Database. Observation and Pipeline management for APERTIF/WSRT Telescope. Microservices architecture in Django and Python.",
         "type": "backend django",
+        "year": " (2018)",
         "technology" : "Django, DRF, Python, Postgres",
-        "developed" : "2017 - 2018",
+        "developed" : "Developed in 2017, 2018. Operational 2018 until now",
         "operational": "2018 - now",
         "role" : "main developer",
         "thumbnail": "/assets/atdb_gui_main.png",
@@ -34,9 +35,9 @@ export const projects = [
         "short_description" : "Pipeline Execution Framework for the LOFAR Data Validation project (LDV). Based on ATDB for APERTIF.",
         "description" : "Pipeline Execution Framework for the LOFAR Data Validation project (LDV). Based on ATDB for APERTIF.",
         "type": "backend django",
+        "year": " (2021)",
         "technology" : "Django, DRF, Python, Postgres",
-        "developed" : "2021",
-        "operational": "2021 - now",
+        "developed" : "Developed and operatinal in 2021, operational.",
         "role" : "main developer",
         "thumbnail": "/assets/atdb_ldv_gui_main.png",
         "details_card": ProjectDetailsCard,
@@ -54,7 +55,7 @@ export const projects = [
     },
 
     {"name": "ESAP-GUI",
-        "short_description" : "ESAP-GUI Frontend or the European Escape Project",
+        "short_description" : "ESAP-GUI Frontend for the European Escape Project",
         "description" : "ESAP-GUI Frontend or the European Escape Project",
         "type": "frontend reactjs",
         "technology" : "ReactJS, Bootstrap",
@@ -85,83 +86,52 @@ export const projects = [
         ]
     },
 
-    {"name": "AstroView",
-        "short_description" : "Frontend for astrophotography database (AstroBase). Various async image processing pipelines. Image cutouts",
-        "description" : "Frontend for astrophotography database (AstroBase). Various async image processing pipelines. Image cutouts",
-        "type": "private,frontend reactjs",
-        "technology" : "ReactJS, Bootstrap, Aladin Light",
-        "thumbnail": "/assets/astroview.png",
-        "details_card": ProjectDetailsCard,
-
-        "details" : [
-            { "image" : "/assets/astroview_splash.png",
-                "description" : "Opening screen" },
-            { "image" : "/assets/astroview_main.png",
-                "description" : "main screen" },
-            { "image" : "/assets/astroview.png",
-                "description" : "details screen" },
-            { "image" : "/assets/astroview_cutout.png",
-                "description" : "image cutouts across all the images" },
-            { "image" : "/assets/astrobase_diagram.png",
-                "description" : "this is the documentation" },
-            { "image" : "/assets/the_home_observatory.png",
-                "description" : "The home observatory" },
-        ]
-    },
-
-    {"name": "AstroBase",
-        "short_description" : "Astrophotography backend/API in Django. Based on ATDB for APERTIF",
-        "description" : "Astrophotography backend/API in Django. Based on ATDB for APERTIF",
-        "type": "private,backend django",
-        "technology" : "Django, DRF, Sqlite, Python, Celery, RabbitMQ",
-        "thumbnail": "/assets/astrobase.png",
-        "details_card": ProjectDetailsCard,
-
-        "details" : [
-            { "image" : "/assets/astroview_main.png",
-                "description" : "main screen" },
-            { "image" : "/assets/astroview_cutout.png",
-                "description" : "these are image cutouts" },
-            { "image" : "/assets/astrobase_diagram.png",
-                "description" : "this is the documentation" },
-        ]
-    },
-
-    {"name": "EnergyView",
-        "short_description" : "Frontend in ReactJS for EnergyServer. Displays live and historical energy usage and weather.",
-        "description" : "Frontend in ReactJS for EnergyServer. Displays live and historical energy usage and weather.",
-        "type": "private,frontend reactjs",
+    {"name": "ALTA-GUI",
+        "short_description" : "Frontend for the Apertif Long Term Archive (ALTA)",
+        "description" : "Frontend for the Apertif Long Term Archive (ALTA)",
+        "type": "frontend reactjs",
         "technology" : "ReactJS, Bootstrap",
-        "thumbnail": "/assets/my_energy_view.png",
+        "thumbnail": "/assets/alta_gui.png",
         "details_card": ProjectDetailsCard,
 
         "details" : [
-            { "image" : "/assets/astroview_main.png",
-                "description" : "main screen" },
-            { "image" : "/assets/astroview_cutout.png",
-                "description" : "these are image cutouts" },
-            { "image" : "/assets/astrobase_diagram.png",
-                "description" : "this is the documentation" },
+            {
+                "image" : "/assets/alta_gui.png",
+                "description" : "Main screen with the overview of the available archives as configured in the underlying sqlite database." },
+            {
+                "image" : "/assets/alta_details.png",
+                "description" : "Observation details" },
+            {
+                "image" : "/assets/alta_gui_list.png",
+                "description" : "List view" },
+            {
+                "image" : "/assets/alta_inspectionplots.png",
+                "description" : "Inspectionplots" },
+            {
+                "image" : "/assets/alta_ingest_monitor.png",
+                "description" : "Ingest Monitor" },
+            {
+                "image" : "/assets/alta_advanced_query.png",
+                "description" : "Advanced query page to search deeper in the ALTA archive. This is a separate ReactJS application that operates on the ALTA frontend." },
         ]
     },
 
-    {"name": "EnergyServer",
-        "short_description" : "Django backend running on Raspberry Pi, connected to a smart energy meter. Interfaces with Domoticz home automation and external solar panel API.",
-        "description" : "Django backend running on Raspberry Pi, connected to a smart energy meter. Interfaces with Domoticz home automation and external solar panel API.",
-        "type": "private,backend django",
-        "technology" : "Django, DRF, Sqlite, RabbitMQ",
-        "thumbnail": "/assets/my_energy_server.png",
+    {"name": "ALTA-API",
+        "short_description" : "ALTAPI Backend for the Apertif Long Term Archive.",
+        "description" : "ALTAPI Backend for the Apertif Long Term Archive.",
+        "type": "backend django",
+        "technology" : "Django, DRF, Postgres",
+        "thumbnail": "/assets/alta_api.png",
         "details_card": ProjectDetailsCard,
 
         "details" : [
-            { "image" : "/assets/astroview_main.png",
-                "description" : "main screen" },
-            { "image" : "/assets/astroview_cutout.png",
-                "description" : "these are image cutouts" },
-            { "image" : "/assets/astrobase_diagram.png",
-                "description" : "this is the documentation" },
+            { "image" : "/assets/alta_api.png",
+                "description" : "ALTA backend REST API endpoints" },
+            { "image" : "/assets/alta_datamodel",
+                "description" : "ALTA datamodel" },
         ]
     },
+
 
     {"name": "HiPS",
         "short_description" : "HiPS website for ASTRON surveys in Virtual Observatory (VO)",
@@ -268,7 +238,7 @@ export const projects = [
     {"name": "MoM SD",
         "short_description" : "MoM3 System Design, reverse engineering its functionality as preparation for the LEI/TMSS project.",
         "description" : "MoM3 System Design, reverse engineering its functionality as preparation for the LEI/TMSS project.",
-        "type": "architecture",
+        "type": "architecture,java",
         "thumbnail": "/assets/mom3_contextdiagram.png",
         "details_card": ProjectDetailsCard,
 
@@ -289,6 +259,85 @@ export const projects = [
                 "description" : "Overview of all the possible user interactions with MoM3 through the GUI." },
             { "image" : "/assets/mom3_status_transitions.png",
                 "description" : "Overview of all the possible status transitions of observations and pipelines in MoM" },
+        ]
+    },
+
+
+    {"name": "AstroView",
+        "short_description" : "Frontend for astrophotography database (AstroBase). Various async image processing pipelines. Image cutouts",
+        "description" : "Frontend for astrophotography database (AstroBase). Various async image processing pipelines. Image cutouts",
+        "type": "private,frontend reactjs",
+        "technology" : "ReactJS, Bootstrap, Aladin Light",
+        "thumbnail": "/assets/astroview.png",
+        "details_card": ProjectDetailsCard,
+
+        "details" : [
+            { "image" : "/assets/astroview_splash.png",
+                "description" : "Opening screen" },
+            { "image" : "/assets/astroview_main.png",
+                "description" : "main screen" },
+            { "image" : "/assets/astroview.png",
+                "description" : "details screen" },
+            { "image" : "/assets/astroview_cutout.png",
+                "description" : "image cutouts across all the images" },
+            { "image" : "/assets/astrobase_diagram.png",
+                "description" : "this is the documentation" },
+            { "image" : "/assets/the_home_observatory.png",
+                "description" : "The home observatory" },
+        ]
+    },
+
+    {"name": "AstroBase",
+        "short_description" : "Astrophotography backend/API in Django. Based on ATDB for APERTIF",
+        "description" : "Astrophotography backend/API in Django. Based on ATDB for APERTIF",
+        "type": "private,backend django",
+        "technology" : "Django, DRF, Sqlite, Python, Celery, RabbitMQ",
+        "thumbnail": "/assets/astrobase.png",
+        "details_card": ProjectDetailsCard,
+
+        "details" : [
+            { "image" : "/assets/astroview_main.png",
+                "description" : "main screen" },
+            { "image" : "/assets/astroview_cutout.png",
+                "description" : "these are image cutouts" },
+            { "image" : "/assets/astrobase_diagram.png",
+                "description" : "this is the documentation" },
+        ]
+    },
+
+    {"name": "EnergyView",
+        "short_description" : "Frontend in ReactJS for EnergyServer. Displays live and historical energy usage and weather.",
+        "description" : "Frontend in ReactJS for EnergyServer. Displays live and historical energy usage and weather.",
+        "type": "private,frontend reactjs",
+        "technology" : "ReactJS, Bootstrap",
+        "thumbnail": "/assets/my_energy_view.png",
+        "details_card": ProjectDetailsCard,
+
+        "details" : [
+            { "image" : "/assets/astroview_main.png",
+                "description" : "main screen" },
+            { "image" : "/assets/astroview_cutout.png",
+                "description" : "these are image cutouts" },
+            { "image" : "/assets/astrobase_diagram.png",
+                "description" : "this is the documentation" },
+        ]
+    },
+
+    {"name": "EnergyServer",
+        "short_description" : "Django backend running on Raspberry Pi, connected to a smart energy meter. Interfaces with Domoticz home automation and external solar panel API.",
+        "description" : "Django backend running on Raspberry Pi, connected to a smart energy meter. Interfaces with Domoticz home automation and external solar panel API.",
+        "type": "private,backend django",
+        "technology" : "Django, DRF, Sqlite, RabbitMQ",
+        "thumbnail": "/assets/my_energy_server.png",
+        "details_card": ProjectDetailsCard,
+
+        "details" : [
+            { "image" : "/assets/astroview_main.png",
+                "description" : "main screen" },
+            { "image" : "/assets/astroview_cutout.png",
+                "description" : "these are image cutouts" },
+            { "image" : "/assets/astrobase_diagram.png",
+                "description" : "this is the documentation" },
         ]
     },
 
