@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card, Table} from 'react-bootstrap'
-import nico_cv_logo from '../../assets/cv_logo_large.png';
+import skills from '../../assets/previous_skills.png';
 
 export default function OlderSkillsCard() {
 
@@ -14,7 +14,7 @@ export default function OlderSkillsCard() {
                         <Table>
                             <tr>
                                 <td align="left">
-                                    <img src={nico_cv_logo} width="300" alt="logo cv"/>
+                                    <img src={skills} width="300" alt="skills"/>
                                     </td>
                                 <td align="left">
                                     <li>Full Stack Web Developer</li>

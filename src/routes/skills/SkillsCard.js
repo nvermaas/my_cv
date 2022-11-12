@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card, Table} from 'react-bootstrap'
-import nico_cv_logo from '../../assets/cv_logo_large.png';
+import skills from '../../assets/skills.png';
 
 export default function SkillsCard() {
 
@@ -14,7 +14,7 @@ export default function SkillsCard() {
                         <Table>
                             <tr>
                                 <td align="left">
-                                    <img src={nico_cv_logo} width="300" alt="logo cv"/>
+                                    <img src={skills} width="300" alt="skills"/>
                                     </td>
                                 <td align="left">
                                     <li>Full Stack Web Developer (Linux, Windows)</li>
