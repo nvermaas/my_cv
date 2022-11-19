@@ -9,29 +9,42 @@ export const projects = [
 
     {"name": "ATDB (2018)",
         "short_description" : "Observation and Pipeline management for APERTIF/WSRT Telescope. Microservices architecture in Django and Python.",
-        "description" : "APERTIF Task Database. Observation and Pipeline management for APERTIF/WSRT Telescope. Microservices architecture in Django and Python.",
+        "description" : "APERTIF Task Database. Observation and Pipeline management for APERTIF/WSRT Telescope. Microservices architecture in Django and Python. " +
+            "An important part of this project where the diagrams, the models of diffent aspects of the ATDB system, " +
+            "I considered them the 'central campfire' around we all sit and talk about our requirements and plans.",
         "type": "backend_django",
         "year": " (2018)",
         "technology" : "Django, DRF, Python, Postgres",
-        "developed" : "Developed in 2017, 2018. Operational 2018 until now",
+        "developed" : "Developed in 2018. Operational from 2018 until 2021.",
         "operational": "2018 - now",
-        "role" : "main developer",
+        "role" : "my role: main developer",
         "thumbnail": "/assets/atdb_gui_main.png",
         "details_card": ProjectDetailsCard,
 
         "details" : [
             { "image" : "/assets/atdb_gui_main.png",
-                "description" : "The main GUI shows the observation tasks with just enough metadata needed for operation." },
+                "description" : "The main GUI shows the observation tasks with just enough metadata needed for operation. " +
+                    "The tasks are created with a python script (not visible) and added through the ATDB REST API." },
             { "image" : "/assets/atdb_contextdiagram.png",
-                "description" : "The CONTEXT diagram shows the environment that ATDB operates in" },
+                "description" : "The CONTEXT diagram shows the environment that ATDB operates in. " +
+                    "The central yellow circle is the ATDB backend, surrounded by a cloud of micro-services, " +
+                    "spread over 4 different machines (the 4 quadrants of the diagram)." +
+                    "The 'green zones' is the ATDB ecosystem, where the micro-services live that are maintained by " +
+                    "the ATDB development team. This diagram shows how ATDB and those micro-services interface with " +
+                    "the rest of the world." },
             { "image" : "/assets/atdb_deploymentdiagram.png",
-                "description" : "The DEPLOYMENT diagram shows where ATDB is deployed in the system" },
+                "description" : "The DEPLOYMENT diagram shows where ATDB is deployed in the system. " +
+                    "The scope is enhanced a bit, to also show the systems that ATDB interfaces with." +
+                    "Its own micro-services, but also its sister application, ALTA. The Apertif Long Term Archive." },
             { "image" : "/assets/atdb_statediagram.png",
-                "description" : "The STATE diagram shows the possible states that an observation can be in, and which of the micro services respond to that state" },
+                "description" : "The STATE diagram shows the possible states that an observation can be in, " +
+                    "and which of the micro services respond to those states. " +
+                    "So this is a data oriented model, and really helps to understand some of the behaviour of the ATDB " +
+                    "system as a whole." },
         ]
     },
 
-    {"name": "ATDB-LDV",
+    {"name": "ATDB-LDV (2021)",
         "short_description" : "Pipeline Execution Framework for the LOFAR Data Validation project (LDV). Based on ATDB for APERTIF.",
         "description" : "Pipeline Execution Framework for the LOFAR Data Validation project (LDV). Based on ATDB for APERTIF.",
         "type": "backend_django",
@@ -54,7 +67,7 @@ export const projects = [
         ]
     },
 
-    {"name": "ESAP-GUI",
+    {"name": "ESAP-GUI (2020)",
         "short_description" : "ESAP-GUI Frontend for the European Escape Project",
         "description" : "ESAP-GUI Frontend or the European Escape Project",
         "type": "frontend_reactjs",
@@ -70,7 +83,7 @@ export const projects = [
         ]
     },
 
-    {"name": "ESAP-API",
+    {"name": "ESAP-API (2020)",
         "short_description" : "ESAP-API Backend or the European Escape Project.",
         "description" : "ESAP-API Backend or the European Escape Project.",
         "type": "backend_django",
@@ -86,7 +99,7 @@ export const projects = [
         ]
     },
 
-    {"name": "ALTA-GUI",
+    {"name": "ALTA-GUI (2017 - 2018)",
         "short_description" : "Frontend for the Apertif Long Term Archive (ALTA)",
         "description" : "Frontend for the Apertif Long Term Archive (ALTA)",
         "type": "frontend_reactjs",
@@ -116,7 +129,7 @@ export const projects = [
         ]
     },
 
-    {"name": "ALTA-API",
+    {"name": "ALTA-API (2017 - 2018)",
         "short_description" : "ALTAPI Backend for the Apertif Long Term Archive.",
         "description" : "ALTAPI Backend for the Apertif Long Term Archive.",
         "type": "backend_django",
@@ -132,7 +145,7 @@ export const projects = [
         ]
     },
 
-    {"name": "Aladin-Testbed",
+    {"name": "Aladin-Testbed (2022)",
         "short_description" : "Frontend web application to test out various API's and visualisations with Aladin Light.",
         "description" : "Frontend web application to test out various API's and visualisations with Aladin Light.",
         "type": "frontend_reactjs,private",
@@ -151,7 +164,7 @@ export const projects = [
         ]
     },
 
-    {"name": "Exoplanets",
+    {"name": "Exoplanets (2021)",
         "short_description" : "Technology demonstration to show how to use Aladin Light in a ReactJS frontend.",
         "description" : "Technology demonstration to show how to use Aladin Light in a ReactJS frontend." +
             "This project was created to assist a french/us development team at the university of Amsterdam",
@@ -166,7 +179,7 @@ export const projects = [
         ]
     },
 
-    {"name": "HiPS",
+    {"name": "HiPS (2020)",
         "short_description" : "HiPS website for ASTRON surveys in Virtual Observatory (VO)",
         "description" : "HiPS website for ASTRON surveys in Virtual Observatory (VO). " +
             "This is a simple frontend application that displays server side instances of DACHS in an iframe." +
@@ -184,7 +197,7 @@ export const projects = [
         ]
     },
 
-    {"name": "MoM SD",
+    {"name": "MoM SD (2016)",
         "short_description" : "MoM3 System Design, reverse engineering its functionality as preparation for the LEI/TMSS project.",
         "description" : "MoM3 System Design, reverse engineering its functionality as preparation for the LEI/TMSS project.",
         "type": "architecture,java",
@@ -211,7 +224,7 @@ export const projects = [
         ]
     },
 
-    {"name": "MoM WSRT",
+    {"name": "MoM WSRT (2004 - 2009)",
         "short_description" : "Project Administration for Observations of the Westerbork Synthesis Radio Telescope (WSRT)",
         "description" : "Project Administration for Observations of the Westerbork Synthesis Radio Telescope (WSRT)",
         "type": "java",
@@ -225,7 +238,7 @@ export const projects = [
         ]
     },
 
-    {"name": "MoM LOFAR",
+    {"name": "MoM LOFAR (2009 - 2016)",
         "short_description" : "Project Administration for Observations of the LOFAR Telescope",
         "description" : "Project Administration for Observations of the LOFAR Telescope",
         "type": "java",
@@ -283,7 +296,7 @@ export const projects = [
         ]
     },
 
-    {"name": "CRAFT",
+    {"name": "CRAFT (2010)",
         "short_description" : "A set of standalone modules to aid in assembling LOFAR components",
         "description" : "A set of standalone modules to aid in assembling LOFAR components. ",
         "type": "java",
@@ -333,7 +346,7 @@ export const projects = [
         ]
     },
 
-    {"name": "AstroView",
+    {"name": "AstroView (2019)",
         "short_description" : "Frontend for astrophotography database (AstroBase). Various async image processing pipelines. Image cutouts",
         "description" : "Frontend for astrophotography database (AstroBase). Various async image processing pipelines. Image cutouts",
         "type": "private,frontend_reactjs",
@@ -357,7 +370,7 @@ export const projects = [
         ]
     },
 
-    {"name": "AstroBase",
+    {"name": "AstroBase (2019)",
         "short_description" : "Astrophotography backend/API in Django. Based on ATDB for APERTIF",
         "description" : "Astrophotography backend/API in Django. Based on ATDB for APERTIF",
         "type": "private,backend_django",
@@ -375,7 +388,7 @@ export const projects = [
         ]
     },
 
-    {"name": "EnergyView",
+    {"name": "EnergyView (2017)",
         "short_description" : "Frontend in ReactJS for EnergyServer. Displays live and historical energy usage and weather.",
         "description" : "Frontend in ReactJS for EnergyServer. Displays live and historical energy usage and weather.",
         "type": "private,frontend_reactjs",
@@ -393,7 +406,7 @@ export const projects = [
         ]
     },
 
-    {"name": "EnergyServer",
+    {"name": "EnergyServer (2017)",
         "short_description" : "Django backend running on Raspberry Pi, connected to a smart energy meter. Interfaces with Domoticz home automation and external solar panel API.",
         "description" : "Django backend running on Raspberry Pi, connected to a smart energy meter. Interfaces with Domoticz home automation and external solar panel API.",
         "type": "private,backend_django",
@@ -411,7 +424,7 @@ export const projects = [
         ]
     },
 
-    {"name": "MyHiking",
+    {"name": "MyHiking (2016)",
         "short_description" : "Django application showing all my hikes stored in a sqlite database.",
         "description" : "Django application showing all my hikes stored in a sqlite database.",
         "type": "private,backend_django",

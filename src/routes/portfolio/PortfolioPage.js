@@ -34,6 +34,7 @@ export default function PortfolioPage(props) {
             <NavigationBar/>
             <Container fluid>
                 <Row>
+
                     <Col sm={12} md={12} lg={12}>
                         {renderProjects}
                     </Col>

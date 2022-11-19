@@ -18,8 +18,8 @@ export default function NavigationBar() {
         <Navbar bg="secondary" variant="dark">
             <Nav className="mr-auto">
                 <Nav.Link as={NavLink} to="/portfolio/all" onClick={() => handleClick("all")}>All Projects</Nav.Link>
-                <Nav.Link as={NavLink} to="/portfolio/frontend_reactjs" onClick={() => handleClick("frontend_reactjs")}>Frontend (ReactJS)</Nav.Link>
-                <Nav.Link as={NavLink} to="/portfolio/backend_django" onClick={() => handleClick("backend_django")}>Backend (Django)</Nav.Link>
+                <Nav.Link as={NavLink} to="/portfolio/frontend_reactjs" onClick={() => handleClick("frontend_reactjs")}>ReactJS (frontend)</Nav.Link>
+                <Nav.Link as={NavLink} to="/portfolio/backend_django" onClick={() => handleClick("backend_django")}>Django (backend)</Nav.Link>
                 <Nav.Link as={NavLink} to="/portfolio/java" onClick={() => handleClick("java")}>Java</Nav.Link>
                 <Nav.Link as={NavLink} to="/portfolio/architecture" onClick={() => handleClick("architecture")}>Architecture</Nav.Link>
                 <Nav.Link as={NavLink} to="/portfolio/private" onClick={() => handleClick("private")}>Private Projects</Nav.Link>
