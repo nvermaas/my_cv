@@ -8,8 +8,9 @@ import {
 } from '../../contexts/GlobalStateReducer';
 
 import Projects from './Projects'
+import NavigationBar from "./NavigationBar";
 
-export default function PortfolioPage() {
+export default function PortfolioPage(props) {
     const [ my_state , my_dispatch] = useGlobalReducer()
 
     const handleClick = (page) => {
@@ -18,8 +19,9 @@ export default function PortfolioPage() {
     }
 
     let renderProjects
+
     if (my_state.current_project === undefined) {
-        renderProjects = <Projects type={my_state.portfolio_page}/>
+        renderProjects = <Projects type={props.page}/>
     } else {
         // find the specific details_card to render in the project structure
         let found = projects.filter(function(item) { return item.name === my_state.current_project.name; });
@@ -29,16 +31,8 @@ export default function PortfolioPage() {
 
     return (
         <div className="App">
-
+            <NavigationBar/>
             <Container fluid>
-                <Row>
-                    <Button variant="secondary" onClick={() => handleClick("all")}>All Projects</Button>&nbsp;
-                    <Button variant="secondary" onClick={() => handleClick("frontend reactjs")}>Frontend (ReactJS)</Button>&nbsp;
-                    <Button variant="secondary" onClick={() => handleClick("backend django")}>Backend (Django)</Button>&nbsp;
-                    <Button variant="secondary" onClick={() => handleClick("architecture")}>Architecture</Button>&nbsp;
-                    <Button variant="secondary" onClick={() => handleClick("java")}>Java</Button>&nbsp;
-                    <Button variant="secondary" onClick={() => handleClick("private")}>Private Projects</Button>&nbsp;
-                </Row>
                 <Row>
                     <Col sm={12} md={12} lg={12}>
                         {renderProjects}
