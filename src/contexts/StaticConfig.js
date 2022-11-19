@@ -132,6 +132,39 @@ export const projects = [
         ]
     },
 
+    {"name": "Aladin-Testbed",
+        "short_description" : "Frontend web application to test out various API's and visualisations with Aladin Light.",
+        "description" : "Frontend web application to test out various API's and visualisations with Aladin Light.",
+        "type": "frontend_reactjs,private",
+        "technology" : "ReactJS, Bootstrap",
+        "thumbnail": "/assets/aladin_testbed.png",
+        "details_card": ProjectDetailsCard,
+
+        "details" : [
+            { "image" : "/assets/aladin_testbed.png",
+                "description" : "Testing backend technology by selecting a backend/API server and visualizing the APERTIF dataset in Aladin Light." },
+            { "image" : "/assets/aladin_hips_catalog.png",
+                "description" : "Testing the aladin 'hips catalog' technology." +
+                    "A dataset is converted with the hipsgen software into a multi layered HiPS catalog." },
+            { "image" : "/assets/aladin_testbed_ucac4.png",
+                "description" : "Demonstrating a very large dataset (114M stars) served by FastAPI" },
+        ]
+    },
+
+    {"name": "Exoplanets",
+        "short_description" : "Technology demonstration to show how to use Aladin Light in a ReactJS frontend.",
+        "description" : "Technology demonstration to show how to use Aladin Light in a ReactJS frontend." +
+            "This project was created to assist a french/us development team at the university of Amsterdam",
+        "type": "frontend_reactjs,private",
+        "technology" : "ReactJS, Bootstrap",
+        "thumbnail": "/assets/exoplanets.jpg",
+        "details_card": ProjectDetailsCard,
+
+        "details" : [
+            { "image" : "/assets/exoplanets.jpg",
+                "description" : "Technology demonstration to show how to use Aladin Light in a ReactJS frontend." },
+        ]
+    },
 
     {"name": "HiPS",
         "short_description" : "HiPS website for ASTRON surveys in Virtual Observatory (VO)",
