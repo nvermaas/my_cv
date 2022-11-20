@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import {Card, Table, Row, Col, Button} from 'react-bootstrap'
+import { base_url, config } from '../../contexts/StaticConfig';
 
 export default function ProjectDetailsCard(props) {
     useEffect(() => {
@@ -24,13 +25,14 @@ export default function ProjectDetailsCard(props) {
                     {
                         // iterate over each details entry, and render as an image with accompanying text
                         props.project.details.map((detail) => {
+                            let image_url = base_url + detail.image
                             return (
                                 <div>
                                     &nbsp;
                                     <hr></hr>
                                     <Row lg={true}>
                                         <Col>
-                                            <a href={detail.image} target="_blank"><img src={detail.image} width="800" alt={detail.description}/></a>
+                                            <a href={image_url} target="_blank"><img src={image_url} width={config.image_width} alt={detail.description}/></a>
                                         </Col>
                                         <Col>
                                             <Card.Subtitle className="mb-2 text-muted">{detail.description}</Card.Subtitle>

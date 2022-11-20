@@ -5,6 +5,10 @@ export const base_url =
         ? "http://localhost:3000"
         : "https://uilennest.net/cv"
 
+export const config = {
+    "image_width" : "800"
+}
+
 export const projects = [
 
     {"name": "ATDB (2018)",
