@@ -6,29 +6,24 @@ export default function ProjectDetailsCard(props) {
         window.scrollTo(0, 0)
     }, [])
 
-    let renderYear = props.project.year ? <li align={"left"}>{props.project.year}</li> : ""
-    let renderDeveloped = props.project.developed ? <li align={"left"}>{props.project.developed}</li> : ""
-    let renderRole = props.project.role ? <li align={"left"}>{props.project.role}</li> : ""
-    let renderTechnology = props.project.technology ? <li align={"left"}>{props.project.technology}</li> : ""
-
     return (
         <div className="App">
             <Card className='text-left'>
                 <Card.Header as="h2">{props.project.name}</Card.Header>
                 <Card.Body>
                     <Card.Subtitle className="mb-2 text-muted">{props.project.description}</Card.Subtitle>
-                    <ul>
-                        {renderTechnology}
-                        {renderDeveloped}
-                        {renderRole}
-                    </ul>
-
+                    <hr></hr>
+                    {
+                        // render the bullet points as a bullet list
+                        props.project.bullets.map(bullet => {
+                            return <li align={"left"}>{bullet.title}: {bullet.text}</li>
+                        })
+                    }
 
                     <Card.Text>
-
                     {
+                        // iterate over each details entry, and render as an image with accompanying text
                         props.project.details.map((detail) => {
-
                             return (
                                 <div>
                                     &nbsp;

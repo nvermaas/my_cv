@@ -13,14 +13,13 @@ export const projects = [
             "An important part of this project where the diagrams, the models of diffent aspects of the ATDB system, " +
             "I considered them the 'central campfire' around we all sit and talk about our requirements and plans.",
         "type": "backend_django",
-        "year": " (2018)",
-        "technology" : "Django, DRF, Python, Postgres",
-        "developed" : "Developed in 2018. Operational from 2018 until 2021.",
-        "operational": "2018 - now",
-        "role" : "my role: main developer",
         "thumbnail": "/assets/atdb_gui_main.png",
         "details_card": ProjectDetailsCard,
-
+        "bullets" : [
+            { "title" : "Technology", "text" : "Django, DRF, Python, Postgres" },
+            { "title" : "Developed", "text" : "Developed in 2018. Operational from 2018 until 2021." },
+            { "title" : "My role", "text" : "Architect, main developer." },
+        ],
         "details" : [
             { "image" : "/assets/atdb_gui_main.png",
                 "description" : "The main GUI shows the observation tasks with just enough metadata needed for operation. " +
@@ -49,13 +48,14 @@ export const projects = [
         "description" : "Pipeline Execution Framework for the LOFAR Data Validation project (LDV). " +
             "A micro-services architecture, based on ATDB for APERTIF, but with much more user facing functionality. ",
         "type": "backend_django",
-        "year": " (2021)",
-        "technology" : "Django, DRF, Python, Postgres",
-        "developed" : "Developed and operatinal in 2021, operational.",
-        "role" : "main developer",
+
         "thumbnail": "/assets/atdb_ldv_gui_main.png",
         "details_card": ProjectDetailsCard,
-
+        "bullets" : [
+            { "title" : "Technology", "text" : "Django, DRF, Python, Postgres" },
+            { "title" : "Developed", "text" : "Developed in 2021. Operational from 2021." },
+            { "title" : "My role", "text" : "Architect, main developer." },
+        ],
         "details" : [
             { "image" : "/assets/atdb_ldv_gui_main.png",
                 "description" : "The TASKS screen shows the pipeline tasks and their status. " +
@@ -95,10 +95,13 @@ export const projects = [
         "short_description" : "ESAP-GUI Frontend for the European Escape Project",
         "description" : "ESAP-GUI Frontend or the European Escape Project",
         "type": "frontend_reactjs",
-        "technology" : "ReactJS, Bootstrap",
         "thumbnail": "/assets/esap_gui.png",
         "details_card": ProjectDetailsCard,
-
+        "bullets" : [
+            { "title" : "Technology", "text" : "ReactJS, Bootstrap" },
+            { "title" : "Developed", "text" : "Developed in 2020, further development handed over to other team members " },
+            { "title" : "My role", "text" : "Architect, main developer for the first iteration." },
+        ],
         "details" : [
             { "image" : "/assets/esap_gui.png",
                 "description" : "Main screen with the overview of the available archives as configured in the underlying sqlite database." },
@@ -114,7 +117,11 @@ export const projects = [
         "technology" : "Django, DRF, Sqlite",
         "thumbnail": "/assets/esap_api.png",
         "details_card": ProjectDetailsCard,
-
+        "bullets" : [
+            { "title" : "Technology", "text" : "Django, DRF, Sqlite" },
+            { "title" : "Developed", "text" : "Developed in 2020, further development handed over to other team members." },
+            { "title" : "My role", "text" : "Architect, main developer for the first iteration." },
+        ],
         "details" : [
             { "image" : "/assets/esap_api.png",
                 "description" : "Main screen of the Query app, with REST API endpoints" },
@@ -127,10 +134,13 @@ export const projects = [
         "short_description" : "Frontend for the Apertif Long Term Archive (ALTA)",
         "description" : "Frontend for the Apertif Long Term Archive (ALTA)",
         "type": "frontend_reactjs",
-        "technology" : "ReactJS, Bootstrap",
         "thumbnail": "/assets/alta_gui.png",
         "details_card": ProjectDetailsCard,
-
+        "bullets" : [
+            { "title" : "Technology", "text" : "ReactJS, Bootstrap" },
+            { "title" : "Developed", "text" : "Developed in 2017/2018." },
+            { "title" : "My role", "text" : "main frontend developer." },
+        ],
         "details" : [
             {
                 "image" : "/assets/alta_gui.png",
@@ -157,10 +167,13 @@ export const projects = [
         "short_description" : "ALTAPI Backend for the Apertif Long Term Archive.",
         "description" : "ALTAPI Backend for the Apertif Long Term Archive.",
         "type": "backend_django",
-        "technology" : "Django, DRF, Postgres",
         "thumbnail": "/assets/alta_api.png",
         "details_card": ProjectDetailsCard,
-
+        "bullets" : [
+            { "title" : "Technology", "text" : "Django, DRF, Postgres" },
+            { "title" : "Developed", "text" : "Developed in 2017/2018." },
+            { "title" : "My role", "text" : "main backend developer." },
+        ],
         "details" : [
             { "image" : "/assets/alta_api.png",
                 "description" : "ALTA backend REST API endpoints" },
@@ -173,10 +186,12 @@ export const projects = [
         "short_description" : "Frontend web application to test out various API's and visualisations with Aladin Light.",
         "description" : "Frontend web application to test out various API's and visualisations with Aladin Light.",
         "type": "frontend_reactjs,private",
-        "technology" : "ReactJS, Bootstrap",
         "thumbnail": "/assets/aladin_testbed.png",
         "details_card": ProjectDetailsCard,
-
+        "bullets" : [
+            { "title" : "Technology", "text" : "ReactJS, Bootstrap, Aladin Light" },
+            { "title" : "My role", "text" : "lead, main developer" },
+        ],
         "details" : [
             { "image" : "/assets/aladin_testbed.png",
                 "description" : "Testing backend technology by selecting a backend/API server and visualizing the APERTIF dataset in Aladin Light." },
@@ -191,15 +206,19 @@ export const projects = [
     {"name": "Exoplanets (2021)",
         "short_description" : "Technology demonstration to show how to use Aladin Light in a ReactJS frontend.",
         "description" : "Technology demonstration to show how to use Aladin Light in a ReactJS frontend." +
-            "This project was created to assist a french/us development team at the university of Amsterdam",
+            "This project was created to assist a French/US development team, from the University of Amsterdam, that was refered to me by CDS.",
         "type": "frontend_reactjs,private",
-        "technology" : "ReactJS, Bootstrap",
         "thumbnail": "/assets/exoplanets.jpg",
         "details_card": ProjectDetailsCard,
-
+        "bullets" : [
+            { "title" : "Technology", "text" : "ReactJS, Bootstrap, Aladin Light" },
+            { "title" : "My role", "text" : "lead, main developer" },
+        ],
         "details" : [
             { "image" : "/assets/exoplanets.jpg",
-                "description" : "Technology demonstration to show how to use Aladin Light in a ReactJS frontend." },
+                "description" : "The goal is the visualisation in Aladin Light. " +
+                    "The data itself is served by my private 'Astrobase' project through a ReST API, " +
+                    "which already existed to plot stars with exoplanets in my 'AstroView' project." },
         ]
     },
 
@@ -209,10 +228,12 @@ export const projects = [
             "This is a simple frontend application that displays server side instances of DACHS in an iframe." +
             "VO personal can add surveys by editing a configuration file without the need to update this software.",
         "type": "frontend_reactjs",
-        "technology" : "ReactJS, Bootstrap",
         "thumbnail": "/assets/hips_dr2.png",
         "details_card": ProjectDetailsCard,
-
+        "bullets" : [
+            { "title" : "Technology", "text" : "ReactJS, Bootstrap, Aladin Light" },
+            { "title" : "My role", "text" : "main developer" },
+        ],
         "details" : [
             { "image" : "/assets/hips_dr2.png",
                 "description" : "Main welcome." },
@@ -227,7 +248,10 @@ export const projects = [
         "type": "architecture,java",
         "thumbnail": "/assets/mom3_contextdiagram.png",
         "details_card": ProjectDetailsCard,
-
+        "bullets" : [
+            { "title" : "Methodology", "text" : "Structured Analyses/Structured Design (SA/SD)" },
+            { "title" : "My role", "text" : "Architect" },
+        ],
         "details" : [
             { "image" : "/assets/mom3_contextdiagram.png",
                 "description" : "Context Diagram" },
@@ -255,7 +279,10 @@ export const projects = [
         "technology" : "Java, Struts, Hibernate, MySQL",
         "thumbnail": "/assets/mom_2004.jpg",
         "details_card": ProjectDetailsCard,
-
+        "bullets" : [
+            { "title" : "Technology", "text" : "Java, Struts, Hibernate, MySQL" },
+            { "title" : "My role", "text" : "web developer. Initially following the main (external) developer, later by myself." },
+        ],
         "details" : [
             { "image" : "/assets/mom_2004.jpg",
                 "description" : "main screen" },
@@ -266,10 +293,12 @@ export const projects = [
         "short_description" : "Project Administration for Observations of the LOFAR Telescope",
         "description" : "Project Administration for Observations of the LOFAR Telescope",
         "type": "java",
-        "technology" : "Java, Struts, Hibernate, MySQL",
         "thumbnail": "/assets/mom3_main.png",
         "details_card": ProjectDetailsCard,
-
+        "bullets" : [
+            { "title" : "Technology", "text" : "Java, Struts, Hibernate, MySQL" },
+            { "title" : "My role", "text" : "main developer" },
+        ],
         "details" : [
             { "image" : "/assets/mom3_main.png",
                 "description" : "main screen" },
@@ -289,7 +318,10 @@ export const projects = [
         "type": "architecture",
         "thumbnail": "/assets/map_sdc_rainbow.png",
         "details_card": ProjectDetailsCard,
-
+        "bullets" : [
+            { "title" : "Methodology", "text" : "Modeling techniques from SA/SD" },
+            { "title" : "My role", "text" : "Architect" },
+        ],
         "details" : [
             {
                 "image" : "/assets/map_sdc_rainbow.png",
@@ -324,10 +356,12 @@ export const projects = [
         "short_description" : "A set of standalone modules to aid in assembling LOFAR components",
         "description" : "A set of standalone modules to aid in assembling LOFAR components. ",
         "type": "java",
-        "technology" : "Java, Struts, Hibernate, MySQL",
         "thumbnail": "/assets/screenshot_craftmodule_connectingcablesutp5.jpg",
         "details_card": ProjectDetailsCard,
-
+        "bullets" : [
+            { "title" : "Technology", "text" : "Java, Struts, Hibernate, MySQL" },
+            { "title" : "My role", "text" : "main developer" },
+        ],
         "details" : [
             { "image" : "/assets/screenshot_craftmodule_cabinet_assembly.gif",
                 "description" : "cabinet assembly" },
@@ -374,10 +408,12 @@ export const projects = [
         "short_description" : "Frontend for astrophotography database (AstroBase). Various async image processing pipelines. Image cutouts",
         "description" : "Frontend for astrophotography database (AstroBase). Various async image processing pipelines. Image cutouts",
         "type": "private,frontend_reactjs",
-        "technology" : "ReactJS, Bootstrap, Aladin Light",
         "thumbnail": "/assets/astroview.png",
         "details_card": ProjectDetailsCard,
-
+        "bullets" : [
+            { "title" : "Technology", "text" : "ReactJS, Bootstrap, Aladin Light" },
+            { "title" : "My role", "text" : "lead, architect, main developer" },
+        ],
         "details" : [
             { "image" : "/assets/astroview_splash.png",
                 "description" : "Opening screen" },
@@ -398,10 +434,12 @@ export const projects = [
         "short_description" : "Astrophotography backend/API in Django. Based on ATDB for APERTIF",
         "description" : "Astrophotography backend/API in Django. Based on ATDB for APERTIF",
         "type": "private,backend_django",
-        "technology" : "Django, DRF, Sqlite, Python, Celery, RabbitMQ",
         "thumbnail": "/assets/astrobase.png",
         "details_card": ProjectDetailsCard,
-
+        "bullets" : [
+            { "title" : "Technology", "text" : "Django, DRF, Sqlite, Python, Celery, RabbitMQ" },
+            { "title" : "My role", "text" : "lead, architect, main developer." },
+        ],
         "details" : [
             { "image" : "/assets/astroview_main.png",
                 "description" : "main screen" },
@@ -416,10 +454,12 @@ export const projects = [
         "short_description" : "Frontend in ReactJS for EnergyServer. Displays live and historical energy usage and weather.",
         "description" : "Frontend in ReactJS for EnergyServer. Displays live and historical energy usage and weather.",
         "type": "private,frontend_reactjs",
-        "technology" : "ReactJS, Bootstrap",
         "thumbnail": "/assets/my_energy_view.png",
         "details_card": ProjectDetailsCard,
-
+        "bullets" : [
+            { "title" : "Technology", "text" : "ReactJS, Bootstrap" },
+            { "title" : "My role", "text" : "lead, architect, main developer." },
+        ],
         "details" : [
             { "image" : "/assets/astroview_main.png",
                 "description" : "main screen" },
@@ -434,10 +474,12 @@ export const projects = [
         "short_description" : "Django backend running on Raspberry Pi, connected to a smart energy meter. Interfaces with Domoticz home automation and external solar panel API.",
         "description" : "Django backend running on Raspberry Pi, connected to a smart energy meter. Interfaces with Domoticz home automation and external solar panel API.",
         "type": "private,backend_django",
-        "technology" : "Django, DRF, Sqlite, RabbitMQ",
         "thumbnail": "/assets/my_energy_server.png",
         "details_card": ProjectDetailsCard,
-
+        "bullets" : [
+            { "title" : "Technology", "text" : "Django, DRF, Sqlite, RabbitMQ, Raspberry Pi, Domoticz, smart meter" },
+            { "title" : "My role", "text" : "lead, architect, main developer." },
+        ],
         "details" : [
             { "image" : "/assets/astroview_main.png",
                 "description" : "main screen" },
@@ -455,7 +497,10 @@ export const projects = [
         "technology" : "Django, Sqlite, Bootstrap",
         "thumbnail": "/assets/my_hiking.png",
         "details_card": ProjectDetailsCard,
-
+        "bullets" : [
+            { "title" : "Technology", "text" : "Django, Sqlite, Bootstrap" },
+            { "title" : "My role", "text" : "lead, architect, main developer." },
+        ],
         "details" : [
             { "image" : "/assets/my_hiking.png",
                 "description" : "main screen" },
