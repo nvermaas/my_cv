@@ -29,6 +29,10 @@ export const projects = [
             { "title" : "Developed", "text" : "Developed in 2018. Operational from 2018 until 2021." },
             { "title" : "My role", "text" : "Architect, main developer." },
         ],
+        "links" : [
+            { "title" : "See also", "text" : "ATDB-LDV", "url" : "/cv/portfolio/all/atdb-ldv" },
+            { "title" : "See also", "text" : "ALTA", "url" : "/cv/portfolio/all/alta-gui" },
+        ],
         "details" : [
             { "image" : "/assets/atdb_gui_main.png",
                 "description" : "The main GUI shows the observation tasks with just enough metadata needed for operation. " +
@@ -65,6 +69,10 @@ export const projects = [
             { "title" : "Technology", "text" : "Django, DRF, Python, Postgres" },
             { "title" : "Developed", "text" : "Developed in 2021. Operational from 2021." },
             { "title" : "My role", "text" : "Architect, main developer." },
+        ],
+        "links" : [
+            { "title" : "See also", "text" : "ATDB (2018)", "url" : "/cv/portfolio/all/atdb" },
+            { "title" : "Live view", "text" : "ATDB at ASTRON", "url" : "https://sdc.astron.nl:5554/atdb/" },
         ],
         "details" : [
             { "image" : "/assets/atdb_ldv_gui_main.png",
@@ -113,6 +121,9 @@ export const projects = [
             { "title" : "Developed", "text" : "Developed in 2020, further development handed over to other team members " },
             { "title" : "My role", "text" : "Architect, main developer for the first iteration." },
         ],
+        "links" : [
+            { "title" : "See also", "text" : "ESAP-API", "url" : "/cv/portfolio/all/esap-api" },
+        ],
         "details" : [
             { "image" : "/assets/esap_gui.png",
                 "description" : "Main screen with the overview of the available archives as configured in the underlying sqlite database." },
@@ -134,6 +145,9 @@ export const projects = [
             { "title" : "Developed", "text" : "Developed in 2020, further development handed over to other team members." },
             { "title" : "My role", "text" : "Architect, main developer for the first iteration." },
         ],
+        "links" : [
+            { "title" : "See also", "text" : "ESAP-GUI", "url" : "/cv/portfolio/all/esap-gui" },
+        ],
         "details" : [
             { "image" : "/assets/esap_api.png",
                 "description" : "Main screen of the Query app, with REST API endpoints" },
@@ -153,6 +167,11 @@ export const projects = [
             { "title" : "Technology", "text" : "ReactJS, Bootstrap" },
             { "title" : "Developed", "text" : "Developed in 2017/2018." },
             { "title" : "My role", "text" : "main frontend developer." },
+        ],
+        "links" : [
+            { "title" : "See also", "text" : "ALTA-API", "url" : "/cv/portfolio/all/alta-api" },
+            { "title" : "See also", "text" : "ATDB", "url" : "/cv/portfolio/all/atdb" },
+            { "title" : "Live view", "text" : "ALTA at ASTRON", "url" : "https://alta.astron.nl/" },
         ],
         "details" : [
             {
@@ -189,6 +208,9 @@ export const projects = [
             { "title" : "Developed", "text" : "Developed in 2017/2018." },
             { "title" : "My role", "text" : "main backend developer." },
         ],
+        "links" : [
+            { "title" : "See also", "text" : "ALTA-GUI", "url" : "/cv/portfolio/all/alta-gui" },
+        ],
         "details" : [
             { "image" : "/assets/alta_api.png",
                 "description" : "ALTA backend REST API endpoints" },
@@ -198,6 +220,7 @@ export const projects = [
     },
 
     {"name": "Aladin-Testbed (2022)",
+        "route" : "aladin-testbed",
         "short_description" : "Frontend web application to test out various API's and visualisations with Aladin Light.",
         "description" : "Frontend web application to test out various API's and visualisations with Aladin Light.",
         "type": "frontend_reactjs,private",
@@ -206,6 +229,10 @@ export const projects = [
         "bullets" : [
             { "title" : "Technology", "text" : "ReactJS, Bootstrap, Aladin Light" },
             { "title" : "My role", "text" : "lead, main developer" },
+        ],
+        "links" : [
+            { "title" : "See also", "text" : "Exoplanets", "url" : "/cv/portfolio/all/exoplanets" },
+            { "title" : "Live view", "text" : "Aladin-testbed", "url" : "https://uilennest.net/aladin-testbed/" },
         ],
         "details" : [
             { "image" : "/assets/aladin_testbed.png",
@@ -229,6 +256,10 @@ export const projects = [
         "bullets" : [
             { "title" : "Technology", "text" : "ReactJS, Bootstrap, Aladin Light" },
             { "title" : "My role", "text" : "lead, main developer" },
+        ],
+        "links" : [
+            { "title" : "See also", "text" : "Aladin-testbed", "url" : "/cv/portfolio/all/aladin-testbed" },
+            { "title" : "Live view", "text" : "Exoplanets", "url" : "https://sdc-dev.astron.nl/exoplanets" },
         ],
         "details" : [
             { "image" : "/assets/exoplanets.jpg",
@@ -261,14 +292,17 @@ export const projects = [
 
     {"name": "MoM Reverse Engineering (2016)",
         "route" : "mom-sd",
-        "short_description" : "MoM3 System Design, reverse engineering its functionality as preparation for the LEI/TMSS project.",
-        "description" : "MoM3 System Design, reverse engineering its functionality as preparation for the LEI/TMSS project.",
+        "short_description" : "MoM3 System Design, reverse engineering its functionality as preparation for TMSS.",
+        "description" : "MoM3 System Design, reverse engineering its functionality as preparation for TMSS.",
         "type": "architecture,java",
         "thumbnail": "/assets/mom3_contextdiagram.png",
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Methodology", "text" : "Structured Analyses/Structured Design (SA/SD)" },
             { "title" : "My role", "text" : "Architect" },
+        ],
+        "links" : [
+            { "title" : "See also", "text" : "MoM (LOFAR)", "url" : "/cv/portfolio/all/mom-lofar" },
         ],
         "details" : [
             { "image" : "/assets/mom3_contextdiagram.png",
@@ -302,6 +336,9 @@ export const projects = [
             { "title" : "Technology", "text" : "Java, Struts, Hibernate, MySQL" },
             { "title" : "My role", "text" : "web developer. Initially following the main (external) developer, later by myself." },
         ],
+        "links" : [
+            { "title" : "See also", "text" : "MoM (LOFAR)", "url" : "/cv/portfolio/all/mom-lofar" },
+        ],
         "details" : [
             { "image" : "/assets/mom_2004.jpg",
                 "description" : "main screen" },
@@ -318,6 +355,10 @@ export const projects = [
         "bullets" : [
             { "title" : "Technology", "text" : "Java, Struts, Hibernate, MySQL" },
             { "title" : "My role", "text" : "main developer" },
+        ],
+        "links" : [
+            { "title" : "See also", "text" : "MoM (WSRT)", "url" : "/cv/portfolio/all/mom-wsrt" },
+            { "title" : "See also", "text" : "MoM Reverse Engineering", "url" : "/cv/portfolio/all/mom-sd" },
         ],
         "details" : [
             { "image" : "/assets/mom3_main.png",
@@ -437,6 +478,9 @@ export const projects = [
             { "title" : "Technology", "text" : "ReactJS, Bootstrap, Aladin Light" },
             { "title" : "My role", "text" : "lead, architect, main developer" },
         ],
+        "links" : [
+            { "title" : "See also", "text" : "Astrobase", "url" : "/cv/portfolio/all/astrobase" },
+        ],
         "details" : [
             { "image" : "/assets/astroview_splash.png",
                 "description" : "Opening screen" },
@@ -464,13 +508,13 @@ export const projects = [
             { "title" : "Technology", "text" : "Django, DRF, Sqlite, Python, Celery, RabbitMQ" },
             { "title" : "My role", "text" : "lead, architect, main developer." },
         ],
+        "links" : [
+            { "title" : "See also", "text" : "AstroView", "url" : "/cv/portfolio/all/astroview" },
+            { "title" : "See also", "text" : "ATDB", "url" : "/cv/portfolio/all/atdb" },
+        ],
         "details" : [
-            { "image" : "/assets/astroview_main.png",
+            { "image" : "/assets/astrobase.png",
                 "description" : "main screen" },
-            { "image" : "/assets/astroview_cutout.png",
-                "description" : "these are image cutouts" },
-            { "image" : "/assets/astrobase_diagram.png",
-                "description" : "this is the documentation" },
         ]
     },
 
@@ -485,13 +529,12 @@ export const projects = [
             { "title" : "Technology", "text" : "ReactJS, Bootstrap" },
             { "title" : "My role", "text" : "lead, architect, main developer." },
         ],
+        "links" : [
+            { "title" : "See also", "text" : "Energy Server", "url" : "/cv/portfolio/all/energyserver" },
+        ],
         "details" : [
-            { "image" : "/assets/astroview_main.png",
+            { "image" : "/assets/my_energy_view.png",
                 "description" : "main screen" },
-            { "image" : "/assets/astroview_cutout.png",
-                "description" : "these are image cutouts" },
-            { "image" : "/assets/astrobase_diagram.png",
-                "description" : "this is the documentation" },
         ]
     },
 
@@ -506,13 +549,12 @@ export const projects = [
             { "title" : "Technology", "text" : "Django, DRF, Sqlite, RabbitMQ, Raspberry Pi, Domoticz, smart meter" },
             { "title" : "My role", "text" : "lead, architect, main developer." },
         ],
+        "links" : [
+            { "title" : "See also", "text" : "EnergyView", "url" : "/cv/portfolio/all/energyview" },
+        ],
         "details" : [
-            { "image" : "/assets/astroview_main.png",
+            { "image" : "/assets/my_energy_server.png",
                 "description" : "main screen" },
-            { "image" : "/assets/astroview_cutout.png",
-                "description" : "these are image cutouts" },
-            { "image" : "/assets/astrobase_diagram.png",
-                "description" : "this is the documentation" },
         ]
     },
 
@@ -538,25 +580,6 @@ export const projects = [
         ],
     },
 
-    {"name": "Curriculum Vitae (2022)",
-        "route" : "cv",
-        "short_description" : "The ReactJS SPA that you are currently navigating.",
-        "description" : "The ReactJS SPA that you are currently navigating. Frontend in ReactJS. All content is defined in a single JSON structure, which makes the application easily customizable and re-usable as boilerplate for similar portfolio applications.",
-        "type": "private,frontend_reactjs",
-        "thumbnail": "/assets/cv.png",
-        "details_card": ProjectDetailsCard,
-        "bullets" : [
-            { "title" : "Technology", "text" : "ReactJS, Bootstrap" },
-            { "title" : "My role", "text" : "lead, architect, main developer." },
-        ],
-        "details" : [
-            { "image" : "/assets/cv.png",
-                "description" : "main screen" },
-            { "image" : "/assets/cv_portfolio.png",
-                "description" : "Portfolio" }
-        ]
-    },
-
     {"name": "OneTreeWood (2017,2021)",
         "route" : "onetreewood",
         "short_description" : "Frontend in ReactJS for my private website. It shows the content from the Django 'homebase' backend application.",
@@ -573,6 +596,25 @@ export const projects = [
                 "description" : "main screen" },
             { "image" : "/assets/onetreewood_travel.png",
                 "description" : "details of the hiking page" }
+        ]
+    },
+
+    {"name": "Curriculum Vitae (2022)",
+        "route" : "cv",
+        "short_description" : "The ReactJS SPA that you are currently navigating.",
+        "description" : "The ReactJS SPA that you are currently navigating. Frontend in ReactJS. All content is defined in a single JSON structure, which makes the application easily customizable and re-usable as boilerplate for similar portfolio applications.",
+        "type": "private,frontend_reactjs",
+        "thumbnail": "/assets/cv.png",
+        "details_card": ProjectDetailsCard,
+        "bullets" : [
+            { "title" : "Technology", "text" : "ReactJS, Bootstrap" },
+            { "title" : "My role", "text" : "lead, architect, main developer." },
+        ],
+        "details" : [
+            { "image" : "/assets/cv.png",
+                "description" : "main screen" },
+            { "image" : "/assets/cv_portfolio.png",
+                "description" : "Portfolio" }
         ]
     },
 ]

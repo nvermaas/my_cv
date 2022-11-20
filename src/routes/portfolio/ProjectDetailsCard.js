@@ -7,6 +7,21 @@ export default function ProjectDetailsCard(props) {
         window.scrollTo(0, 0)
     }, [])
 
+    let renderBullets
+    if (props.project.bullets) {
+        renderBullets = props.project.bullets.map(bullet => {
+            return <li align={"left"}>{bullet.title}: {bullet.text}</li>
+        })
+    }
+
+    // render the links as a bullet list
+    let renderLinks
+    if (props.project.links!==undefined) {
+        renderLinks = props.project.links.map(link => {
+            return <li align={"left"}>{link.title}: <a href={link.url}>{link.text}</a></li>
+        })
+    }
+
     return (
         <div className="App">
             <Card className='text-left'>
@@ -14,13 +29,14 @@ export default function ProjectDetailsCard(props) {
                 <Card.Body>
                     <Card.Subtitle className="mb-2 text-muted">{props.project.description}</Card.Subtitle>
                     <hr></hr>
-                    {
-                        // render the bullet points as a bullet list
-                        props.project.bullets.map(bullet => {
-                            return <li align={"left"}>{bullet.title}: {bullet.text}</li>
-                        })
-                    }
-
+                    <Row>
+                        <Col>
+                    {renderBullets}
+                        </Col>
+                        <Col>
+                    {renderLinks}
+                        </Col>
+                    </Row>
                     <Card.Text>
                     {
                         // iterate over each details entry, and render as an image with accompanying text
