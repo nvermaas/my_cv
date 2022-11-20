@@ -601,8 +601,8 @@ export const projects = [
 
     {"name": "Curriculum Vitae (2022)",
         "route" : "cv",
-        "short_description" : "The ReactJS SPA that you are currently navigating.",
-        "description" : "The ReactJS SPA that you are currently navigating. Frontend in ReactJS. All content is defined in a single JSON structure, which makes the application easily customizable and re-usable as boilerplate for similar portfolio applications.",
+        "short_description" : "The ReactJS Single Page Application (SPA) that you are currently navigating.",
+        "description" : "The ReactJS Single Page Application (SPA) that you are currently navigating.. Frontend in ReactJS. All content is defined in a single JSON structure, which makes the application easily customizable and re-usable as boilerplate for similar portfolio applications.",
         "type": "private,frontend_reactjs",
         "thumbnail": "/assets/cv.png",
         "details_card": ProjectDetailsCard,
