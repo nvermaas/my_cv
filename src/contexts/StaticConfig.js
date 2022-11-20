@@ -45,8 +45,9 @@ export const projects = [
     },
 
     {"name": "ATDB-LDV (2021)",
-        "short_description" : "Pipeline Execution Framework for the LOFAR Data Validation project (LDV). Based on ATDB for APERTIF.",
-        "description" : "Pipeline Execution Framework for the LOFAR Data Validation project (LDV). Based on ATDB for APERTIF.",
+        "short_description" : "Pipeline Execution Framework for the LOFAR Data Validation project (LDV). Micro-services architecture, based on ATDB for APERTIF.",
+        "description" : "Pipeline Execution Framework for the LOFAR Data Validation project (LDV). " +
+            "A micro-services architecture, based on ATDB for APERTIF, but with much more user facing functionality. ",
         "type": "backend_django",
         "year": " (2021)",
         "technology" : "Django, DRF, Python, Postgres",
@@ -57,13 +58,36 @@ export const projects = [
 
         "details" : [
             { "image" : "/assets/atdb_ldv_gui_main.png",
-                "description" : "The main GUI shows the observation tasks with just enough metadata needed for operation." },
-            { "image" : "/assets/atdb_contextdiagram.png",
-                "description" : "The CONTEXT diagram shows the environment that ATDB operates in" },
-            { "image" : "/assets/atdb_deploymentdiagram.png",
-                "description" : "The DEPLOYMENT diagram shows where ATDB is deployed in the system" },
-            { "image" : "/assets/atdb_statediagram.png",
-                "description" : "The STATE diagram shows the possible states that an observation can be in, and which of the micro services respond to that state" },
+                "description" : "The TASKS screen shows the pipeline tasks and their status. " +
+                    "The user can do some basic filtering, control the priority of individual tasks" +
+                    " and access more detailed information with the 'details' and 'workflow' buttons." },
+            { "image" : "/assets/atdb_ldv_details.png",
+                "description" : "The DETAILS screen shows more details per task and has links to additional information, " +
+                    "logfiles, the ReST API and contents of JSON blobs." },
+            { "image" : "/assets/atdb_ldv_dashboard.png",
+                "description" : "The DASHBOARD shows the overall progress through per workflow (pipeline)." },
+            { "image" : "/assets/atdb_ldv_filter.png",
+                "description" : "The FILTER screen provides detailed filtering and buttons to change the status of multiple " +
+                    "tasks at once. This powerful functionality requires users with the proper operational rights." },
+            { "image" : "/assets/atdb_ldv_quality.png",
+                "description" : "The QUALITY screen shows an overview of properties that are used to automatically estimate the quality of the data. " +
+                    "There is also access to a range of quality plots to assist the user in assessing the quality manually." },
+            { "image" : "/assets/atdb_ldv_validation.png",
+                "description" : "The VALIDATION screen shows an important manual step in the proces. " +
+                    "Before the output data of the workflows is allowed to be ingested in the LOFAR archive (LTA)," +
+                    "it has to be manually validated by an operator/astronomer. " +
+                    "Once a 'Poor', 'Medium' or 'Good' button is clicked, the flow continues and the data will be ingested in the LTA. " },
+            { "image" : "/assets/atdb_ldv_failures.png",
+                "description" : "The FAILURES screen gives an overview of tasks that failed in any of the steps in the workflow. " +
+                    "The 'retry' button will set the status of a tasks to an appropriate value so that the failed step can be retried." },
+            { "image" : "/assets/atdb_ldv_monitoring.png",
+                "description" : "The MONITORING screen gives an overview of the status of the micro-services by showing when they last checked in. " +
+                    ", showing a 'late' indication in red when that last check-in exceeds the expected time. " +
+                    "This page also gives access to the monitoring of the Spider cluster through Grafana and Ganglia" },
+            { "image" : "/assets/atdb_ldv_configuration.png",
+                "description" : "Many of the configuration parameters of the LDV framework are stored centrally in the ATDB database. " +
+                    "The are accessable by the services through the REST API, and editable by admins in this configuration screen." },
+
         ]
     },
 
