@@ -1,8 +1,9 @@
 import React from 'react';
 import {Card, Table} from 'react-bootstrap'
-import skills from '../../assets/ancient_skills.png';
+import { config  } from '../../contexts/StaticConfig';
 
 export default function AncientSkillsCard() {
+
     return (
         <div className="App">
             <Card>
@@ -13,14 +14,14 @@ export default function AncientSkillsCard() {
                         <Table>
                             <tr>
                                 <td align="left">
-                                    <img src={skills} width="300" alt="skills"/>
+                                    <img src={config.image_ancient_skills} width="300" alt="skills"/>
                                     </td>
                                 <td align="left">
                                     <li>Programmer (ms-dos, windows)</li>
                                     <li>Delphi (GUI)</li>
                                     <li>Clipper (dbase3), Pascal, Fortran, Basic</li>
                                     <li>Database: dbase3</li>
-                                    <li>System Design: SA/SD, Structured Analyses/Design, Technical Design</li>
+                                    <li>System Engineering: SA/SD, Structured Analyses/Design, Technical Design</li>
                                     <li>GIS (Geographical Information Systems)</li>
                                 </td>
                             </tr>

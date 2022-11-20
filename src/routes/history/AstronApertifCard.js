@@ -20,10 +20,10 @@ export default function AstronSDCCard() {
                                 </td>
                                 <td align="left">
                                     In 2016 I joined the 'ALTA team' to develop the Apertif Long Term Archive.
-                                    This was a 5 person agile/scrum team, where I built the ALTA frontend in ReactJS
-                                    and the backend/api in Django.
+                                    This was a 5 person agile/scrum team, where I built the <a href={"/cv/portfolio/all/alta-gui"}>ALTA frontend</a> in ReactJS
+                                    and the <a href={"/cv/portfolio/all/alta-api"}>ALTA backend/api</a> in Django.
                                     <tr>&nbsp;</tr>
-                                    <li>ALTA (backend/frontend developer)</li>
+                                    <li><a href={"/cv/portfolio/all/alta-gui"}>ALTA</a> (backend/frontend developer)</li>
                                     <li>DevOps (CI/CD pipelines in Jenkins)</li>
 
                                     <tr>&nbsp;</tr>
@@ -32,7 +32,7 @@ export default function AstronSDCCard() {
                                     connect the astronomers, operators, telescopes and archive into a working system.
                                     I was the only developer and worked directly with the scientists.
                                     <tr>&nbsp;</tr>
-                                    <li>ATDB (architect, lead developer)</li>
+                                    <li><a href={"/cv/portfolio/all/atdb"}>ATDB</a> (architect, lead developer)</li>
                                 </td>
                             </tr>
                         </Table>

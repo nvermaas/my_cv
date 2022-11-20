@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card, Table} from 'react-bootstrap'
 
-import nico from '../../assets/nico.jpg';
+import { config  } from '../../contexts/StaticConfig';
 
 
 export default function WhoAmICard() {
@@ -16,7 +16,7 @@ export default function WhoAmICard() {
                         <Table>
                             <tr>
                                 <td align="center">
-                                    <img src={nico} width="300" alt="logo cv"/>
+                                    <img src={config.image_nico} width="300" alt="logo cv"/>
                                 </td>
 
                             </tr>

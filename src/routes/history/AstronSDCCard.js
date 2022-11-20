@@ -29,10 +29,10 @@ export default function AstronSDCCard() {
                                     My role changed to a more architectural/design role and lead developer for ADEX.
 
                                     <tr>&nbsp;</tr>
-                                    <li>ESAP backend & frontend</li>
-                                    <li>ADEX backend & frontend (lead engineer)</li>
-                                    <li>Architecture, analyses and design</li>
-                                    <li>Infrastructure & DevOps (CI/CD pipelines in Gitlab</li>
+                                    <li>ESAP <a href={"/cv/portfolio/all/esap-api"}>backend</a> & <a href={"/cv/portfolio/all/esap-gui"}>frontend</a></li>
+                                    <li>ADEX <a href={"/cv/portfolio/all/adex-api"}>backend</a> & <a href={"/cv/portfolio/all/adex-gui"}>frontend</a> (lead engineer)</li>
+                                    <li><a href={"/cv/portfolio/architecture"}>Architecture</a>, analyses and design</li>
+                                    <li>Infrastructure & DevOps (CI/CD pipelines in Gitlab and Github)</li>
                                     <li>Introducing documentation vision & strategy</li>
                                 </td>
                             </tr>

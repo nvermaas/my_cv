@@ -1,8 +1,8 @@
 import React from 'react';
 import {Card, Table} from 'react-bootstrap'
-import skills from '../../assets/previous_skills.png';
+import { config  } from '../../contexts/StaticConfig';
 
-export default function OlderSkillsCard() {
+export default function PreviousSkillsCard() {
 
     return (
         <div className="App">
@@ -14,18 +14,17 @@ export default function OlderSkillsCard() {
                         <Table>
                             <tr>
                                 <td align="left">
-                                    <img src={skills} width="300" alt="skills"/>
+                                    <img src={config.image_previous_skills} width="300" alt="skills"/>
                                     </td>
                                 <td align="left">
-                                    <li>Full Stack Web Developer (Java)</li>
+                                    <li>Full Stack Web Developer (<a href={"/cv/portfolio/java"}>Java</a>)</li>
                                     <li>Java Struts (backend) on Tomcat</li>
                                     <li>Java Server Pages (jsp) (frontend)</li>
                                     <li>Database: MySQL </li>
                                     <li>DevOps: CI/CD pipelines with Jenkins and Subversion (svn)</li>
                                     <li>Provisioning: Ansible, Vagrant</li>
-                                    <li>System Design: SA/SD, Structured Analyses/Design, Technical Design</li>
+                                    <li>System Engineering: SA/SD, Structured Analyses/Design, Technical Design</li>
                                     <li>Documentation/Modelling: DFD, UML</li>
-                                    <li>Async messagebus: qpid</li>
                                     <li>Agile/scrum</li>
                                 </td>
                             </tr>

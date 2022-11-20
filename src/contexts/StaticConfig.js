@@ -6,11 +6,15 @@ export const base_url =
         : "https://uilennest.net/cv"
 
 export const config = {
-    "image_width" : "800"
+    "image_width" : "800",
+    "image_welcome" : base_url + "/assets/welcome_image.png",
+    "image_nico" : base_url + "/assets/nico.jpg",
+    "image_ancient_skills" : base_url + "/assets/ancient_skills.jpg",
+    "image_previous_skills" : base_url + "/assets/previous_skills.jpg",
+    "image_current_skills" : base_url + "/assets/atdb_deploymentdiagram.png",
 }
 
 export const projects = [
-
     {"name": "ATDB (2018)",
         "route" : "atdb",
         "short_description" : "Observation and Pipeline management for APERTIF/WSRT Telescope. Microservices architecture in Django and Python.",
@@ -255,7 +259,7 @@ export const projects = [
         ]
     },
 
-    {"name": "MoM SD (2016)",
+    {"name": "MoM Reverse Engineering (2016)",
         "route" : "mom-sd",
         "short_description" : "MoM3 System Design, reverse engineering its functionality as preparation for the LEI/TMSS project.",
         "description" : "MoM3 System Design, reverse engineering its functionality as preparation for the LEI/TMSS project.",
@@ -534,7 +538,7 @@ export const projects = [
         ],
     },
 
-    {"name": "Curiculum Vitae (2022)",
+    {"name": "Curriculum Vitae (2022)",
         "route" : "cv",
         "short_description" : "The ReactJS SPA that you are currently navigating.",
         "description" : "The ReactJS SPA that you are currently navigating. Frontend in ReactJS. All content is defined in a single JSON structure, which makes the application easily customizable and re-usable as boilerplate for similar portfolio applications.",

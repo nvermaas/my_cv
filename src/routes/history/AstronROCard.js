@@ -19,11 +19,11 @@ export default function AstronSDCCard() {
                                     <img src={lofar} width="300" alt="logo cv"/>
                                 </td>
                                 <td align="left">
-                                    In 2002 I joined ASTRON. Initially I worked on the Cosmolab project for INAF in Bologna
-                                    as the ASTRON radio-astronomy representative. This was in C++.
+                                    In 2002 I joined ASTRON. Initially I worked on the European Cosmo.lab project for
+                                    the university of Bologna as the ASTRON radio-astronomy representative. This was in C++.
 
                                     <tr>&nbsp;</tr>
-                                    In 2003 we started to work on MoM for the WSRT telescope, the first web based observation management system.
+                                    In 2003 we started to work on <a href={"/cv/portfolio/java/mom-wsrt"}>MoM for the WSRT</a> telescope, the first web based observation management system.
                                     The technology was Java Struts running in a Tomcat server and was introduced by an external party.
                                     We worked in a team of 4 people on a suite of interconnected software with this technology.
 
@@ -31,25 +31,25 @@ export default function AstronSDCCard() {
                                     with this newly introduced web application.
 
                                     <tr>&nbsp;</tr>
-                                    <li>MoM for WSRT Telescope (backend/frontend/databases)</li>
+                                    <li><a href={"/cv/portfolio/java/mom-wsrt"}>MoM for the WSRT</a> Telescope (backend/frontend/databases)</li>
                                     <li>Tomcat Web environment</li>
 
                                     <tr>&nbsp;</tr>
-                                    In 2007 MoM was ported to the LOFAR telescope. I was now the only developer.
+                                    In 2007 MoM was also ported to the LOFAR telescope as <a href={"/cv/portfolio/java/mom-lofar"}>Mom3</a>. I was now the only developer.
                                     LOFAR was in development for a long time, and my task was to keep MoM adapted accordingly.
 
                                     <tr>&nbsp;</tr>
-                                    I also wrote the CRAFT software, which was developed to keep track of all the LOFAR hardware components. a micro-service architecture.
+                                    I also wrote the <a href={"/cv/portfolio/java/craft"}>CRAFT</a> software, which was developed to keep track of all the LOFAR hardware components. a micro-service architecture.
                                     This was a micro-services architecture in java, with a java-struts/sql backend on Tomcat
                                     and several distributed java GUI's as services.
                                     The GUI's, combined with a barcode scanner, was used at the factories and the telescope construction sites.
 
                                     <tr>&nbsp;</tr>
 
-                                    <li>MoM for LOFAR Telescope (backend/frontend/databases)</li>
+                                    <li><a href={"/cv/portfolio/java/mom-lofar"}>MoM for LOFAR Telescope</a> (backend/frontend/databases)</li>
                                     <li>Tomcat Web environment</li>
 
-                                    <li>CRAFT (backend/frontend developer)</li>
+                                    <li><a href={"/cv/portfolio/java/craft"}>CRAFT</a> (backend/frontend developer)</li>
                                 </td>
                             </tr>
                         </Table>

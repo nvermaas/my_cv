@@ -1,7 +1,7 @@
 import React from 'react';
 
 import SkillsCard from './SkillsCard'
-import OlderSkillsCard from './OlderSkillsCard'
+import PreviousSkillsCard from './PreviousSkillsCard'
 import AncientSkillsCard from './AncientSkillsCard'
 
 export default function SkillsPage() {
@@ -9,7 +9,7 @@ export default function SkillsPage() {
     return (
         <div>
             <SkillsCard/>
-            <OlderSkillsCard/>
+            <PreviousSkillsCard/>
             <AncientSkillsCard/>
         </div>
     );
