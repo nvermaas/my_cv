@@ -4,7 +4,7 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { projects } from '../../contexts/StaticConfig';
 import { useGlobalReducer, findProject } from '../../contexts/GlobalContext';
 import {
-    SET_PORTFOLIO_PAGE, SET_CURRENT_PROJECT
+    SET_PORTFOLIO_PAGE
 } from '../../contexts/GlobalStateReducer';
 
 import Projects from './Projects'
@@ -15,11 +15,10 @@ export default function PortfolioPage(props) {
 
     const handleClick = (page) => {
         my_dispatch({type: SET_PORTFOLIO_PAGE, portfolio_page: page})
-        my_dispatch({type: SET_CURRENT_PROJECT, current_project: undefined})
     }
 
     // check for a selected project in the stored state.
-    let selected_project = my_state.current_project
+    let selected_project
 
     // check for a selected project in the requested url, or from the stored state.
     if (props.project_route) {

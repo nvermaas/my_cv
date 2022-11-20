@@ -12,7 +12,6 @@ export default function NavigationBar() {
 
     const handleClick = (page) => {
         my_dispatch({type: SET_PORTFOLIO_PAGE, portfolio_page: page})
-        my_dispatch({type: SET_CURRENT_PROJECT, current_project: undefined})
     }
     return (
         <Navbar bg="secondary" variant="dark">

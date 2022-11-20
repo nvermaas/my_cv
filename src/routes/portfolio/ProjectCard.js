@@ -1,17 +1,17 @@
 import React from 'react';
 import {Card, Table, Button, Container, Row, Col} from 'react-bootstrap'
+import { useHistory  } from 'react-router-dom';
+
 import {useGlobalReducer} from "../../contexts/GlobalContext";
-import {SET_CURRENT_PROJECT} from "../../contexts/GlobalStateReducer";
 
 export default function ProjectCard(props) {
     const [ my_state , my_dispatch] = useGlobalReducer()
+    const history = useHistory();
 
     const handleClick = (project) => {
         let new_route = '/portfolio/' + my_state.portfolio_page + '/' + project.route
-        alert(new_route)
-        // forward to this route, look how to redirect with react-router
+        history.push(new_route)
 
-        my_dispatch({type: SET_CURRENT_PROJECT, current_project: project})
     }
 
     return (
