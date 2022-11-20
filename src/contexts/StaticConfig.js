@@ -8,6 +8,7 @@ export const base_url =
 export const projects = [
 
     {"name": "ATDB (2018)",
+        "route" : "atdb",
         "short_description" : "Observation and Pipeline management for APERTIF/WSRT Telescope. Microservices architecture in Django and Python.",
         "description" : "APERTIF Task Database. Observation and Pipeline management for APERTIF/WSRT Telescope. Microservices architecture in Django and Python. " +
             "An important part of this project where the diagrams, the models of diffent aspects of the ATDB system, " +
@@ -44,6 +45,7 @@ export const projects = [
     },
 
     {"name": "ATDB-LDV (2021)",
+        "route" : "atdb-ldv",
         "short_description" : "Pipeline Execution Framework for the LOFAR Data Validation project (LDV). Micro-services architecture, based on ATDB for APERTIF.",
         "description" : "Pipeline Execution Framework for the LOFAR Data Validation project (LDV). " +
             "A micro-services architecture, based on ATDB for APERTIF, but with much more user facing functionality. ",
@@ -92,6 +94,7 @@ export const projects = [
     },
 
     {"name": "ESAP-GUI (2020)",
+        "route" : "esap-gui",
         "short_description" : "ESAP-GUI Frontend for the European Escape Project",
         "description" : "ESAP-GUI Frontend or the European Escape Project",
         "type": "frontend_reactjs",
@@ -111,6 +114,7 @@ export const projects = [
     },
 
     {"name": "ESAP-API (2020)",
+        "route" : "esap-api",
         "short_description" : "ESAP-API Backend or the European Escape Project.",
         "description" : "ESAP-API Backend or the European Escape Project.",
         "type": "backend_django",
@@ -131,6 +135,7 @@ export const projects = [
     },
 
     {"name": "ALTA-GUI (2017 - 2018)",
+        "route" : "alta-gui",
         "short_description" : "Frontend for the Apertif Long Term Archive (ALTA)",
         "description" : "Frontend for the Apertif Long Term Archive (ALTA)",
         "type": "frontend_reactjs",
@@ -164,8 +169,10 @@ export const projects = [
     },
 
     {"name": "ALTA-API (2017 - 2018)",
-        "short_description" : "ALTAPI Backend for the Apertif Long Term Archive.",
-        "description" : "ALTAPI Backend for the Apertif Long Term Archive.",
+        "route" : "alta-api",
+        "short_description" : "Backend/API for the Apertif Long Term Archive.",
+        "description" : "Backend/API for the Apertif Long Term Archive. Not only a backend for the ALTA-GUI frontend, " +
+            "but also for the iRODS based data services.",
         "type": "backend_django",
         "thumbnail": "/assets/alta_api.png",
         "details_card": ProjectDetailsCard,
@@ -177,7 +184,7 @@ export const projects = [
         "details" : [
             { "image" : "/assets/alta_api.png",
                 "description" : "ALTA backend REST API endpoints" },
-            { "image" : "/assets/alta_datamodel",
+            { "image" : "/assets/alta_datamodel.png",
                 "description" : "ALTA datamodel" },
         ]
     },
@@ -204,6 +211,7 @@ export const projects = [
     },
 
     {"name": "Exoplanets (2021)",
+        "route" : "exoplanets",
         "short_description" : "Technology demonstration to show how to use Aladin Light in a ReactJS frontend.",
         "description" : "Technology demonstration to show how to use Aladin Light in a ReactJS frontend." +
             "This project was created to assist a French/US development team, from the University of Amsterdam, that was refered to me by CDS.",
@@ -223,6 +231,7 @@ export const projects = [
     },
 
     {"name": "HiPS (2020)",
+        "route" : "hips",
         "short_description" : "HiPS website for ASTRON surveys in Virtual Observatory (VO)",
         "description" : "HiPS website for ASTRON surveys in Virtual Observatory (VO). " +
             "This is a simple frontend application that displays server side instances of DACHS in an iframe." +
@@ -243,6 +252,7 @@ export const projects = [
     },
 
     {"name": "MoM SD (2016)",
+        "route" : "mom-sd",
         "short_description" : "MoM3 System Design, reverse engineering its functionality as preparation for the LEI/TMSS project.",
         "description" : "MoM3 System Design, reverse engineering its functionality as preparation for the LEI/TMSS project.",
         "type": "architecture,java",
@@ -273,6 +283,7 @@ export const projects = [
     },
 
     {"name": "MoM WSRT (2004 - 2009)",
+        "route" : "mom-wsrt",
         "short_description" : "Project Administration for Observations of the Westerbork Synthesis Radio Telescope (WSRT)",
         "description" : "Project Administration for Observations of the Westerbork Synthesis Radio Telescope (WSRT)",
         "type": "java",
@@ -290,6 +301,7 @@ export const projects = [
     },
 
     {"name": "MoM LOFAR (2009 - 2016)",
+        "route" : "mom-lofar",
         "short_description" : "Project Administration for Observations of the LOFAR Telescope",
         "description" : "Project Administration for Observations of the LOFAR Telescope",
         "type": "java",
@@ -313,6 +325,7 @@ export const projects = [
 
 
     {"name": "Architecture",
+        "route" : "architecture",
         "short_description" : "Examples of Architecture and modelling",
         "description" : "This shows a range of types of diagrams that I use to model a 'system', or a series of software components.",
         "type": "architecture",
@@ -353,6 +366,7 @@ export const projects = [
     },
 
     {"name": "CRAFT (2010)",
+        "route" : "craft",
         "short_description" : "A set of standalone modules to aid in assembling LOFAR components",
         "description" : "A set of standalone modules to aid in assembling LOFAR components. ",
         "type": "java",
@@ -405,6 +419,7 @@ export const projects = [
     },
 
     {"name": "AstroView (2019)",
+        "route" : "astroview",
         "short_description" : "Frontend for astrophotography database (AstroBase). Various async image processing pipelines. Image cutouts",
         "description" : "Frontend for astrophotography database (AstroBase). Various async image processing pipelines. Image cutouts",
         "type": "private,frontend_reactjs",
@@ -431,6 +446,7 @@ export const projects = [
     },
 
     {"name": "AstroBase (2019)",
+        "route" : "astrobase",
         "short_description" : "Astrophotography backend/API in Django. Based on ATDB for APERTIF",
         "description" : "Astrophotography backend/API in Django. Based on ATDB for APERTIF",
         "type": "private,backend_django",
@@ -451,6 +467,7 @@ export const projects = [
     },
 
     {"name": "EnergyView (2017)",
+        "route" : "energyview",
         "short_description" : "Frontend in ReactJS for EnergyServer. Displays live and historical energy usage and weather.",
         "description" : "Frontend in ReactJS for EnergyServer. Displays live and historical energy usage and weather.",
         "type": "private,frontend_reactjs",
@@ -471,6 +488,7 @@ export const projects = [
     },
 
     {"name": "EnergyServer (2017)",
+        "route" : "energyserver",
         "short_description" : "Django backend running on Raspberry Pi, connected to a smart energy meter. Interfaces with Domoticz home automation and external solar panel API.",
         "description" : "Django backend running on Raspberry Pi, connected to a smart energy meter. Interfaces with Domoticz home automation and external solar panel API.",
         "type": "private,backend_django",
@@ -491,6 +509,7 @@ export const projects = [
     },
 
     {"name": "MyHiking (2016)",
+        "route" : "my_hiking",
         "short_description" : "Django application showing all my hikes stored in a sqlite database.",
         "description" : "Django application showing all my hikes stored in a sqlite database.",
         "type": "private,backend_django",

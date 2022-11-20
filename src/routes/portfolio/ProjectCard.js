@@ -7,6 +7,10 @@ export default function ProjectCard(props) {
     const [ my_state , my_dispatch] = useGlobalReducer()
 
     const handleClick = (project) => {
+        let new_route = '/portfolio/' + my_state.portfolio_page + '/' + project.route
+        alert(new_route)
+        // forward to this route, look how to redirect with react-router
+
         my_dispatch({type: SET_CURRENT_PROJECT, current_project: project})
     }
 
@@ -37,8 +41,6 @@ export default function ProjectCard(props) {
 
                  </Card.Body>
             </Card>
-
     );
-
 }
 

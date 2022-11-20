@@ -43,6 +43,10 @@ export default function Main() {
                         <HistoryPage />
                     </Route>
 
+                    {
+                        // the order matters here, first check for url's containing a project, then for only a page
+                    }
+                    <Route path="/portfolio/:page/:project" children={<PortfolioSubPage />} />
                     <Route path="/portfolio/:page" children={<PortfolioSubPage />} />
 
                     <Route exact path="/whoami">
@@ -51,7 +55,7 @@ export default function Main() {
                 </Switch>
             </div>
             <footer>
-                <small> (C) 2022 - Nico Vermaas - version 1.0.0 - 20 nov 2022 - 10:00</small>
+                <small> (C) 2022 - Nico Vermaas - version 1.0.0 - 20 nov 2022 - 12:00</small>
             </footer>
         </Router>
 
@@ -60,6 +64,7 @@ export default function Main() {
 
 function PortfolioSubPage() {
     const [ my_state , my_dispatch] = useGlobalReducer()
-    let { page } = useParams();
-    return <PortfolioPage page={page} />
+    let { page, project } = useParams();
+
+    return <PortfolioPage page={page} project_route={project} />
 }
