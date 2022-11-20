@@ -28,7 +28,7 @@ export const projects = [
         "details" : [
             { "image" : "/assets/atdb_gui_main.png",
                 "description" : "The main GUI shows the observation tasks with just enough metadata needed for operation. " +
-                    "The tasks are created with a python script (not visible) and added through the ATDB REST API." },
+                    "The tasks are created with a python script and uploaded to ATDB through its ReST API." },
             { "image" : "/assets/atdb_contextdiagram.png",
                 "description" : "The CONTEXT diagram shows the environment that ATDB operates in. " +
                     "The central yellow circle is the ATDB backend, surrounded by a cloud of micro-services, " +
@@ -238,8 +238,8 @@ export const projects = [
         "route" : "hips",
         "short_description" : "HiPS website for ASTRON surveys in Virtual Observatory (VO)",
         "description" : "HiPS website for ASTRON surveys in Virtual Observatory (VO). " +
-            "This is a simple frontend application that displays server side instances of DACHS in an iframe." +
-            "VO personal can add surveys by editing a configuration file without the need to update this software.",
+            "This is a simple frontend application that displays local DACHS websites in an iframe. " +
+            "VO engineers can add surveys by editing a configuration file without the need to update this software.",
         "type": "frontend_reactjs",
         "thumbnail": "/assets/hips_dr2.png",
         "details_card": ProjectDetailsCard,
@@ -248,10 +248,10 @@ export const projects = [
             { "title" : "My role", "text" : "main developer" },
         ],
         "details" : [
-            { "image" : "/assets/hips_dr2.png",
-                "description" : "Main welcome." },
             { "image" : "/assets/hips.png",
-                "description" : "One of the survey pages." },
+                "description" : "" },
+            { "image" : "/assets/hips_dr2.png",
+                "description" : "LoTSS DR2 High survey page " },
         ]
     },
 
@@ -531,6 +531,44 @@ export const projects = [
                 "description" : "details screen" },
             { "image" : "/assets/my_hiking_gallery.png",
                 "description" : "image gallery" }
+        ],
+    },
+
+    {"name": "Curiculum Vitae (2022)",
+        "route" : "cv",
+        "short_description" : "The ReactJS SPA that you are currently navigating.",
+        "description" : "The ReactJS SPA that you are currently navigating. Frontend in ReactJS. All content is defined in a single JSON structure, which makes the application easily customizable and re-usable as boilerplate for similar portfolio applications.",
+        "type": "private,frontend_reactjs",
+        "thumbnail": "/assets/cv.png",
+        "details_card": ProjectDetailsCard,
+        "bullets" : [
+            { "title" : "Technology", "text" : "ReactJS, Bootstrap" },
+            { "title" : "My role", "text" : "lead, architect, main developer." },
+        ],
+        "details" : [
+            { "image" : "/assets/cv.png",
+                "description" : "main screen" },
+            { "image" : "/assets/cv_portfolio.png",
+                "description" : "Portfolio" }
+        ]
+    },
+
+    {"name": "OneTreeWood (2017,2021)",
+        "route" : "onetreewood",
+        "short_description" : "Frontend in ReactJS for my private website. It shows the content from the Django 'homebase' backend application.",
+        "description" : "Frontend in ReactJS for my private website. It shows the content from the Django 'homebase' backend application.",
+        "type": "private,frontend_reactjs",
+        "thumbnail": "/assets/onetreewood.png",
+        "details_card": ProjectDetailsCard,
+        "bullets" : [
+            { "title" : "Technology", "text" : "ReactJS, Bootstrap" },
+            { "title" : "My role", "text" : "lead, architect, main developer." },
+        ],
+        "details" : [
+            { "image" : "/assets/onetreewood.png",
+                "description" : "main screen" },
+            { "image" : "/assets/onetreewood_travel.png",
+                "description" : "details of the hiking page" }
         ]
     },
 ]
