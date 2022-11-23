@@ -18,6 +18,7 @@ export default function NavigationBar() {
                 <Nav.Link as={NavLink} to="/skills">Skills</Nav.Link>
                 <Nav.Link as={NavLink} to="/history">History</Nav.Link>
                 <Nav.Link as={NavLink} to="/portfolio/all">Software Portfolio</Nav.Link>
+                <Nav.Link as={NavLink} to="/architecture/all">Architecture</Nav.Link>
                 <Nav.Link as={NavLink} to="/whoami">Who Am I</Nav.Link>
             </Nav>
         </Navbar>

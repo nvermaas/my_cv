@@ -13,6 +13,7 @@ import NavigationBar from "./NavigationBar";
 export default function PortfolioPage(props) {
     const [ my_state , my_dispatch] = useGlobalReducer()
 
+
     // check for a selected project in the stored state.
     let selected_project
 
@@ -26,7 +27,7 @@ export default function PortfolioPage(props) {
 
     let renderProjects
     if (selected_project===undefined) {
-        renderProjects = <Projects type={props.page} base_route={"/portfolio/" + my_state.portfolio_page}/>
+        renderProjects = <Projects type={props.page} base_route={"/architecture"}/>
     } else {
         // find the specific details_card to render in the project structure
         let found = projects.filter(function(item) { return item.name === selected_project.name; });
@@ -36,7 +37,6 @@ export default function PortfolioPage(props) {
 
     return (
         <div className="App">
-            <NavigationBar/>
             <Container fluid>
                 <Row>
                     <Col sm={12} md={12} lg={12}>

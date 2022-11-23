@@ -18,7 +18,7 @@ export default function Projects(props) {
                                 let image_url = base_url + project.thumbnail
                                 return (
                                     <Col lg={true}>
-                                        <ProjectCard project={project} image={image_url} />
+                                        <ProjectCard project={project} image={image_url} base_route={props.base_route}/>
                                     </Col>
                                 );
                             }
