@@ -72,6 +72,7 @@ export const projects = [
         ],
         "links" : [
             { "title" : "See also", "text" : "ATDB (2018)", "url" : "/cv/portfolio/all/atdb" },
+            { "title" : "See also", "text" : "ldv-specification", "url" : "/cv/portfolio/all/ldvspec" },
         ],
         "details" : [
             { "image" : "/assets/atdb_ldv_gui_main.png",
@@ -104,7 +105,8 @@ export const projects = [
             { "image" : "/assets/atdb_ldv_configuration.png",
                 "description" : "Many of the configuration parameters of the LDV framework are stored centrally in the ATDB database. " +
                     "The are accessable by the services through the REST API, and editable by admins in this configuration screen." },
-
+            { "image" : "/assets/ldvspec-deployment.png",
+                "description" : "Deployment diagram" },
         ]
     },
 
@@ -209,68 +211,6 @@ export const projects = [
         ]
     },
 
-    {"name": "ALTA-GUI (2017 - 2018)",
-        "route" : "alta-gui",
-        "short_description" : "Frontend for the Apertif Long Term Archive (ALTA)",
-        "description" : "Frontend for the Apertif Long Term Archive (ALTA)",
-        "type": "frontend_reactjs",
-        "thumbnail": "/assets/alta_gui.png",
-        "details_card": ProjectDetailsCard,
-        "bullets" : [
-            { "title" : "Technology", "text" : "ReactJS, Bootstrap" },
-            { "title" : "Developed", "text" : "Developed in 2017/2018." },
-            { "title" : "My role", "text" : "main frontend developer." },
-        ],
-        "links" : [
-            { "title" : "See also", "text" : "ALTA-API", "url" : "/cv/portfolio/all/alta-api" },
-            { "title" : "See also", "text" : "ATDB", "url" : "/cv/portfolio/all/atdb" },
-        ],
-        "details" : [
-            {
-                "image" : "/assets/alta_gui.png",
-                "description" : "Main screen with the overview of the available archives as configured in the underlying sqlite database." },
-            {
-                "image" : "/assets/alta_details.png",
-                "description" : "Observation details" },
-            {
-                "image" : "/assets/alta_gui_list.png",
-                "description" : "List view" },
-            {
-                "image" : "/assets/alta_inspectionplots.png",
-                "description" : "Inspectionplots" },
-            {
-                "image" : "/assets/alta_ingest_monitor.png",
-                "description" : "Ingest Monitor" },
-            {
-                "image" : "/assets/alta_advanced_query.png",
-                "description" : "Advanced query page to search deeper in the ALTA archive. This is a separate ReactJS application that operates on the ALTA frontend." },
-        ]
-    },
-
-    {"name": "ALTA-API (2017 - 2018)",
-        "route" : "alta-api",
-        "short_description" : "Backend/API for the Apertif Long Term Archive.",
-        "description" : "Backend/API for the Apertif Long Term Archive. Not only a backend for the ALTA-GUI frontend, " +
-            "but also for the iRODS based data services.",
-        "type": "backend_django",
-        "thumbnail": "/assets/alta_api.png",
-        "details_card": ProjectDetailsCard,
-        "bullets" : [
-            { "title" : "Technology", "text" : "Django, DRF, Postgres" },
-            { "title" : "Developed", "text" : "Developed in 2017/2018." },
-            { "title" : "My role", "text" : "main backend developer." },
-        ],
-        "links" : [
-            { "title" : "See also", "text" : "ALTA-GUI", "url" : "/cv/portfolio/all/alta-gui" },
-        ],
-        "details" : [
-            { "image" : "/assets/alta_api.png",
-                "description" : "ALTA backend REST API endpoints" },
-            { "image" : "/assets/alta_datamodel.png",
-                "description" : "ALTA datamodel" },
-        ]
-    },
-
     {"name": "Aladin-Testbed (2022)",
         "route" : "aladin-testbed",
         "short_description" : "Frontend web application to test out various API's and visualisations with Aladin Light.",
@@ -342,25 +282,91 @@ export const projects = [
         ]
     },
 
-    {"name": "Curriculum Vitae (2022)",
-        "route" : "cv",
-        "short_description" : "The ReactJS Single Page Application (SPA) that you are currently navigating.",
-        "description" : "The ReactJS Single Page Application (SPA) that you are currently navigating.. Frontend in ReactJS. All content is defined in a single JSON structure, which makes the application easily customizable and re-usable as boilerplate for similar portfolio applications.",
-        "type": "private,frontend_reactjs",
-        "thumbnail": "/assets/cv.png",
+    {"name": "LDV-specification (2022)",
+        "route" : "ldvspec",
+        "short_description" : "Django application for specifying tasks for ATDB-LDV.",
+        "description" : "Django application for specifying tasks for ATDB-LDV. " +
+            "This only shows the initial application with API endpoints, " +
+            "other team members added extra functionality and a GUI for the users later.",
+        "type": "backend_django",
+        "technology" : "Django, Postgres, Bootstrap",
+        "thumbnail": "/assets/ldvspec.png",
+        "details_card": ProjectDetailsCard,
+        "bullets" : [
+            { "title" : "Technology", "text" : "Django, Postgres, Bootstrap" },
+            { "title" : "My role", "text" : "coordinator, lead developer." },
+        ],
+        "links" : [
+            { "title" : "See also", "text" : "ATDB-LDV", "url" : "/cv/portfolio/all/atdb-ldv" },
+        ],
+        "details" : [
+            { "image" : "/assets/ldvspec.png",
+                "description" : "API screen" },
+            { "image" : "/assets/ldvspec-deployment.png",
+                "description" : "Deployment diagram for ATDB-LDV and LDV-specification" },
+        ],
+    },
+
+
+    {"name": "ALTA-GUI (2017 - 2018)",
+        "route" : "alta-gui",
+        "short_description" : "Frontend for the Apertif Long Term Archive (ALTA)",
+        "description" : "Frontend for the Apertif Long Term Archive (ALTA)",
+        "type": "frontend_reactjs",
+        "thumbnail": "/assets/alta_gui.png",
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Technology", "text" : "ReactJS, Bootstrap" },
-            { "title" : "My role", "text" : "single developer." },
+            { "title" : "Developed", "text" : "Developed in 2017/2018." },
+            { "title" : "My role", "text" : "main frontend developer." },
         ],
         "links" : [
-            { "title" : "Repository on github", "text" : "https://github.com/nvermaas/my_cv", "url" : "https://github.com/nvermaas/my_cv" },
+            { "title" : "See also", "text" : "ALTA-API", "url" : "/cv/portfolio/all/alta-api" },
+            { "title" : "See also", "text" : "ATDB", "url" : "/cv/portfolio/all/atdb" },
         ],
         "details" : [
-            { "image" : "/assets/cv.png",
-                "description" : "main screen" },
-            { "image" : "/assets/cv_portfolio.png",
-                "description" : "Portfolio" }
+            {
+                "image" : "/assets/alta_gui.png",
+                "description" : "Main screen with the overview of the available archives as configured in the underlying sqlite database." },
+            {
+                "image" : "/assets/alta_details.png",
+                "description" : "Observation details" },
+            {
+                "image" : "/assets/alta_gui_list.png",
+                "description" : "List view" },
+            {
+                "image" : "/assets/alta_inspectionplots.png",
+                "description" : "Inspectionplots" },
+            {
+                "image" : "/assets/alta_ingest_monitor.png",
+                "description" : "Ingest Monitor" },
+            {
+                "image" : "/assets/alta_advanced_query.png",
+                "description" : "Advanced query page to search deeper in the ALTA archive. This is a separate ReactJS application that operates on the ALTA frontend." },
+        ]
+    },
+
+    {"name": "ALTA-API (2017 - 2018)",
+        "route" : "alta-api",
+        "short_description" : "Backend/API for the Apertif Long Term Archive.",
+        "description" : "Backend/API for the Apertif Long Term Archive. Not only a backend for the ALTA-GUI frontend, " +
+            "but also for the iRODS based data services.",
+        "type": "backend_django",
+        "thumbnail": "/assets/alta_api.png",
+        "details_card": ProjectDetailsCard,
+        "bullets" : [
+            { "title" : "Technology", "text" : "Django, DRF, Postgres" },
+            { "title" : "Developed", "text" : "Developed in 2017/2018." },
+            { "title" : "My role", "text" : "main backend developer." },
+        ],
+        "links" : [
+            { "title" : "See also", "text" : "ALTA-GUI", "url" : "/cv/portfolio/all/alta-gui" },
+        ],
+        "details" : [
+            { "image" : "/assets/alta_api.png",
+                "description" : "ALTA backend REST API endpoints" },
+            { "image" : "/assets/alta_datamodel.png",
+                "description" : "ALTA datamodel" },
         ]
     },
 
@@ -723,5 +729,25 @@ export const projects = [
         ]
     },
 
-
+    {"name": "Curriculum Vitae (2022)",
+        "route" : "cv",
+        "short_description" : "The ReactJS Single Page Application (SPA) that you are currently navigating.",
+        "description" : "The ReactJS Single Page Application (SPA) that you are currently navigating.. Frontend in ReactJS. All content is defined in a single JSON structure, which makes the application easily customizable and re-usable as boilerplate for similar portfolio applications.",
+        "type": "private,frontend_reactjs",
+        "thumbnail": "/assets/cv.png",
+        "details_card": ProjectDetailsCard,
+        "bullets" : [
+            { "title" : "Technology", "text" : "ReactJS, Bootstrap" },
+            { "title" : "My role", "text" : "single developer." },
+        ],
+        "links" : [
+            { "title" : "Repository on github", "text" : "https://github.com/nvermaas/my_cv", "url" : "https://github.com/nvermaas/my_cv" },
+        ],
+        "details" : [
+            { "image" : "/assets/cv.png",
+                "description" : "main screen" },
+            { "image" : "/assets/cv_portfolio.png",
+                "description" : "Portfolio" }
+        ]
+    },
 ]
