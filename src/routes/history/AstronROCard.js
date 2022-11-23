@@ -55,7 +55,7 @@ export default function AstronSDCCard() {
 
                                     <li><a href={"/cv/portfolio/java/craft"}>CRAFT</a> (backend/frontend developer)</li>
                                     <li>Software Support role for the broader suite of LOFAR software.</li>
-                                    <li>DevOps role for deploying/maintaining the MoM ecosystem</li>
+                                    <li>DevOps role for deploying/maintaining the <a href={"/cv/portfolio/java/mom-ecosystem"}>MoM ecosystem</a></li>
                                 </td>
                             </tr>
                         </Table>

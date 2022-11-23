@@ -109,10 +109,10 @@ export const projects = [
         ]
     },
 
-    {"name": "ESAP-GUI (2020)",
+    {"name": "ESAP-GUI / ADEX-GUI (2020)",
         "route" : "esap-gui",
-        "short_description" : "ESAP-GUI Frontend for the European Escape Project",
-        "description" : "ESAP-GUI Frontend or the European Escape Project",
+        "short_description" : "ESAP-GUI for the European Escape Project, also deployed as ADEX for the ASTRON Portal",
+        "description" : "ESAP-GUI for the European Escape Project, also deployed as ADEX for the ASTRON Portal",
         "type": "frontend_reactjs",
         "thumbnail": "/assets/esap_gui.png",
         "details_card": ProjectDetailsCard,
@@ -357,9 +357,6 @@ export const projects = [
             { "title" : "See also", "text" : "MoM (LOFAR)", "url" : "/cv/portfolio/all/mom-lofar" },
         ],
         "details" : [
-            { "image" : "/assets/mom3_ecosystem_detailed.png",
-                "description" : "The broader MoM3 ecosystem. This diagram shows the different instances of the MoM3 " +
-                    "software deployed for various purposes. It also shows dependencies, interfaces and configuration." },
             { "image" : "/assets/mom3_contextdiagram.png",
                 "description" : "Context Diagram" },
             { "image" : "/assets/mom3_dfd0.png",
@@ -381,8 +378,7 @@ export const projects = [
 
     {"name": "MoM Ecosystem (2016)",
         "route" : "mom-ecosystem",
-        "short_description" : "The broader MoM3 ecosystem. This diagram shows the different instances of the MoM " +
-            "software deployed for various purposes. It also shows dependencies, interfaces and configuration.",
+        "short_description" : "The broader MoM3 ecosystem.",
         "description" : "The broader MoM3 ecosystem. This diagram shows the different instances of the MoM " +
             "software deployed for various purposes. It also shows dependencies, interfaces and configuration.",
         "type": "architecture",
