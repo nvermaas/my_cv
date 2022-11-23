@@ -13,7 +13,7 @@ export default function Projects(props) {
                         projects.map((project) => {
                             let list = project.type.split(',')
 
-                            if ((list.includes(props.type)) || (props.type === 'all')) {
+                            if (list.includes(props.type) || ((props.type === 'all') && (list[0] !== 'architecture')) )  {
 
                                 let image_url = base_url + project.thumbnail
                                 return (

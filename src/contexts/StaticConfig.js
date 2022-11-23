@@ -27,7 +27,7 @@ export const projects = [
         "bullets" : [
             { "title" : "Technology", "text" : "Django, DRF, Python, Postgres" },
             { "title" : "Developed", "text" : "Developed in 2018. Operational from 2018 until 2021." },
-            { "title" : "My role", "text" : "Architect, main developer." },
+            { "title" : "My role", "text" : "architect, main developer." },
         ],
         "links" : [
             { "title" : "See also", "text" : "ATDB-LDV", "url" : "/cv/portfolio/all/atdb-ldv" },
@@ -68,11 +68,10 @@ export const projects = [
         "bullets" : [
             { "title" : "Technology", "text" : "Django, DRF, Python, Postgres" },
             { "title" : "Developed", "text" : "Developed in 2021. Operational from 2021." },
-            { "title" : "My role", "text" : "Architect, main developer." },
+            { "title" : "My role", "text" : "main developer." },
         ],
         "links" : [
             { "title" : "See also", "text" : "ATDB (2018)", "url" : "/cv/portfolio/all/atdb" },
-            { "title" : "Live view", "text" : "ATDB at ASTRON", "url" : "https://sdc.astron.nl:5554/atdb/" },
         ],
         "details" : [
             { "image" : "/assets/atdb_ldv_gui_main.png",
@@ -169,7 +168,7 @@ export const projects = [
         "bullets" : [
             { "title" : "Technology", "text" : "Django, DRF, Postgres" },
             { "title" : "Developed", "text" : "Under development in 2022." },
-            { "title" : "My role", "text" : "Architect, main developer." },
+            { "title" : "My role", "text" : "Architect, single developer." },
         ],
         "links" : [
             { "title" : "See also", "text" : "ESAP-API", "url" : "/cv/portfolio/all/esap-api" },
@@ -194,7 +193,7 @@ export const projects = [
         "bullets" : [
             { "title" : "Technology", "text" : "FastAPI, DRF, Postgres" },
             { "title" : "Developed", "text" : "Developed in 2022 as a benchmarking experiment." },
-            { "title" : "My role", "text" : "Architect, main developer." },
+            { "title" : "My role", "text" : "Architect, single developer." },
         ],
         "links" : [
             { "title" : "See also", "text" : "ADEX-backend-django", "url" : "/cv/portfolio/all/adex-backend-django" },
@@ -225,7 +224,6 @@ export const projects = [
         "links" : [
             { "title" : "See also", "text" : "ALTA-API", "url" : "/cv/portfolio/all/alta-api" },
             { "title" : "See also", "text" : "ATDB", "url" : "/cv/portfolio/all/atdb" },
-            { "title" : "Live view", "text" : "ALTA at ASTRON", "url" : "https://alta.astron.nl/" },
         ],
         "details" : [
             {
@@ -282,7 +280,7 @@ export const projects = [
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Technology", "text" : "ReactJS, Bootstrap, Aladin Light" },
-            { "title" : "My role", "text" : "lead, main developer" },
+            { "title" : "My role", "text" : "single developer" },
         ],
         "links" : [
             { "title" : "See also", "text" : "Exoplanets", "url" : "/cv/portfolio/all/exoplanets" },
@@ -309,7 +307,7 @@ export const projects = [
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Technology", "text" : "ReactJS, Bootstrap, Aladin Light" },
-            { "title" : "My role", "text" : "lead, main developer" },
+            { "title" : "My role", "text" : "single developer" },
         ],
         "links" : [
             { "title" : "See also", "text" : "Aladin-testbed", "url" : "/cv/portfolio/all/aladin-testbed" },
@@ -386,6 +384,9 @@ export const projects = [
         "type": "architecture",
         "thumbnail": "/assets/mom3_ecosystem_detailed.png",
         "details_card": ProjectDetailsCard,
+        "bullets" : [
+            { "title" : "My role", "text" : "main developer" },
+        ],
         "links" : [
             { "title" : "See also", "text" : "MoM (LOFAR)", "url" : "/cv/portfolio/all/mom-lofar" },
         ],
@@ -495,7 +496,7 @@ export const projects = [
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Technology", "text" : "Java, Struts, Hibernate, MySQL" },
-            { "title" : "My role", "text" : "main developer" },
+            { "title" : "My role", "text" : "single developer" },
         ],
         "details" : [
             { "image" : "/assets/screenshot_craftmodule_cabinet_assembly.gif",
@@ -548,7 +549,7 @@ export const projects = [
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Technology", "text" : "ReactJS, Bootstrap, Aladin Light" },
-            { "title" : "My role", "text" : "lead, architect, main developer" },
+            { "title" : "My role", "text" : "single developer" },
         ],
         "links" : [
             { "title" : "See also", "text" : "Astrobase", "url" : "/cv/portfolio/all/astrobase" },
@@ -578,7 +579,7 @@ export const projects = [
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Technology", "text" : "Django, DRF, Sqlite, Python, Celery, RabbitMQ" },
-            { "title" : "My role", "text" : "lead, architect, main developer." },
+            { "title" : "My role", "text" : "single developer." },
         ],
         "links" : [
             { "title" : "See also", "text" : "AstroView", "url" : "/cv/portfolio/all/astroview" },
@@ -599,7 +600,7 @@ export const projects = [
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Technology", "text" : "ReactJS, Bootstrap" },
-            { "title" : "My role", "text" : "lead, architect, main developer." },
+            { "title" : "My role", "text" : "single developer." },
         ],
         "links" : [
             { "title" : "See also", "text" : "Energy Server", "url" : "/cv/portfolio/all/energyserver" },
@@ -619,7 +620,7 @@ export const projects = [
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Technology", "text" : "Django, DRF, Sqlite, RabbitMQ, Raspberry Pi, Domoticz, smart meter" },
-            { "title" : "My role", "text" : "lead, architect, main developer." },
+            { "title" : "My role", "text" : "single developer." },
         ],
         "links" : [
             { "title" : "See also", "text" : "EnergyView", "url" : "/cv/portfolio/all/energyview" },
@@ -640,7 +641,7 @@ export const projects = [
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Technology", "text" : "Django, Sqlite, Bootstrap" },
-            { "title" : "My role", "text" : "lead, architect, main developer." },
+            { "title" : "My role", "text" : "single developer." },
         ],
         "details" : [
             { "image" : "/assets/my_hiking.png",
@@ -661,7 +662,7 @@ export const projects = [
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Technology", "text" : "ReactJS, Bootstrap" },
-            { "title" : "My role", "text" : "lead, architect, main developer." },
+            { "title" : "My role", "text" : "single developer." },
         ],
         "details" : [
             { "image" : "/assets/onetreewood.png",
@@ -680,7 +681,10 @@ export const projects = [
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Technology", "text" : "ReactJS, Bootstrap" },
-            { "title" : "My role", "text" : "lead, architect, main developer." },
+            { "title" : "My role", "text" : "single developer." },
+        ],
+        "links" : [
+            { "title" : "Repository on github", "text" : "https://github.com/nvermaas/my_cv", "url" : "https://github.com/nvermaas/my_cv" },
         ],
         "details" : [
             { "image" : "/assets/cv.png",

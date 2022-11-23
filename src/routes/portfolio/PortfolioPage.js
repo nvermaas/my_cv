@@ -3,9 +3,6 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 import { projects } from '../../contexts/StaticConfig';
 import { useGlobalReducer, findProject } from '../../contexts/GlobalContext';
-import {
-    SET_PORTFOLIO_PAGE
-} from '../../contexts/GlobalStateReducer';
 
 import Projects from './Projects'
 import NavigationBar from "./NavigationBar";
