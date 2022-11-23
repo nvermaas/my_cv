@@ -156,6 +156,58 @@ export const projects = [
         ]
     },
 
+
+    {"name": "ADEX-backend-django (2022)",
+        "route" : "adex-backend-django",
+        "short_description" : "ADEX Backend for the ASTRON Data Explorer with Django.",
+        "description" : "ADEX Backend for the ASTRON Data Explorer, replacing the temporary ESAP-API backend solution.",
+        "type": "backend_django",
+        "thumbnail": "/assets/adex_backend_django.png",
+        "details_card": ProjectDetailsCard,
+        "bullets" : [
+            { "title" : "Technology", "text" : "Django, DRF, Postgres" },
+            { "title" : "Developed", "text" : "Under development in 2022." },
+            { "title" : "My role", "text" : "Architect, main developer." },
+        ],
+        "links" : [
+            { "title" : "See also", "text" : "ESAP-API", "url" : "/cv/portfolio/all/esap-api" },
+        ],
+        "details" : [
+            { "image" : "/assets/adex_backend_django.png",
+                "description" : "Main screen of the Query app, with REST API endpoints" },
+            { "image" : "/assets/adex_architecture.png",
+                "description" : "Architecture and Technology choices" },
+            { "image" : "/assets/adex_backend_django_deploymentdiagram.png",
+                "description" : "Deployment Diagram" },
+        ]
+    },
+
+    {"name": "ADEX-backend-fastapi (2022)",
+        "route" : "adex-backend-fastapi",
+        "short_description" : "ADEX Backend for the ASTRON Data Explorer with FastAPI.",
+        "description" : "DEX Backend for the ASTRON Data Explorer with FastAPI, investigating a solution for replacing the temporary ESAP-API backend solution.",
+        "type": "backend_django",
+        "thumbnail": "/assets/adex_backend_fastapi.png",
+        "details_card": ProjectDetailsCard,
+        "bullets" : [
+            { "title" : "Technology", "text" : "FastAPI, DRF, Postgres" },
+            { "title" : "Developed", "text" : "Developed in 2022 as a benchmarking experiment." },
+            { "title" : "My role", "text" : "Architect, main developer." },
+        ],
+        "links" : [
+            { "title" : "See also", "text" : "ADEX-backend-django", "url" : "/cv/portfolio/all/adex-backend-django" },
+            { "title" : "See also", "text" : "aladin-testbed", "url" : "/cv/portfolio/all/aladin-testbed" },
+        ],
+        "details" : [
+            { "image" : "/assets/adex_backend_fastapi.png",
+                "description" : "Main screen of the Query app, with REST API endpoints" },
+            { "image" : "/assets/aladin_testbed.png",
+                "description" : "The results visualized with Aladin LIght in a ReactJS frontend." },
+            { "image" : "/assets/adex_backend_fastapi_deployment.png",
+                "description" : "Deployment Diagram" },
+        ]
+    },
+
     {"name": "ALTA-GUI (2017 - 2018)",
         "route" : "alta-gui",
         "short_description" : "Frontend for the Apertif Long Term Archive (ALTA)",
@@ -305,6 +357,9 @@ export const projects = [
             { "title" : "See also", "text" : "MoM (LOFAR)", "url" : "/cv/portfolio/all/mom-lofar" },
         ],
         "details" : [
+            { "image" : "/assets/mom3_ecosystem_detailed.png",
+                "description" : "The broader MoM3 ecosystem. This diagram shows the different instances of the MoM3 " +
+                    "software deployed for various purposes. It also shows dependencies, interfaces and configuration." },
             { "image" : "/assets/mom3_contextdiagram.png",
                 "description" : "Context Diagram" },
             { "image" : "/assets/mom3_dfd0.png",
@@ -321,6 +376,25 @@ export const projects = [
                 "description" : "Overview of all the possible user interactions with MoM3 through the GUI." },
             { "image" : "/assets/mom3_status_transitions.png",
                 "description" : "Overview of all the possible status transitions of observations and pipelines in MoM" },
+        ]
+    },
+
+    {"name": "MoM Ecosystem (2016)",
+        "route" : "mom-ecosystem",
+        "short_description" : "The broader MoM3 ecosystem. This diagram shows the different instances of the MoM " +
+            "software deployed for various purposes. It also shows dependencies, interfaces and configuration.",
+        "description" : "The broader MoM3 ecosystem. This diagram shows the different instances of the MoM " +
+            "software deployed for various purposes. It also shows dependencies, interfaces and configuration.",
+        "type": "architecture",
+        "thumbnail": "/assets/mom3_ecosystem_detailed.png",
+        "details_card": ProjectDetailsCard,
+        "links" : [
+            { "title" : "See also", "text" : "MoM (LOFAR)", "url" : "/cv/portfolio/all/mom-lofar" },
+        ],
+        "details" : [
+            { "image" : "/assets/mom3_ecosystem_detailed.png",
+                "description" : "The broader MoM3 ecosystem. This diagram shows the different instances of the MoM " +
+                    "software deployed for various purposes. It also shows dependencies, interfaces and configuration." },
         ]
     },
 
@@ -373,7 +447,7 @@ export const projects = [
     },
 
 
-    {"name": "Architecture",
+    {"name": "System Modelling",
         "route" : "architecture",
         "short_description" : "Examples of Architecture and modelling",
         "description" : "This shows a range of types of diagrams that I use to model a 'system', or a series of software components.",
@@ -414,7 +488,7 @@ export const projects = [
         ]
     },
 
-    {"name": "CRAFT (2010)",
+    {"name": "CRAFT (2012)",
         "route" : "craft",
         "short_description" : "A set of standalone modules to aid in assembling LOFAR components",
         "description" : "A set of standalone modules to aid in assembling LOFAR components. ",
@@ -580,7 +654,7 @@ export const projects = [
         ],
     },
 
-    {"name": "OneTreeWood (2017,2021)",
+    {"name": "OneTreeWood (2020)",
         "route" : "onetreewood",
         "short_description" : "Frontend in ReactJS for my private website. It shows the content from the Django 'homebase' backend application.",
         "description" : "Frontend in ReactJS for my private website. It shows the content from the Django 'homebase' backend application.",
