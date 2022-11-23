@@ -38,6 +38,25 @@ export default function PortfolioPage(props) {
     return (
         <div className="App">
             <Container fluid>
+                <Card className='text-left'>
+                    <Card.Body>
+                        <Card.Text>
+                            My formal education in 'system engineering' influences my software engineering a lot.
+                            I have a training in several methodologies, but mostly cherry pick some specific techniques from SA/SD.
+                            'System engineering' has a broad scope, but in my role as software engineer I usually limit myself to modelling
+                            architecture, technical design, datamodels, implementation and deployment.
+                            To limit the number of models, I try to combine these different views on the system if possible.
+                        </Card.Text>
+                        <Card.Text>
+                            My style is pragmatic and very visual, in principe every aspect of a system can be modelled, especially before implementation.
+                            The goal is to provide a living map of the system. Which acts as a guide and documentation during and after development.
+                            This page shows several examples of how that works out in real life.
+
+
+                        </Card.Text>
+
+                    </Card.Body>
+                </Card>
                 <Row>
                     <Col sm={12} md={12} lg={12}>
                         {renderProjects}

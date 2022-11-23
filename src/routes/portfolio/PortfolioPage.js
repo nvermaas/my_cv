@@ -38,6 +38,19 @@ export default function PortfolioPage(props) {
         <div className="App">
             <NavigationBar/>
             <Container fluid>
+                <Card className='text-left'>
+                    <Card.Body>
+                        <Card.Text>
+                            All software in this portolio was made by me, and in almost all the cases I was the only developer.
+                            With the exception of the MoM Java software, where I initially followed an externally hired developer.
+                            The ESAP & ADEX software has evolved into a team efford, but for clarity I show it how I initially created it.
+                            I wrote more software than these pages show, I have limited it to the web applications.
+
+                    </Card.Text>
+
+
+                    </Card.Body>
+                </Card>
                 <Row>
                     <Col sm={12} md={12} lg={12}>
                         {renderProjects}

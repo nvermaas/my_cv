@@ -26,7 +26,7 @@ export default function SkillsCard() {
                                     <li>Containerization: Docker and docker-compose</li>
                                     <li>System Engineering: SA/SD, Structured Analyses/Design, Technical Design</li>
                                     <li>Documentation/Modelling: DFD, UML</li>
-                                    <li>Async messagebus: RabbitMQ, Celery</li>
+                                    <li>RabbitMQ, Celery</li>
                                     <li>Agile, scrum, SAFe framework</li>
                                 </td>
                             </tr>
