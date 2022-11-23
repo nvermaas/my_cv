@@ -21,7 +21,7 @@ export default function AstronSDCCard() {
                                     <img src={sdc} width="300" alt="logo cv"/>
                                 </td>
                                 <td align="left">
-                                    In 2019 I joined the 'SDC team' to start development of the ESAP Science Portal for the European Escape project.
+                                    In 2019 I joined the 'SDC team' at ASTRON to start development of the ESAP Science Portal for the European Escape project.
                                     I set up the development infrastructure (Gitlab), made the technology choices (Django and ReactJS)
                                     and implemented the first iteration of the ESAP portal and the ADEX spinoff for ASTRON.
                                     <tr>&nbsp;</tr>
@@ -30,8 +30,8 @@ export default function AstronSDCCard() {
 
                                     <tr>&nbsp;</tr>
                                     <li>ESAP <a href={"/cv/portfolio/all/esap-api"}>backend</a> & <a href={"/cv/portfolio/all/esap-gui"}>frontend</a></li>
-                                    <li>ADEX <a href={"/cv/portfolio/all/adex-api"}>backend</a> & <a href={"/cv/portfolio/all/adex-gui"}>frontend</a> (lead engineer)</li>
-                                    <li><a href={"/cv/portfolio/architecture"}>Architecture</a>, analyses and design</li>
+                                    <li>ADEX <a href={"/cv/portfolio/all/adex-backend-django"}>backend</a> & <a href={"/cv/portfolio/all/adex-gui"}>frontend</a> (lead engineer)</li>
+                                    <li><a href={"/cv/architecture/all"}>Architecture</a>, analyses and design</li>
                                     <li>Infrastructure & DevOps (CI/CD pipelines in Gitlab and Github)</li>
                                     <li>Introducing documentation vision & strategy</li>
                                 </td>

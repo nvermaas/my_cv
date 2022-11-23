@@ -153,6 +153,8 @@ export const projects = [
                 "description" : "Main screen of the Query app, with REST API endpoints" },
             { "image" : "/assets/esap_api_architecture.png",
                 "description" : "Overall architecture of ESAP" },
+            { "image" : "/assets/esap_datamodel.png",
+                "description" : "Datamodel" },
         ]
     },
 
