@@ -342,6 +342,28 @@ export const projects = [
         ]
     },
 
+    {"name": "Curriculum Vitae (2022)",
+        "route" : "cv",
+        "short_description" : "The ReactJS Single Page Application (SPA) that you are currently navigating.",
+        "description" : "The ReactJS Single Page Application (SPA) that you are currently navigating.. Frontend in ReactJS. All content is defined in a single JSON structure, which makes the application easily customizable and re-usable as boilerplate for similar portfolio applications.",
+        "type": "private,frontend_reactjs",
+        "thumbnail": "/assets/cv.png",
+        "details_card": ProjectDetailsCard,
+        "bullets" : [
+            { "title" : "Technology", "text" : "ReactJS, Bootstrap" },
+            { "title" : "My role", "text" : "single developer." },
+        ],
+        "links" : [
+            { "title" : "Repository on github", "text" : "https://github.com/nvermaas/my_cv", "url" : "https://github.com/nvermaas/my_cv" },
+        ],
+        "details" : [
+            { "image" : "/assets/cv.png",
+                "description" : "main screen" },
+            { "image" : "/assets/cv_portfolio.png",
+                "description" : "Portfolio" }
+        ]
+    },
+
     {"name": "MoM Reverse Engineering (2016)",
         "route" : "mom-sd",
         "short_description" : "MoM3 System Design, reverse engineering its functionality as preparation for TMSS.",
@@ -445,6 +467,35 @@ export const projects = [
         ]
     },
 
+    {"name": "MoM3 Django API (2017)",
+        "route" : "mom3api",
+        "short_description" : "Wrapping the MoM3 MySQL database in a Django Rest API.",
+        "description" : "Wrapping the MoM3 MySQL database in a Django Rest API. " +
+            "This experiment was meant to provide a way to bootstrap the TMSS project with a REST API around the MoM database.",
+        "type": "backend_django",
+        "thumbnail": "/assets/alta_mom_api.jpg",
+        "details_card": ProjectDetailsCard,
+        "bullets" : [
+            { "title" : "Technology", "text" : "Django, DRF, MySQL" },
+            { "title" : "My role", "text" : "single developer." },
+        ],
+        "links" : [
+            { "title" : "See also", "text" : "MoM (LOFAR)", "url" : "/cv/portfolio/all/mom-lofar" },
+            { "title" : "Github Repository", "text" : "https://github.com/vermaas/mom3api", "url" : "https://github.com/vermaas/mom3api" },
+        ],
+        "details" : [
+            { "image" : "/assets/mom3_django_api1.png",
+                "description" : "" },
+            { "image" : "/assets/mom3_django_api2.png",
+                "description" : "" },
+            { "image" : "/assets/mom3_django_api3.png",
+                "description" : "" },
+            { "image" : "/assets/alta_mom_api.jpg",
+                "description" : "Visualisation of MoM database in ALTA Frontend (experimental)" },
+            { "image" : "/assets/lofar_red_blob.jpg",
+                "description" : "Visualisation of MoM database in Aladin Light " }
+        ],
+    },
 
     {"name": "System Modeling Examples",
         "route" : "architecture",
@@ -672,25 +723,5 @@ export const projects = [
         ]
     },
 
-    {"name": "Curriculum Vitae (2022)",
-        "route" : "cv",
-        "short_description" : "The ReactJS Single Page Application (SPA) that you are currently navigating.",
-        "description" : "The ReactJS Single Page Application (SPA) that you are currently navigating.. Frontend in ReactJS. All content is defined in a single JSON structure, which makes the application easily customizable and re-usable as boilerplate for similar portfolio applications.",
-        "type": "private,frontend_reactjs",
-        "thumbnail": "/assets/cv.png",
-        "details_card": ProjectDetailsCard,
-        "bullets" : [
-            { "title" : "Technology", "text" : "ReactJS, Bootstrap" },
-            { "title" : "My role", "text" : "single developer." },
-        ],
-        "links" : [
-            { "title" : "Repository on github", "text" : "https://github.com/nvermaas/my_cv", "url" : "https://github.com/nvermaas/my_cv" },
-        ],
-        "details" : [
-            { "image" : "/assets/cv.png",
-                "description" : "main screen" },
-            { "image" : "/assets/cv_portfolio.png",
-                "description" : "Portfolio" }
-        ]
-    },
+
 ]
