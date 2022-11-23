@@ -445,7 +445,7 @@ export const projects = [
     },
 
 
-    {"name": "System Modelling",
+    {"name": "System Modeling Examples",
         "route" : "architecture",
         "short_description" : "Examples of Architecture and modelling",
         "description" : "This shows a range of types of diagrams that I use to model a 'system', or a series of software components.",
