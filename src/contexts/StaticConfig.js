@@ -199,6 +199,7 @@ export const projects = [
         ],
         "links" : [
             { "title" : "See also", "text" : "ADEX-backend-django", "url" : "/cv/portfolio/all/adex-backend-django" },
+            { "title" : "See also", "text" : "adex-labs", "url" : "/cv/portfolio/all/adex-labs" },
             { "title" : "See also", "text" : "aladin-testbed", "url" : "/cv/portfolio/all/aladin-testbed" },
         ],
         "details" : [
@@ -208,6 +209,34 @@ export const projects = [
                 "description" : "The results visualized with Aladin LIght in a ReactJS frontend." },
             { "image" : "/assets/adex_backend_fastapi_deployment.png",
                 "description" : "Deployment Diagram" },
+        ]
+    },
+
+    {"name": "adex-labs (2022)",
+        "route" : "adex-labs",
+        "short_description" : "Frontend web application to test, validate and experiment with ADEX technology.",
+        "description" : "Frontend web application to test, validate and experiment with ADEX technology.",
+        "type": "frontend_reactjs",
+        "thumbnail": "/assets/adex_labs.png",
+        "details_card": ProjectDetailsCard,
+        "bullets" : [
+            { "title" : "Technology", "text" : "ReactJS, Bootstrap, Aladin Light" },
+            { "title" : "My role", "text" : "single developer" },
+        ],
+        "links" : [
+            { "title" : "See also", "text" : "ADEX-backend-django", "url" : "/cv/portfolio/all/adex-backend-django" },
+            { "title" : "Live view", "text" : "Aladin-testbed", "url" : "https://uilennest.net/aladin-testbed/" },
+        ],
+        "details" : [
+            { "image" : "/assets/adex_labs.png",
+                "description" : "Testing out different backends with multiple query options. " },
+            { "image" : "/assets/adex_labs_backends.png",
+                "description" : "There are 2 types of backends, django and fastapi, located in 5 different places. " +
+                    "Selecting a different backend, or changing any of the other filters, results in fetching and timing the data. " +
+                    "This way the combination of backend technology (fastapi or django) and machine configuration can be compared. " },
+            { "image" : "/assets/adex_labs_welcome.png",
+                "description" : "" },
+
         ]
     },
 
