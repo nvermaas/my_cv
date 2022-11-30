@@ -693,7 +693,16 @@ export const projects = [
         ],
         "details" : [
             { "image" : "/assets/my_energy_view.png",
-                "description" : "main screen" },
+                "description" : "Electricity usage for the current day. The yellow bars show the nett usage/delivery that is read from the smart meter. " +
+                    "The green line is what the external API for the solar panel reports. From that the red line is calculated, which shows the actual power usage."},
+            { "image" : "/assets/my_energy_view_solarpanels.png",
+                "description" : "The total output of the solar panels for the current year."},
+            { "image" : "/assets/my_energy_view_gas_week.png",
+                "description" : "Gas usage per week. This is read and stored by the 3rd Domoticz software on a Raspberry Pi. " +
+                    "My homemade 'EnergyServer' Django backend reads the Domoticz database and adds the data to its own database. " +
+                    "The EnergyView frontend contacts the EnergyServer through a REST API and displays the data." },
+            { "image" : "/assets/my_energy_view_weather.png",
+                "description" : "Rain and Temperature. Also read from the Domoticz database." },
         ]
     },
 
