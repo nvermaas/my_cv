@@ -135,8 +135,8 @@ export const projects = [
 
     {"name": "ESAP-API (2020)",
         "route" : "esap-api",
-        "short_description" : "ESAP-API Backend or the European Escape Project.",
-        "description" : "ESAP-API Backend or the European Escape Project.",
+        "short_description" : "ESAP-API Backend for the European Escape Project.",
+        "description" : "ESAP-API Backend for the European Escape Project.",
         "type": "backend_django",
         "technology" : "Django, DRF, Sqlite",
         "thumbnail": "/assets/esap_api.png",
@@ -786,6 +786,28 @@ export const projects = [
                 "description" : "main screen" },
             { "image" : "/assets/cv_portfolio.png",
                 "description" : "Portfolio" }
+        ]
+    },
+
+    {"name": "LOFAR Software Landscape (2018)",
+        "route" : "lofar-ecosystem",
+        "short_description" : "The LOFAR system overview.",
+        "description" : "This shows the software landscape of the Radio Obsevatory departement. " +
+            "The goal of this overview was to provide knowledge for 'software support'",
+        "type": "architecture",
+        "thumbnail": "/assets/lofar_system_overview.png",
+        "details_card": ProjectDetailsCard,
+        "bullets" : [
+            { "title" : "My role", "text" : "main developer" },
+        ],
+        "links" : [
+            { "title" : "See also", "text" : "MoM (LOFAR)", "url" : "/cv/portfolio/all/mom-lofar" },
+        ],
+        "details" : [
+            { "image" : "/assets/lofar_system_overview.png",
+                "description" : "This shows the software landscape of the Radio Obsevatory departement. " +
+                    "The goal of this overview was to provide knowledge for 'software support'. " +
+                    "The links in the diagram link to all the available documentation and live systems where possible." },
         ]
     },
 ]
