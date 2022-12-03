@@ -240,56 +240,6 @@ export const projects = [
         ]
     },
 
-    {"name": "Aladin-Testbed (2022)",
-        "route" : "aladin-testbed",
-        "short_description" : "Frontend web application to test out various API's and visualisations with Aladin Light.",
-        "description" : "Frontend web application to test out various API's and visualisations with Aladin Light.",
-        "type": "frontend_reactjs,private",
-        "thumbnail": "/assets/aladin_testbed.png",
-        "details_card": ProjectDetailsCard,
-        "bullets" : [
-            { "title" : "Technology", "text" : "ReactJS, Bootstrap, Aladin Light" },
-            { "title" : "My role", "text" : "single developer" },
-        ],
-        "links" : [
-            { "title" : "See also", "text" : "Exoplanets", "url" : "/cv/portfolio/all/exoplanets" },
-            { "title" : "Live view", "text" : "Aladin-testbed", "url" : "https://uilennest.net/aladin-testbed/" },
-        ],
-        "details" : [
-            { "image" : "/assets/aladin_testbed.png",
-                "description" : "Testing backend technology by selecting a backend/API server and visualizing the APERTIF dataset in Aladin Light." },
-            { "image" : "/assets/aladin_hips_catalog.png",
-                "description" : "Testing the aladin 'hips catalog' technology." +
-                    "A dataset is converted with the hipsgen software into a multi layered HiPS catalog." },
-            { "image" : "/assets/aladin_testbed_ucac4.png",
-                "description" : "Demonstrating a very large dataset (114M stars) served by FastAPI" },
-        ]
-    },
-
-    {"name": "Exoplanets (2021)",
-        "route" : "exoplanets",
-        "short_description" : "Technology demonstration to show how to use Aladin Light in a ReactJS frontend.",
-        "description" : "Technology demonstration to show how to use Aladin Light in a ReactJS frontend." +
-            "This project was created to assist a French/US development team, from the University of Amsterdam, that was refered to me by CDS.",
-        "type": "frontend_reactjs,private",
-        "thumbnail": "/assets/exoplanets.jpg",
-        "details_card": ProjectDetailsCard,
-        "bullets" : [
-            { "title" : "Technology", "text" : "ReactJS, Bootstrap, Aladin Light" },
-            { "title" : "My role", "text" : "single developer" },
-        ],
-        "links" : [
-            { "title" : "See also", "text" : "Aladin-testbed", "url" : "/cv/portfolio/all/aladin-testbed" },
-            { "title" : "Live view", "text" : "Exoplanets", "url" : "https://sdc-dev.astron.nl/exoplanets" },
-        ],
-        "details" : [
-            { "image" : "/assets/exoplanets.jpg",
-                "description" : "The goal is the visualisation in Aladin Light. " +
-                    "The data itself is served by my private 'Astrobase' project through a ReST API, " +
-                    "which already existed to plot stars with exoplanets in my 'AstroView' project." },
-        ]
-    },
-
     {"name": "HiPS (2020)",
         "route" : "hips",
         "short_description" : "HiPS website for ASTRON surveys in Virtual Observatory (VO)",
@@ -664,7 +614,7 @@ export const projects = [
         "thumbnail": "/assets/astrobase.png",
         "details_card": ProjectDetailsCard,
         "bullets" : [
-            { "title" : "Technology", "text" : "Django, DRF, Sqlite, Python, Celery, RabbitMQ" },
+            { "title" : "Technology", "text" : "Django, DRF, Sqlite, Python, Celery, RabbitMQ, Gitlab actions, Docker" },
             { "title" : "My role", "text" : "single developer." },
         ],
         "links" : [
@@ -676,6 +626,7 @@ export const projects = [
                 "description" : "main screen" },
         ]
     },
+
 
     {"name": "EnergyView (2017)",
         "route" : "energyview",
@@ -726,16 +677,97 @@ export const projects = [
         ]
     },
 
+
+    {"name": "Aladin-Testbed (2022)",
+        "route" : "aladin-testbed",
+        "short_description" : "Frontend web application to test out various API's and visualisations with Aladin Light.",
+        "description" : "Frontend web application to test out various API's and visualisations with Aladin Light.",
+        "type": "frontend_reactjs,private",
+        "thumbnail": "/assets/aladin_testbed.png",
+        "details_card": ProjectDetailsCard,
+        "bullets" : [
+            { "title" : "Technology", "text" : "ReactJS, Bootstrap, Aladin Light, Gitlab actions" },
+            { "title" : "My role", "text" : "single developer" },
+        ],
+        "links" : [
+            { "title" : "See also", "text" : "Exoplanets", "url" : "/cv/portfolio/all/exoplanets" },
+            { "title" : "Live view", "text" : "Aladin-testbed", "url" : "https://uilennest.net/aladin-testbed/" },
+        ],
+        "details" : [
+            { "image" : "/assets/aladin_testbed.png",
+                "description" : "Testing backend technology by selecting a backend/API server and visualizing the APERTIF dataset in Aladin Light." },
+            { "image" : "/assets/aladin_hips_catalog.png",
+                "description" : "Testing the aladin 'hips catalog' technology." +
+                    "A dataset is converted with the hipsgen software into a multi layered HiPS catalog." },
+            { "image" : "/assets/aladin_testbed_ucac4.png",
+                "description" : "Demonstrating a very large dataset (114M stars) served by FastAPI" },
+        ]
+    },
+
+    {"name": "Exoplanets (2021)",
+        "route" : "exoplanets",
+        "short_description" : "Technology demonstration to show how to use Aladin Light in a ReactJS frontend.",
+        "description" : "Technology demonstration to show how to use Aladin Light in a ReactJS frontend." +
+            "This project was created to assist a French/US development team, from the University of Amsterdam, that was refered to me by CDS.",
+        "type": "frontend_reactjs,private",
+        "thumbnail": "/assets/exoplanets.jpg",
+        "details_card": ProjectDetailsCard,
+        "bullets" : [
+            { "title" : "Technology", "text" : "ReactJS, Bootstrap, Aladin Light, Gitlab actions" },
+            { "title" : "My role", "text" : "single developer" },
+        ],
+        "links" : [
+            { "title" : "See also", "text" : "Aladin-testbed", "url" : "/cv/portfolio/all/aladin-testbed" },
+            { "title" : "Live view", "text" : "Exoplanets", "url" : "https://sdc-dev.astron.nl/exoplanets" },
+        ],
+        "details" : [
+            { "image" : "/assets/exoplanets.jpg",
+                "description" : "The goal is the visualisation in Aladin Light. " +
+                    "The data itself is served by my private 'Astrobase' project through a ReST API, " +
+                    "which already existed to plot stars with exoplanets in my 'AstroView' project." },
+        ]
+    },
+
+    {"name": "StarCharts (2022)",
+        "route" : "starcharts",
+        "short_description" : "Drawing starcharts based on the 114 million star UCAC4 dataset, converted to a Postgres database.",
+        "description" : "Drawing starcharts based on the 114 milion star UCAC4 dataset, converted to a Postgres database.",
+        "type": "private,backend_django",
+        "thumbnail": "/assets/starcharts.png",
+        "details_card": ProjectDetailsCard,
+        "bullets" : [
+            { "title" : "Technology", "text" : "Django, Python, Postgres, Gitlab actions, Docker" },
+            { "title" : "My role", "text" : "single developer." },
+        ],
+        "links" : [
+            { "title" : "See also", "text" : "AstroBase", "url" : "/cv/portfolio/all/astrobase" },
+        ],
+        "details" : [
+            { "image" : "/assets/starcharts.png",
+                "description" : "The GUI can be used to generate a starchart and tweak desired settings into a 'scheme'. " +
+                    "But the main interface is a REST API endpoint, containing sky coordinates and a scheme, to generate a skymap image on the server that an be displayed or downloaded." },
+            { "image" : "/assets/starcharts_diagram.png",
+                "description" : "This shows the architecture and it documents the implementation proces. " +
+                    "It shows how the original binary dataset was downloaded from CDS," +
+                    " converted into a Postgres datatabase and finally hosted as a remove Docker volume on a NAS." },
+            { "image" : "/assets/starcharts_transients.jpg",
+                "description" : "Hooking up the Starcharts app to the Transients app. " +
+                    "This shows the path of Ceres over 5 days. " },
+            { "image" : "/assets/starchart_new_gui.png",
+                "description" : "Development is still ongoing to refine and expand the possiblities." },
+        ]
+    },
+
     {"name": "MyHiking (2016)",
         "route" : "my_hiking",
         "short_description" : "Django application showing all my hikes stored in a sqlite database.",
-        "description" : "Django application showing all my hikes stored in a sqlite database.",
+        "description" : "Django application showing all my hikes stored in a sqlite database. This was my first Django application",
         "type": "private,backend_django",
         "technology" : "Django, Sqlite, Bootstrap",
         "thumbnail": "/assets/my_hiking.png",
         "details_card": ProjectDetailsCard,
         "bullets" : [
-            { "title" : "Technology", "text" : "Django, Sqlite, Bootstrap" },
+            { "title" : "Technology", "text" : "Django, Sqlite, Bootstrap, Gitlab actions, Docker" },
             { "title" : "My role", "text" : "single developer." },
         ],
         "details" : [
