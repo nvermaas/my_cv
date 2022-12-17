@@ -26,8 +26,8 @@ export const projects = [
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Technology", "text" : "Django, DRF, Python, Postgres" },
-            { "title" : "Developed", "text" : "Developed in 2018. Operational from 2018 until 2021." },
-            { "title" : "My role", "text" : "architect, main developer." },
+            { "title" : "Developed", "text" : "in 2018. Operational from 2018 until 2021." },
+            { "title" : "My role", "text" : "software architect, main developer." },
         ],
         "links" : [
             { "title" : "See also", "text" : "ATDB-LDV", "url" : "/cv/portfolio/all/atdb-ldv" },
@@ -67,7 +67,7 @@ export const projects = [
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Technology", "text" : "Django, DRF, Python, Postgres" },
-            { "title" : "Developed", "text" : "Developed in 2021. Operational from 2021." },
+            { "title" : "Developed", "text" : "in 2021. Operational from 2021." },
             { "title" : "My role", "text" : "main developer." },
         ],
         "links" : [
@@ -112,15 +112,15 @@ export const projects = [
 
     {"name": "ESAP-GUI / ADEX-GUI (2020)",
         "route" : "esap-gui",
-        "short_description" : "ESAP-GUI for the European Escape Project, also deployed as ADEX for the ASTRON Portal",
-        "description" : "ESAP-GUI for the European Escape Project, also deployed as ADEX for the ASTRON Portal",
+        "short_description" : "ESAP-GUI for the European Escape Project, also deployed as ADEX for the ASTRON science portal",
+        "description" : "ESAP-GUI for the European Escape Project, also deployed as ADEX for the ASTRON science portal",
         "type": "frontend_reactjs",
         "thumbnail": "/assets/esap_gui.png",
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Technology", "text" : "ReactJS, Bootstrap" },
-            { "title" : "Developed", "text" : "Developed in 2020, further development handed over to other team members " },
-            { "title" : "My role", "text" : "Architect, main developer for the first iteration." },
+            { "title" : "Developed", "text" : "in 2020, further development handed over to other team members " },
+            { "title" : "My role", "text" : "software architect, main developer for the first iteration." },
         ],
         "links" : [
             { "title" : "See also", "text" : "ESAP-API", "url" : "/cv/portfolio/all/esap-api" },
@@ -143,8 +143,8 @@ export const projects = [
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Technology", "text" : "Django, DRF, Sqlite" },
-            { "title" : "Developed", "text" : "Developed in 2020, further development handed over to other team members." },
-            { "title" : "My role", "text" : "Architect, main developer for the first iteration." },
+            { "title" : "Developed", "text" : "in 2020, further development handed over to other team members." },
+            { "title" : "My role", "text" : "software architect, main developer for the first iteration." },
         ],
         "links" : [
             { "title" : "See also", "text" : "ESAP-GUI", "url" : "/cv/portfolio/all/esap-gui" },
@@ -170,7 +170,7 @@ export const projects = [
         "bullets" : [
             { "title" : "Technology", "text" : "Django, DRF, Postgres" },
             { "title" : "Developed", "text" : "Under development in 2022." },
-            { "title" : "My role", "text" : "Architect, single developer." },
+            { "title" : "My role", "text" : "software architect, single developer." },
         ],
         "links" : [
             { "title" : "See also", "text" : "ESAP-API", "url" : "/cv/portfolio/all/esap-api" },
@@ -194,8 +194,8 @@ export const projects = [
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Technology", "text" : "FastAPI, DRF, Postgres" },
-            { "title" : "Developed", "text" : "Developed in 2022 as a benchmarking experiment." },
-            { "title" : "My role", "text" : "Architect, single developer." },
+            { "title" : "Developed", "text" : "in 2022 as a benchmarking experiment." },
+            { "title" : "My role", "text" : "software architect, single developer." },
         ],
         "links" : [
             { "title" : "See also", "text" : "ADEX-backend-django", "url" : "/cv/portfolio/all/adex-backend-django" },
@@ -296,7 +296,7 @@ export const projects = [
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Technology", "text" : "ReactJS, Bootstrap" },
-            { "title" : "Developed", "text" : "Developed in 2017/2018." },
+            { "title" : "Developed", "text" : "in 2017/2018." },
             { "title" : "My role", "text" : "main frontend developer." },
         ],
         "links" : [
@@ -335,7 +335,7 @@ export const projects = [
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Technology", "text" : "Django, DRF, Postgres" },
-            { "title" : "Developed", "text" : "Developed in 2017/2018." },
+            { "title" : "Developed", "text" : "in 2017/2018." },
             { "title" : "My role", "text" : "main backend developer." },
         ],
         "links" : [
@@ -358,7 +358,7 @@ export const projects = [
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Methodology", "text" : "Structured Analyses/Structured Design (SA/SD)" },
-            { "title" : "My role", "text" : "Architect" },
+            { "title" : "My role", "text" : "software architect" },
         ],
         "links" : [
             { "title" : "See also", "text" : "MoM (LOFAR)", "url" : "/cv/portfolio/all/mom-lofar" },
@@ -491,7 +491,7 @@ export const projects = [
         "details_card": ProjectDetailsCard,
         "bullets" : [
             { "title" : "Methodology", "text" : "Modeling techniques from SA/SD" },
-            { "title" : "My role", "text" : "Architect" },
+            { "title" : "My role", "text" : "architect" },
         ],
         "details" : [
             {
@@ -601,7 +601,7 @@ export const projects = [
                 "description" : "image cutouts across all the images" },
             { "image" : "/assets/astrobase_diagram.png",
                 "description" : "this is the documentation" },
-            { "image" : "/assets/the_home_observatory.png",
+            { "image" : "/assets/the_home_observatory.jpg",
                 "description" : "The home observatory" },
         ]
     },
@@ -795,7 +795,7 @@ export const projects = [
             { "image" : "/assets/onetreewood.png",
                 "description" : "main screen" },
             { "image" : "/assets/onetreewood_travel.png",
-                "description" : "details of the hiking page" }
+                "description" : "details of the travel page" }
         ]
     },
 
