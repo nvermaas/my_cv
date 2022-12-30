@@ -654,6 +654,8 @@ export const projects = [
                     "The EnergyView frontend contacts the EnergyServer through a REST API and displays the data." },
             { "image" : "/assets/my_energy_view_weather.png",
                 "description" : "Rain and Temperature. Also read from the Domoticz database." },
+            { "image" : "/assets/my_energy_view_structurechart.png",
+                "description" : "Documentation of the source code." },
         ]
     },
 
@@ -674,6 +676,8 @@ export const projects = [
         "details" : [
             { "image" : "/assets/my_energy_server.png",
                 "description" : "main screen" },
+            { "image" : "/assets/my_energy_server_documentation.png",
+                "description" : "Deployment Diagran and Structure Chart of the source code" },
         ]
     },
 
